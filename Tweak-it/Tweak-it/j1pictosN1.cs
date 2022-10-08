@@ -26,6 +26,7 @@ namespace Tweak_it
 
         private void j1pictos_Load(object sender, EventArgs e)
         {
+        
             //agrego los pBox que cree por pantalla al array pictureBoxesArray
 
             pictureBoxesArray[0] = pB2;
@@ -92,8 +93,7 @@ namespace Tweak_it
             {
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
-                j1pictosN1 j1p = new j1pictosN1();
-                j1p.Hide();
+                this.Hide();
             }
         }
 
@@ -104,8 +104,7 @@ namespace Tweak_it
             {
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
-                j1pictosN1 j1p = new j1pictosN1();
-                j1p.Hide();
+                this.Hide();
             }
         }
 
@@ -116,8 +115,7 @@ namespace Tweak_it
             {
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
-                j1pictosN1 j1p = new j1pictosN1();
-                j1p.Hide();
+                this.Hide();
             }
         }
     }

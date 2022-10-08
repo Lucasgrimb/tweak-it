@@ -64,6 +64,12 @@
     <Compile Include="j1pictosN1.Designer.cs">
       <DependentUpon>j1pictosN1.cs</DependentUpon>
     </Compile>
+    <Compile Include="j1pictosN3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j1pictosN3.Designer.cs">
+      <DependentUpon>j1pictosN3.cs</DependentUpon>
+    </Compile>
     <Compile Include="juego1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="j1pictosN1.resx">
       <DependentUpon>j1pictosN1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j1pictosN3.resx">
+      <DependentUpon>j1pictosN3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="juego1.resx">
       <DependentUpon>juego1.cs</DependentUpon>

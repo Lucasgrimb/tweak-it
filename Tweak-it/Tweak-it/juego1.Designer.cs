@@ -75,6 +75,7 @@
             this.Controls.Add(this.dibujos);
             this.Name = "juego1";
             this.Text = "juego1";
+            this.Load += new System.EventHandler(this.juego1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dibujos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictogramas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotos)).EndInit();

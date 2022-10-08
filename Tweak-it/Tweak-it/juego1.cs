@@ -21,7 +21,12 @@ namespace Tweak_it
         {
             j1pictosN1 j1p = new j1pictosN1();
             j1p.Show();
+            this.Hide();
         }
 
+        private void juego1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

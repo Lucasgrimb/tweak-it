@@ -21,17 +21,21 @@ namespace Tweak_it
         {
             juego1 j1 = new juego1();
             j1.Show();
+            this.Hide();
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
             juego2 j2 = new juego2();
             j2.Show();
+            this.Hide();
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
             juego3 j3 = new juego3();
+            j3.Show();
+            this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
