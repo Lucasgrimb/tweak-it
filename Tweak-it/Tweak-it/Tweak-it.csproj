@@ -82,11 +82,11 @@
     <Compile Include="juego2.Designer.cs">
       <DependentUpon>juego2.cs</DependentUpon>
     </Compile>
-    <Compile Include="juego3.cs">
+    <Compile Include="juego3n1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="juego3.Designer.cs">
-      <DependentUpon>juego3.cs</DependentUpon>
+    <Compile Include="juego3n1.Designer.cs">
+      <DependentUpon>juego3n1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="juego1.resx">
       <DependentUpon>juego1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="juego3n1.resx">
+      <DependentUpon>juego3n1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -208,6 +211,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\vergüenza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicojarron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicoromp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consigna1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consigna2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jarrón.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Razón1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Razon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RazónC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Situación1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Situacion2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

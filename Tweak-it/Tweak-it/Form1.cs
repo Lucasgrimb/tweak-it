@@ -33,7 +33,7 @@ namespace Tweak_it
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            juego3 j3 = new juego3();
+            juego3n1 j3 = new juego3n1();
             j3.Show();
             this.Hide();
         }
