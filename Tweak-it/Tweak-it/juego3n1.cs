@@ -14,7 +14,7 @@ namespace Tweak_it
     public partial class juego3n1 : Form
     {
         PictureBox[,] situaciones = new PictureBox[2, 8];
-        PictureBox[] x = new PictureBox[2];
+        Random rand = new Random();
         public juego3n1()
         {
             InitializeComponent();
@@ -47,8 +47,34 @@ namespace Tweak_it
             situaciones[1, 6].Image = Tweak_it.Properties.Resources.Razón1;
             situaciones[1, 7].Image = Tweak_it.Properties.Resources.RazónC;
 
-            
-
+            randSituacion();
         }
+        private void randSituacion()
+        {
+            int x = rand.Next(situaciones.GetLength(0));
+            if (x == 0)
+            {
+                pB1 = situaciones[0, 0];
+                pB2 = situaciones[0, 1];
+                pB3 = situaciones[0, 2];
+                pB4 = situaciones[0, 3];
+                pB5 = situaciones[0, 4];
+                pB6 = situaciones[0, 5];
+                pB7 = situaciones[0, 6];
+                pB8 = situaciones[0, 7];
+            }
+            else
+            {
+                pB1 = situaciones[1, 0];
+                pB2 = situaciones[1, 1];
+                pB3 = situaciones[1, 2];
+                pB4 = situaciones[1, 3];
+                pB5 = situaciones[1, 4];
+                pB6 = situaciones[1, 5];
+                pB7 = situaciones[1, 6];
+                pB8 = situaciones[1, 7];
+            }
+        }
+
     }
 }
