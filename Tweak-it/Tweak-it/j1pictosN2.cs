@@ -154,5 +154,17 @@ namespace Tweak_it
                 this.Hide();
             }
         }
+
+        private void btnN1_Click(object sender, EventArgs e)
+        {
+            j1pictosN1 jn1 = new j1pictosN1();
+            jn1.Show();
+            this.Hide();
+        }
+
+        private void pB1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

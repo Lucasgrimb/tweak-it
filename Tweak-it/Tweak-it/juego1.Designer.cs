@@ -31,6 +31,7 @@
             this.dibujos = new System.Windows.Forms.PictureBox();
             this.pictogramas = new System.Windows.Forms.PictureBox();
             this.fotos = new System.Windows.Forms.PictureBox();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dibujos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictogramas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fotos)).BeginInit();
@@ -44,6 +45,7 @@
             this.dibujos.Size = new System.Drawing.Size(187, 81);
             this.dibujos.TabIndex = 0;
             this.dibujos.TabStop = false;
+            this.dibujos.Click += new System.EventHandler(this.dibujos_Click);
             // 
             // pictogramas
             // 
@@ -65,11 +67,22 @@
             this.fotos.TabIndex = 2;
             this.fotos.TabStop = false;
             // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(37, 32);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(107, 43);
+            this.btnAtras.TabIndex = 3;
+            this.btnAtras.Text = "atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
             // juego1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.fotos);
             this.Controls.Add(this.pictogramas);
             this.Controls.Add(this.dibujos);
@@ -88,5 +101,6 @@
         private System.Windows.Forms.PictureBox dibujos;
         private System.Windows.Forms.PictureBox pictogramas;
         private System.Windows.Forms.PictureBox fotos;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

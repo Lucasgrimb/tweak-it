@@ -32,6 +32,7 @@
             this.pB2 = new System.Windows.Forms.PictureBox();
             this.pB3 = new System.Windows.Forms.PictureBox();
             this.pB4 = new System.Windows.Forms.PictureBox();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
@@ -74,16 +75,27 @@
             this.pB4.TabStop = false;
             this.pB4.Click += new System.EventHandler(this.pB4_Click);
             // 
-            // j1pictos
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(63, 25);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(111, 63);
+            this.btnAtras.TabIndex = 4;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
+            // j1pictosN1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1144, 640);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pB4);
             this.Controls.Add(this.pB3);
             this.Controls.Add(this.pB2);
             this.Controls.Add(this.pB1);
-            this.Name = "j1pictos";
+            this.Name = "j1pictosN1";
             this.Text = "j1pictos";
             this.Load += new System.EventHandler(this.j1pictos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).EndInit();
@@ -100,5 +112,6 @@
         private System.Windows.Forms.PictureBox pB2;
         private System.Windows.Forms.PictureBox pB3;
         private System.Windows.Forms.PictureBox pB4;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

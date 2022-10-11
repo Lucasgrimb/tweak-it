@@ -189,5 +189,12 @@ namespace Tweak_it
             }
         }
 
+        private void btnN2_Click(object sender, EventArgs e)
+        {
+            j1pictosN2 j2p = new j1pictosN2();
+            j2p.Show();
+            this.Hide();
+
+        }
     }
 }

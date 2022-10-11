@@ -28,5 +28,19 @@ namespace Tweak_it
         {
             
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void dibujos_Click(object sender, EventArgs e)
+        {
+            j1dibujosN1 j1d = new j1dibujosN1();
+            j1d.Show();
+            this.Hide();
+        }
     }
 }

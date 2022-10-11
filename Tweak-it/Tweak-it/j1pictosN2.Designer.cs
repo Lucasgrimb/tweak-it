@@ -35,6 +35,7 @@
             this.pB5 = new System.Windows.Forms.PictureBox();
             this.pB6 = new System.Windows.Forms.PictureBox();
             this.pB7 = new System.Windows.Forms.PictureBox();
+            this.btnN1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
@@ -51,6 +52,7 @@
             this.pB1.Size = new System.Drawing.Size(247, 191);
             this.pB1.TabIndex = 0;
             this.pB1.TabStop = false;
+            this.pB1.Click += new System.EventHandler(this.pB1_Click);
             // 
             // pB2
             // 
@@ -106,11 +108,22 @@
             this.pB7.TabStop = false;
             this.pB7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // j1dibujos
+            // btnN1
+            // 
+            this.btnN1.Location = new System.Drawing.Point(97, 48);
+            this.btnN1.Name = "btnN1";
+            this.btnN1.Size = new System.Drawing.Size(89, 70);
+            this.btnN1.TabIndex = 7;
+            this.btnN1.Text = "nivel 1";
+            this.btnN1.UseVisualStyleBackColor = true;
+            this.btnN1.Click += new System.EventHandler(this.btnN1_Click);
+            // 
+            // j1pictosN2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 632);
+            this.Controls.Add(this.btnN1);
             this.Controls.Add(this.pB7);
             this.Controls.Add(this.pB6);
             this.Controls.Add(this.pB5);
@@ -118,7 +131,7 @@
             this.Controls.Add(this.pB3);
             this.Controls.Add(this.pB2);
             this.Controls.Add(this.pB1);
-            this.Name = "j1dibujos";
+            this.Name = "j1pictosN2";
             this.Text = "j1dibujos";
             this.Load += new System.EventHandler(this.j1dibujos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).EndInit();
@@ -141,5 +154,6 @@
         private System.Windows.Forms.PictureBox pB5;
         private System.Windows.Forms.PictureBox pB6;
         private System.Windows.Forms.PictureBox pB7;
+        private System.Windows.Forms.Button btnN1;
     }
 }

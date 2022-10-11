@@ -10,23 +10,20 @@ using System.Windows.Forms;
 
 namespace Tweak_it
 {
-    public partial class j1pictosN1 : Form
+    public partial class j1dibujosN1 : Form
     {
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List<Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
-        
-        
         int nivel = 0;
 
-        public j1pictosN1()
+        public j1dibujosN1()
         {
             InitializeComponent();
         }
 
-        private void j1pictos_Load(object sender, EventArgs e)
+        private void j1dibujosN1_Load(object sender, EventArgs e)
         {
-        
             //agrego los pBox que cree por pantalla al array pictureBoxesArray
 
             pictureBoxesArray[0] = pB2;
@@ -41,9 +38,9 @@ namespace Tweak_it
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             //Cargo la imagen de la compu y las meto en el array      
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.contento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.triste);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.enfadado);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.contentoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.tristeD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.enfadadoD);
 
 
             randomizarImages();
@@ -80,18 +77,19 @@ namespace Tweak_it
                 MessageBox.Show("emocion incorrecta, volve a intentarlo");
             }
         }
-        
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void btnAtras_Click_1(object sender, EventArgs e)
         {
-
+            juego1 j1 = new juego1();
+            j1.Show();
+            this.Hide();
         }
-
         private void pB2_Click(object sender, EventArgs e)
         {
             checkResult(pB2);
-           if (nivel == 10)
+            if (nivel == 10)
             {
-                j1pictosN2 j1d = new j1pictosN2();
+               j1dibujosN2 j1d = new j1dibujosN2();
                 j1d.Show();
                 this.Hide();
             }
@@ -102,7 +100,7 @@ namespace Tweak_it
             checkResult(pB3);
             if (nivel == 10)
             {
-                j1pictosN2 j1d = new j1pictosN2();
+                j1dibujosN2 j1d = new j1dibujosN2();
                 j1d.Show();
                 this.Hide();
             }
@@ -113,18 +111,11 @@ namespace Tweak_it
             checkResult(pB4);
             if (nivel == 10)
             {
-                j1pictosN2 j1d = new j1pictosN2();
+                j1dibujosN2 j1d = new j1dibujosN2();
                 j1d.Show();
                 this.Hide();
             }
         }
-
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            juego1 j1 = new juego1();
-            j1.Show();
-            this.Hide();
-        }
     }
-}
+    }
 

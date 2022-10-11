@@ -39,6 +39,7 @@
             this.pB9 = new System.Windows.Forms.PictureBox();
             this.pB8 = new System.Windows.Forms.PictureBox();
             this.pB7 = new System.Windows.Forms.PictureBox();
+            this.btnN2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
@@ -150,11 +151,22 @@
             this.pB7.TabStop = false;
             this.pB7.Click += new System.EventHandler(this.pB7_Click);
             // 
+            // btnN2
+            // 
+            this.btnN2.Location = new System.Drawing.Point(130, 56);
+            this.btnN2.Name = "btnN2";
+            this.btnN2.Size = new System.Drawing.Size(124, 66);
+            this.btnN2.TabIndex = 11;
+            this.btnN2.Text = "Nivel 2";
+            this.btnN2.UseVisualStyleBackColor = true;
+            this.btnN2.Click += new System.EventHandler(this.btnN2_Click);
+            // 
             // j1pictosN3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1643, 986);
+            this.Controls.Add(this.btnN2);
             this.Controls.Add(this.pB11);
             this.Controls.Add(this.pB10);
             this.Controls.Add(this.pB9);
@@ -197,5 +209,6 @@
         private System.Windows.Forms.PictureBox pB9;
         private System.Windows.Forms.PictureBox pB8;
         private System.Windows.Forms.PictureBox pB7;
+        private System.Windows.Forms.Button btnN2;
     }
 }
