@@ -28,7 +28,18 @@ namespace Tweak_it
 
         private void juego3n1_Load(object sender, EventArgs e)
         {
+
+
             //agrego fotos al array
+            situaciones[0, 0] = pB1;
+            situaciones[0, 0] = pB2;
+            situaciones[0, 0] = pB3;
+            situaciones[0, 0] = pB4;
+            situaciones[0, 0] = pB5;
+            situaciones[0, 0] = pB6;
+            situaciones[0, 0] = pB7;
+            situaciones[0, 0] = pB8;
+
             situaciones[0, 0].Image = Tweak_it.Properties.Resources.Situación1;
             situaciones[0, 1].Image = Tweak_it.Properties.Resources.Consigna1;
             situaciones[0, 2].Image = Tweak_it.Properties.Resources.contento;
