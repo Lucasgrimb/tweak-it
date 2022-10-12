@@ -13,8 +13,12 @@ namespace Tweak_it
    
     public partial class juego3n1 : Form
     {
-        PictureBox[,] situaciones = new PictureBox[2, 8];
+        Image[,] situaciones = new Image[2, 8];
+        String [] sits = new String [2];
         Random rand = new Random();
+        int x;
+        bool correcto = false;
+        bool correcto2 = false;
         public juego3n1()
         {
             InitializeComponent();
@@ -31,61 +35,148 @@ namespace Tweak_it
 
 
             //agrego fotos al array
-            situaciones[0, 0] = pB1;
-            situaciones[0, 0] = pB2;
-            situaciones[0, 0] = pB3;
-            situaciones[0, 0] = pB4;
-            situaciones[0, 0] = pB5;
-            situaciones[0, 0] = pB6;
-            situaciones[0, 0] = pB7;
-            situaciones[0, 0] = pB8;
+        
 
-            situaciones[0, 0].Image = Tweak_it.Properties.Resources.Situación1;
-            situaciones[0, 1].Image = Tweak_it.Properties.Resources.Consigna1;
-            situaciones[0, 2].Image = Tweak_it.Properties.Resources.contento;
-            situaciones[0, 3].Image = Tweak_it.Properties.Resources.enfadado;
-            situaciones[0, 4].Image = Tweak_it.Properties.Resources.asustado;
-            situaciones[0, 5].Image = Tweak_it.Properties.Resources.Chicojarron;
-            situaciones[0, 6].Image = Tweak_it.Properties.Resources.Jarrón;
-            situaciones[0, 7].Image = Tweak_it.Properties.Resources.Chicoromp;
+            situaciones[0, 0] = Tweak_it.Properties.Resources.Situación1;
+            situaciones[0, 1] = Tweak_it.Properties.Resources.Consigna1;
+            situaciones[0, 2] = Tweak_it.Properties.Resources.contento;
+            situaciones[0, 3] = Tweak_it.Properties.Resources.enfadado;
+            situaciones[0, 4] = Tweak_it.Properties.Resources.asustado;
+            situaciones[0, 5] = Tweak_it.Properties.Resources.Chicojarron;
+            situaciones[0, 6] = Tweak_it.Properties.Resources.Jarrón;
+            situaciones[0, 7] = Tweak_it.Properties.Resources.Chicoromp;
 
-            situaciones[1, 0].Image = Tweak_it.Properties.Resources.Situacion2;
-            situaciones[1, 1].Image = Tweak_it.Properties.Resources.Consigna2;
-            situaciones[1, 2].Image = Tweak_it.Properties.Resources.triste;
-            situaciones[1, 3].Image = Tweak_it.Properties.Resources.aburrido;
-            situaciones[1, 4].Image = Tweak_it.Properties.Resources.contento;
-            situaciones[1, 5].Image = Tweak_it.Properties.Resources.Razon2;
-            situaciones[1, 6].Image = Tweak_it.Properties.Resources.Razón1;
-            situaciones[1, 7].Image = Tweak_it.Properties.Resources.RazónC;
+            situaciones[1, 0] = Tweak_it.Properties.Resources.Situacion2;
+            situaciones[1, 1] = Tweak_it.Properties.Resources.Consigna2;
+            situaciones[1, 2] = Tweak_it.Properties.Resources.triste;
+            situaciones[1, 3] = Tweak_it.Properties.Resources.aburrido;
+            situaciones[1, 4] = Tweak_it.Properties.Resources.contento;
+            situaciones[1, 5] = Tweak_it.Properties.Resources.Razon2;
+            situaciones[1, 6] = Tweak_it.Properties.Resources.Razón1;
+            situaciones[1, 7] = Tweak_it.Properties.Resources.RazónC;
 
-            randSituacion();
+            pB1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pB8.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            sits[0] = "sit1";
+            sits[1] = "sit2";
+            randsit();
+                int x = rand.Next(0, sits.Length);
+
+           
         }
-        private void randSituacion()
+
+
+
+        private void pB3_Click(object sender, EventArgs e)
         {
-            int x = rand.Next(situaciones.GetLength(0));
             if (x == 0)
             {
-                pB1 = situaciones[0, 0];
-                pB2 = situaciones[0, 1];
-                pB3 = situaciones[0, 2];
-                pB4 = situaciones[0, 3];
-                pB5 = situaciones[0, 4];
-                pB6 = situaciones[0, 5];
-                pB7 = situaciones[0, 6];
-                pB8 = situaciones[0, 7];
-            }
-            else
-            {
-                pB1 = situaciones[1, 0];
-                pB2 = situaciones[1, 1];
-                pB3 = situaciones[1, 2];
-                pB4 = situaciones[1, 3];
-                pB5 = situaciones[1, 4];
-                pB6 = situaciones[1, 5];
-                pB7 = situaciones[1, 6];
-                pB8 = situaciones[1, 7];
+                MessageBox.Show("emocion incorrecta, vlové a intentar!");
             }
         }
 
+        private void pB4_Click(object sender, EventArgs e)
+        {
+            if(x== 0)
+            {
+                if (correcto2 == true)
+                {
+                    MessageBox.Show("felicidades, pasaste de nivel");
+                    sit2();
+                }
+                else
+                {
+                    correcto = true;
+                }
+            }
+        }
+
+        private void pB5_Click(object sender, EventArgs e)
+        {
+            if (x == 0)
+            {
+                MessageBox.Show("emocion incorrecta, vlové a intentar!");
+            }
+        }
+
+        private void pB6_Click(object sender, EventArgs e)
+        {
+            if (x == 0)
+            {
+                MessageBox.Show("causa incorrecta, vlové a intentar!");
+            }
+        }
+
+        private void pB7_Click(object sender, EventArgs e)
+        {
+            if (x == 0)
+            {
+                MessageBox.Show("causa incorrecta, vlové a intentar!");
+            }
+        }
+
+        private void pB8_Click(object sender, EventArgs e)
+        {
+            if (x == 0)
+            {
+                if (correcto = true)
+                {
+                    MessageBox.Show("muy bien, pasaste de nivel");
+                    sit2();
+                }
+                else
+                {
+                    correcto2 = false;
+                    MessageBox.Show("no elegiste la emocion correspondiente");
+                }
+            }
+            
+        }
+
+        private void sit1()
+        {
+            pB1.Image = situaciones[0, 0];
+            pB2.Image = situaciones[0, 1];
+            pB3.Image = situaciones[0, 2];
+            pB4.Image = situaciones[0, 3];
+            pB5.Image = situaciones[0, 4];
+            pB6.Image = situaciones[0, 5];
+            pB7.Image = situaciones[0, 6];
+            pB8.Image = situaciones[0, 7];
+        }
+
+        private void sit2()
+        {
+            pB1.Image = situaciones[1, 0];
+            pB2.Image = situaciones[1, 1];
+            pB3.Image = situaciones[1, 2];
+            pB4.Image = situaciones[1, 3];
+            pB5.Image = situaciones[1, 4];
+            pB6.Image = situaciones[1, 5];
+            pB7.Image = situaciones[1, 6];
+            pB8.Image = situaciones[1, 7];
+        }
+
+        private void randsit()
+        {
+        
+            if (x == 0)
+            {
+                sit1();
+            }
+            else if (x == 1)
+            {
+                sit2();
+            }
+        }
+
+        }
     }
-}
+
