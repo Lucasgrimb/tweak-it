@@ -129,6 +129,9 @@
     <EmbeddedResource Include="juego1.resx">
       <DependentUpon>juego1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="juego2.resx">
+      <DependentUpon>juego2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="juego3n1.resx">
       <DependentUpon>juego3n1.cs</DependentUpon>
     </EmbeddedResource>
