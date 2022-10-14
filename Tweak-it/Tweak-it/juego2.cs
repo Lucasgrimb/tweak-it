@@ -50,11 +50,6 @@ namespace Tweak_it
             {
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
-
-            randomizarImagenes();
-        }
-        private void randomizarImagenes()
-        {
             // Agrego las imagenes de resources a la lista con las emociones que se usarán en el nivel
             pictos.Add(Tweak_it.Properties.Resources.contento);
             pictos.Add(Tweak_it.Properties.Resources.triste);
@@ -104,7 +99,11 @@ namespace Tweak_it
             dibujos[8].Tag = "enfermo";
             dibujos[9].Tag = "aburrido";
             dibujos[10].Tag = "preocupado";
-
+            randomizarImagenes();
+        }
+        private void randomizarImagenes()
+        {
+            
 
             //asigno emociones a pBpictos
 
@@ -112,8 +111,7 @@ namespace Tweak_it
             {
                 int x = rand.Next(0, pictos.Count);
 
-                pBpictos[i].Image = pictos[x];
-                pBpictos[i].Tag = i.ToString();
+                pBpictos[i].Image = pictos[x];               
                 ndibujos.Add(dibujos[x]);
                 pictos.RemoveAt(x);
                 dibujos.RemoveAt(x);
@@ -158,6 +156,22 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if(cont == 5)
+                {
+                    MessageBox.Show("felicitaciones, pasaste de nivel");
+                    if (dibujos.Count > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                    }
+                    else
+                    {
+                        j2N2 j2N = new j2N2();
+                        j2N.Show();
+                    }
+
+                }
+                
             }
             else
             {
@@ -171,6 +185,20 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5)
+                {
+                    MessageBox.Show("felicitaciones, pasaste de nivel");
+                    if (dibujos.Count > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                    }
+                    else
+                    {
+                        j2N2 j2N = new j2N2();
+                        j2N.Show();
+                    }
+                }
             }
             else
             {
@@ -184,6 +212,21 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5)
+                {
+                    MessageBox.Show("felicitaciones, pasaste de nivel");
+                    if (dibujos.Count > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                    }
+                    else
+                    {
+                        j2N2 j2N = new j2N2();
+                        j2N.Show();
+                    }
+
+                }
             }
             else
             {
@@ -197,6 +240,21 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5)
+                {
+                    MessageBox.Show("felicitaciones, pasaste de nivel");
+                    if (dibujos.Count > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                    }
+                    else
+                    {
+                        j2N2 j2N = new j2N2();
+                        j2N.Show();
+                    }
+
+                }
             }
             else
             {
@@ -210,11 +268,33 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5)
+                {
+                    MessageBox.Show("felicitaciones, pasaste de nivel");
+                    if (dibujos.Count > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                    }
+                    else
+                    {
+                        j2N2 j2N = new j2N2();
+                        j2N.Show();
+                    }
+
+                }
             }
             else
             {
                 MessageBox.Show("incorrecto, volve a intentarlo");
             }
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
         }
     }
 }
