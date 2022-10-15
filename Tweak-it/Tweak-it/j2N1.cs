@@ -20,6 +20,11 @@ namespace Tweak_it
         Random rand = new Random();
         String aux;
         int cont = 0;
+        bool pb1 = false;
+        bool pb2 = false;
+        bool pb3 = false;
+        bool pb4 = false;
+        bool pb5 = false;
 
         public j2N1()
         {
@@ -75,6 +80,7 @@ namespace Tweak_it
             dibujos.Add(Tweak_it.Properties.Resources.enfermoD);
             dibujos.Add(Tweak_it.Properties.Resources.aburridoD);
             dibujos.Add(Tweak_it.Properties.Resources.preocupadoD);
+            
 
 
             //Asigno tag para cada emocion
@@ -134,27 +140,63 @@ namespace Tweak_it
 
         private void pB1p_Click(object sender, EventArgs e)
         {
-            aux = pB1p.Image.Tag.ToString();
+            if (pb1 == true)
+            {
+                MessageBox.Show("ya matcheaste esta emocion");
+            }
+            else
+            {
+                aux = pB1p.Image.Tag.ToString();
+            }
         }
 
         private void pB2p_Click(object sender, EventArgs e)
+           
         {
-            aux = pB2p.Image.Tag.ToString();
+            if (pb2 == true)
+            {
+                MessageBox.Show("ya matcheaste esta emocion");
+            }
+            else
+            {
+                aux = pB2p.Image.Tag.ToString();
+            }
         }
 
         private void pB3p_Click(object sender, EventArgs e)
         {
-            aux = pB3p.Image.Tag.ToString();
+            if (pb3 == true)
+            {
+                MessageBox.Show("ya matcheaste esta emocion");
+            }
+            else
+            {
+                aux = pB3p.Image.Tag.ToString();
+            }
         }
 
         private void pB4p_Click(object sender, EventArgs e)
         {
-            aux = pB4p.Image.Tag.ToString();
+            if (pb4 == true)
+            {
+                MessageBox.Show("ya matcheaste esta emocion");
+            }
+            else
+            {
+                aux = pB4p.Image.Tag.ToString();
+            }
         }
 
         private void pB5p_Click(object sender, EventArgs e)
         {
-            aux = pB5p.Image.Tag.ToString();
+            if (pb5 == true)
+            {
+                MessageBox.Show("ya matcheaste esta emocion");
+            }
+            else
+            {
+                aux = pB5p.Image.Tag.ToString();
+            }
         }
 
         private void pB1d_Click(object sender, EventArgs e)
@@ -162,11 +204,14 @@ namespace Tweak_it
             if (pB1d.Image.Tag.ToString() == aux)
             {
                 MessageBox.Show("Correcto");
-                cont++;             
+                cont++;
+                aux = "x";
+                pb1 = true;
                   if(cont==5 && pictos.Count() > 1)
                 {
                     randomizarImagenes();
                     cont = 0;
+                    pb1 = false;
                 }
                   else if(cont == 5 && pictos.Count() == 1)
                 {
@@ -188,10 +233,13 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                aux = "x";           
+                pb2 = true;
                 if (cont == 5 && pictos.Count() > 1)
                 {
                     randomizarImagenes();
                     cont = 0;
+                    pb2 = false;
                 }
                 else if (cont == 5 && pictos.Count() == 1)
                 {
@@ -212,10 +260,13 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                pb3 = true;
+                aux = "x";
                 if (cont == 5 && pictos.Count() > 1)
                 {
                     randomizarImagenes();
                     cont = 0;
+                    pb3 = false;
                 }
                 else if (cont == 5 && pictos.Count() == 1)
                 {
@@ -236,10 +287,13 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                pb4 = true;
+                aux = "x";
                 if (cont == 5 && pictos.Count() > 1)
                 {
                     randomizarImagenes();
                     cont = 0;
+                    pb4 = false;
                 }
                 else if (cont == 5 && pictos.Count() == 1)
                 {
@@ -260,10 +314,13 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                aux = "x";
+                pb5 = true;
                 if (cont == 5 && pictos.Count() > 1)
                 {
                     randomizarImagenes();
                     cont = 0;
+                    pb5 = false;    
                 }
                 else if (cont == 5 && pictos.Count() == 1)
                 {
