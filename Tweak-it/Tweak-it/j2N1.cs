@@ -51,13 +51,6 @@ namespace Tweak_it
             {
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
-
-            randomizarImagenes();
-
-        }
-
-        private void randomizarImagenes()
-       {
             // Agrego imagenes a las listas
             pictos.Add(Tweak_it.Properties.Resources.contento);
             pictos.Add(Tweak_it.Properties.Resources.triste);
@@ -82,6 +75,7 @@ namespace Tweak_it
             dibujos.Add(Tweak_it.Properties.Resources.enfermoD);
             dibujos.Add(Tweak_it.Properties.Resources.aburridoD);
             dibujos.Add(Tweak_it.Properties.Resources.preocupadoD);
+
 
             //Asigno tag para cada emocion
             pictos[0].Tag = "contento";
@@ -108,6 +102,15 @@ namespace Tweak_it
             dibujos[8].Tag = "enfermo";
             dibujos[9].Tag = "aburrido";
             dibujos[10].Tag = "preocupado";
+
+            randomizarImagenes();
+
+        }
+
+        private void randomizarImagenes()
+       {
+
+
 
             //asigno emociones a pBpictos
 
@@ -159,7 +162,19 @@ namespace Tweak_it
             if (pB1d.Image.Tag.ToString() == aux)
             {
                 MessageBox.Show("Correcto");
-                cont++;
+                cont++;             
+                  if(cont==5 && pictos.Count() > 1)
+                {
+                    randomizarImagenes();
+                    cont = 0;
+                }
+                  else if(cont == 5 && pictos.Count() == 1)
+                {
+                    j2N2 j2 = new j2N2();
+                    j2.Show();
+                    this.Hide();
+                }
+               
             }
             else
             {
@@ -173,6 +188,17 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5 && pictos.Count() > 1)
+                {
+                    randomizarImagenes();
+                    cont = 0;
+                }
+                else if (cont == 5 && pictos.Count() == 1)
+                {
+                    j2N2 j2 = new j2N2();
+                    j2.Show();
+                    this.Hide();
+                }
             }
             else
             {
@@ -186,6 +212,17 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5 && pictos.Count() > 1)
+                {
+                    randomizarImagenes();
+                    cont = 0;
+                }
+                else if (cont == 5 && pictos.Count() == 1)
+                {
+                    j2N2 j2 = new j2N2();
+                    j2.Show();
+                    this.Hide();
+                }
             }
             else
             {
@@ -199,6 +236,17 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5 && pictos.Count() > 1)
+                {
+                    randomizarImagenes();
+                    cont = 0;
+                }
+                else if (cont == 5 && pictos.Count() == 1)
+                {
+                    j2N2 j2 = new j2N2();
+                    j2.Show();
+                    this.Hide();
+                }
             }
             else
             {
@@ -212,6 +260,17 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
+                if (cont == 5 && pictos.Count() > 1)
+                {
+                    randomizarImagenes();
+                    cont = 0;
+                }
+                else if (cont == 5 && pictos.Count() == 1)
+                {
+                    j2N2 j2 = new j2N2();
+                    j2.Show();
+                    this.Hide();
+                }
             }
             else
             {
