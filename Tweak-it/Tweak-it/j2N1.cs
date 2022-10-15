@@ -26,6 +26,7 @@ namespace Tweak_it
         bool pb4 = false;
         bool pb5 = false;
 
+
         public j2N1()
         {
             InitializeComponent();
@@ -139,200 +140,214 @@ namespace Tweak_it
         }
 
         private void pB1p_Click(object sender, EventArgs e)
-        {
-            if (pb1 == true)
-            {
-                MessageBox.Show("ya matcheaste esta emocion");
-            }
-            else
-            {
-                aux = pB1p.Image.Tag.ToString();
-            }
+        {                             
+                aux = pB1p.Image.Tag.ToString();            
         }
 
         private void pB2p_Click(object sender, EventArgs e)
            
         {
-            if (pb2 == true)
-            {
-                MessageBox.Show("ya matcheaste esta emocion");
-            }
-            else
-            {
-                aux = pB2p.Image.Tag.ToString();
-            }
+            aux = pB2p.Image.Tag.ToString();
         }
 
         private void pB3p_Click(object sender, EventArgs e)
         {
-            if (pb3 == true)
-            {
-                MessageBox.Show("ya matcheaste esta emocion");
-            }
-            else
-            {
-                aux = pB3p.Image.Tag.ToString();
-            }
+            aux = pB3p.Image.Tag.ToString();
         }
 
         private void pB4p_Click(object sender, EventArgs e)
         {
-            if (pb4 == true)
-            {
-                MessageBox.Show("ya matcheaste esta emocion");
-            }
-            else
-            {
-                aux = pB4p.Image.Tag.ToString();
-            }
+            aux = pB4p.Image.Tag.ToString();
         }
 
         private void pB5p_Click(object sender, EventArgs e)
         {
-            if (pb5 == true)
-            {
-                MessageBox.Show("ya matcheaste esta emocion");
-            }
-            else
-            {
-                aux = pB5p.Image.Tag.ToString();
-            }
+            aux = pB5p.Image.Tag.ToString();
         }
 
         private void pB1d_Click(object sender, EventArgs e)
         {
-            if (pB1d.Image.Tag.ToString() == aux)
+            if (pb1 == false)
             {
-                MessageBox.Show("Correcto");
-                cont++;
-                aux = "x";
-                pb1 = true;
-                  if(cont==5 && pictos.Count() > 1)
+                if (pB1d.Image.Tag.ToString() == aux)
                 {
-                    randomizarImagenes();
-                    cont = 0;
-                    pb1 = false;
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    aux = "x";
+                    pb1 = true;
+                    if (cont == 5 && pictos.Count() > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb1 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 1)
+                    {
+                        j2N2 j2 = new j2N2();
+                        j2.Show();
+                        this.Hide();
+                        pb1 = false;
+                    }
+
                 }
-                  else if(cont == 5 && pictos.Count() == 1)
+                else
                 {
-                    j2N2 j2 = new j2N2();
-                    j2.Show();
-                    this.Hide();
+                    MessageBox.Show("incorrecto, volve a intentarlo");
                 }
-               
             }
             else
             {
-                MessageBox.Show("incorrecto, volve a intentarlo");
+                MessageBox.Show("Ya matcheaste esta emocion");
             }
+
         }
 
         private void pB2d_Click(object sender, EventArgs e)
         {
-            if (pB2d.Image.Tag.ToString() == aux)
+            if (pb2 == false)
             {
-                MessageBox.Show("Correcto");
-                cont++;
-                aux = "x";           
-                pb2 = true;
-                if (cont == 5 && pictos.Count() > 1)
+                if (pB2d.Image.Tag.ToString() == aux)
                 {
-                    randomizarImagenes();
-                    cont = 0;
-                    pb2 = false;
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    aux = "x";
+                    pb2 = true;
+                    if (cont == 5 && pictos.Count() > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb2 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 1)
+                    {
+                        j2N2 j2 = new j2N2();
+                        j2.Show();
+                        this.Hide();
+                        pb2 = false;
+                    }
+
                 }
-                else if (cont == 5 && pictos.Count() == 1)
+                else
                 {
-                    j2N2 j2 = new j2N2();
-                    j2.Show();
-                    this.Hide();
+                    MessageBox.Show("incorrecto, volve a intentarlo");
                 }
             }
             else
             {
-                MessageBox.Show("incorrecto, volve a intentarlo");
+                MessageBox.Show("Ya matcheaste esta emocion");
             }
+
         }
 
         private void pB3d_Click(object sender, EventArgs e)
         {
-            if (pB3d.Image.Tag.ToString() == aux)
+            if (pb3 == false)
             {
-                MessageBox.Show("Correcto");
-                cont++;
-                pb3 = true;
-                aux = "x";
-                if (cont == 5 && pictos.Count() > 1)
+                if (pB3d.Image.Tag.ToString() == aux)
                 {
-                    randomizarImagenes();
-                    cont = 0;
-                    pb3 = false;
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    aux = "x";
+                    pb3 = true;
+                    if (cont == 5 && pictos.Count() > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb3 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 1)
+                    {
+                        j2N2 j2 = new j2N2();
+                        j2.Show();
+                        this.Hide();
+                        pb3 = false;
+                    }
+
                 }
-                else if (cont == 5 && pictos.Count() == 1)
+                else
                 {
-                    j2N2 j2 = new j2N2();
-                    j2.Show();
-                    this.Hide();
+                    MessageBox.Show("incorrecto, volve a intentarlo");
                 }
             }
             else
             {
-                MessageBox.Show("incorrecto, volve a intentarlo");
+                MessageBox.Show("Ya matcheaste esta emocion");
             }
+
         }
 
         private void pB4d_Click(object sender, EventArgs e)
         {
-            if (pB4d.Image.Tag.ToString() == aux)
+            if (pb4 == false)
             {
-                MessageBox.Show("Correcto");
-                cont++;
-                pb4 = true;
-                aux = "x";
-                if (cont == 5 && pictos.Count() > 1)
+                if (pB4d.Image.Tag.ToString() == aux)
                 {
-                    randomizarImagenes();
-                    cont = 0;
-                    pb4 = false;
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    aux = "x";
+                    pb4 = true;
+                    if (cont == 5 && pictos.Count() > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb4 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 1)
+                    {
+                        j2N2 j2 = new j2N2();
+                        j2.Show();
+                        this.Hide();
+                        pb4 = false;
+                    }
+
                 }
-                else if (cont == 5 && pictos.Count() == 1)
+                else
                 {
-                    j2N2 j2 = new j2N2();
-                    j2.Show();
-                    this.Hide();
+                    MessageBox.Show("incorrecto, volve a intentarlo");
                 }
             }
             else
             {
-                MessageBox.Show("incorrecto, volve a intentarlo");
+                MessageBox.Show("Ya matcheaste esta emocion");
             }
+
         }
 
         private void pB5d_Click(object sender, EventArgs e)
         {
-            if (pB5d.Image.Tag.ToString() == aux)
+            if (pb5 == false)
             {
-                MessageBox.Show("Correcto");
-                cont++;
-                aux = "x";
-                pb5 = true;
-                if (cont == 5 && pictos.Count() > 1)
+                if (pB5d.Image.Tag.ToString() == aux)
                 {
-                    randomizarImagenes();
-                    cont = 0;
-                    pb5 = false;    
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    aux = "x";
+                    pb5 = true;
+                    if (cont == 5 && pictos.Count() > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb5 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 1)
+                    {
+                        j2N2 j2 = new j2N2();
+                        j2.Show();
+                        this.Hide();
+                        pb5 = false;
+                    }
+
                 }
-                else if (cont == 5 && pictos.Count() == 1)
+                else
                 {
-                    j2N2 j2 = new j2N2();
-                    j2.Show();
-                    this.Hide();
+                    MessageBox.Show("incorrecto, volve a intentarlo");
                 }
             }
             else
             {
-                MessageBox.Show("incorrecto, volve a intentarlo");
+                MessageBox.Show("Ya matcheaste esta emocion");
             }
+
         }
 
         private void btn1_Click(object sender, EventArgs e)
