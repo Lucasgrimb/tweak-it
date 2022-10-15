@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Tweak_it
 {
-    public partial class juego2 : Form
+    public partial class j2N1 : Form
     {
         PictureBox[] pBpictos = new PictureBox[5];
         PictureBox[] pBdibujos = new PictureBox[5];
@@ -20,12 +20,13 @@ namespace Tweak_it
         Random rand = new Random();
         String aux;
         int cont = 0;
-        public juego2()
+
+        public j2N1()
         {
             InitializeComponent();
         }
 
-        private void juego2_Load(object sender, EventArgs e)
+        private void j2N1_Load(object sender, EventArgs e)
         {
             //agrego Pb al arrray
             pBpictos[0] = pB1p;
@@ -34,12 +35,12 @@ namespace Tweak_it
             pBpictos[3] = pB4p;
             pBpictos[4] = pB5p;
 
-
             pBdibujos[0] = pB1d;
             pBdibujos[1] = pB2d;
             pBdibujos[2] = pB3d;
             pBdibujos[3] = pB4d;
             pBdibujos[4] = pB5d;
+
 
             // pongo las imagenes en un formato especial para que se vean centradas
             for (int x = 0; x < pBpictos.Length; x++)
@@ -50,7 +51,14 @@ namespace Tweak_it
             {
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
-            // Agrego las imagenes de resources a la lista con las emociones que se usarán en el nivel
+
+            randomizarImagenes();
+
+        }
+
+        private void randomizarImagenes()
+       {
+            // Agrego imagenes a las listas
             pictos.Add(Tweak_it.Properties.Resources.contento);
             pictos.Add(Tweak_it.Properties.Resources.triste);
             pictos.Add(Tweak_it.Properties.Resources.enfadado);
@@ -75,6 +83,7 @@ namespace Tweak_it
             dibujos.Add(Tweak_it.Properties.Resources.aburridoD);
             dibujos.Add(Tweak_it.Properties.Resources.preocupadoD);
 
+            //Asigno tag para cada emocion
             pictos[0].Tag = "contento";
             pictos[1].Tag = "triste";
             pictos[2].Tag = "enfadado";
@@ -99,11 +108,6 @@ namespace Tweak_it
             dibujos[8].Tag = "enfermo";
             dibujos[9].Tag = "aburrido";
             dibujos[10].Tag = "preocupado";
-            randomizarImagenes();
-        }
-        private void randomizarImagenes()
-        {
-            
 
             //asigno emociones a pBpictos
 
@@ -111,7 +115,8 @@ namespace Tweak_it
             {
                 int x = rand.Next(0, pictos.Count);
 
-                pBpictos[i].Image = pictos[x];               
+                pBpictos[i].Image = pictos[x];
+                pBpictos[i].Tag = i.ToString();
                 ndibujos.Add(dibujos[x]);
                 pictos.RemoveAt(x);
                 dibujos.RemoveAt(x);
@@ -122,7 +127,6 @@ namespace Tweak_it
                 pBdibujos[j].Image = ndibujos[f];
                 ndibujos.RemoveAt(f);
             }
-
         }
 
         private void pB1p_Click(object sender, EventArgs e)
@@ -156,22 +160,6 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
-                if(cont == 5)
-                {
-                    MessageBox.Show("felicitaciones, pasaste de nivel");
-                    if (dibujos.Count > 1)
-                    {
-                        randomizarImagenes();
-                        cont = 0;
-                    }
-                    else
-                    {
-                        j2N2 j2N = new j2N2();
-                        j2N.Show();
-                    }
-
-                }
-                
             }
             else
             {
@@ -185,20 +173,6 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
-                if (cont == 5)
-                {
-                    MessageBox.Show("felicitaciones, pasaste de nivel");
-                    if (dibujos.Count > 1)
-                    {
-                        randomizarImagenes();
-                        cont = 0;
-                    }
-                    else
-                    {
-                        j2N2 j2N = new j2N2();
-                        j2N.Show();
-                    }
-                }
             }
             else
             {
@@ -212,21 +186,6 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
-                if (cont == 5)
-                {
-                    MessageBox.Show("felicitaciones, pasaste de nivel");
-                    if (dibujos.Count > 1)
-                    {
-                        randomizarImagenes();
-                        cont = 0;
-                    }
-                    else
-                    {
-                        j2N2 j2N = new j2N2();
-                        j2N.Show();
-                    }
-
-                }
             }
             else
             {
@@ -240,21 +199,6 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
-                if (cont == 5)
-                {
-                    MessageBox.Show("felicitaciones, pasaste de nivel");
-                    if (dibujos.Count > 1)
-                    {
-                        randomizarImagenes();
-                        cont = 0;
-                    }
-                    else
-                    {
-                        j2N2 j2N = new j2N2();
-                        j2N.Show();
-                    }
-
-                }
             }
             else
             {
@@ -268,21 +212,6 @@ namespace Tweak_it
             {
                 MessageBox.Show("Correcto");
                 cont++;
-                if (cont == 5)
-                {
-                    MessageBox.Show("felicitaciones, pasaste de nivel");
-                    if (dibujos.Count > 1)
-                    {
-                        randomizarImagenes();
-                        cont = 0;
-                    }
-                    else
-                    {
-                        j2N2 j2N = new j2N2();
-                        j2N.Show();
-                    }
-
-                }
             }
             else
             {

@@ -26,7 +26,7 @@ namespace Tweak_it
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            juego2 j2 = new juego2();
+            j2N1 j2 = new j2N1();
             j2.Show();
             this.Hide();
         }
