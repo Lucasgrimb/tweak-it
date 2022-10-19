@@ -126,7 +126,7 @@ namespace Tweak_it
         {
             if (x == 0)
             {
-                if (correcto = true)
+                if (correcto == true)
                 {
                     MessageBox.Show("muy bien, pasaste de nivel");
                     sit2();
