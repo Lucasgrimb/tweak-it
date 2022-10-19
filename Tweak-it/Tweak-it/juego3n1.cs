@@ -19,7 +19,9 @@ namespace Tweak_it
         int x;
         bool correcto = false;
         bool correcto2 = false;
+        int a = 0;
         public juego3n1()
+
         {
             InitializeComponent();
         }
@@ -64,10 +66,8 @@ namespace Tweak_it
             pB7.SizeMode = PictureBoxSizeMode.StretchImage;
             pB8.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            sits[0] = "sit1";
-            sits[1] = "sit2";
-            int x = rand.Next(0, sits.Length);
-            randsit();
+            sit1();
+          
        
 
            
@@ -77,7 +77,11 @@ namespace Tweak_it
 
         private void pB3_Click(object sender, EventArgs e)
         {
-            if(x == 0)
+            if(a == 0)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+            else if (a == 1)
             {
                 MessageBox.Show("emocion incorrecta, volve a intentar");
             }
@@ -85,24 +89,37 @@ namespace Tweak_it
 
         private void pB4_Click(object sender, EventArgs e)
         {
-            if (x == 0)
+            if (a == 0)
+            {
+                MessageBox.Show("emocion correcta");
+                correcto = true;
+            }
+            else if (a == 1)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+        }
+
+        private void pB5_Click(object sender, EventArgs e)
+        {
+            if (a == 0)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+            if (a == 1)
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
             }
         }
 
-        private void pB5_Click(object sender, EventArgs e)
-        {
-            if (x == 0)
-            {
-                MessageBox.Show("emocion incorrecta, volve a intentar");
-            }
-        }
-
         private void pB6_Click(object sender, EventArgs e)
         {
-            if (x == 0)
+            if (a == 0)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            if (a == 1)
             {
                 MessageBox.Show("causa incorrecta, volve a intentar");
             }
@@ -110,19 +127,39 @@ namespace Tweak_it
 
         private void pB7_Click(object sender, EventArgs e)
         {
-            if (x == 0)
+            if (a == 0)
             {
                 MessageBox.Show("causa incorrecta volve a intentar");
+            }
+            if (a == 1)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
             }
         }
 
         private void pB8_Click(object sender, EventArgs e)
         {
-            if (x == 0)
+            if (a == 0)
             {
                 if (correcto == true)
                 {
-                    MessageBox.Show("Muy bien, pasaste de nivel");               
+                    MessageBox.Show("Muy bien, pasaste de nivel");
+                    correcto = false;
+                    sit2();
+                    a++;
+                }
+                else
+                {
+                    MessageBox.Show("debes elegir la emocion correcta");
+                }
+            }
+            if (a == 1)
+            {
+                if (correcto == true)
+                {
+                    MessageBox.Show("Muy bien, pasaste de nivel");
+                    correcto = false;
+                    a++;
                 }
                 else
                 {
@@ -155,18 +192,6 @@ namespace Tweak_it
             pB8.Image = situaciones[1, 7];
         }
 
-        private void randsit()
-        {
-        
-            if (x == 0)
-            {
-                sit1();
-            }
-            else if (x == 1)
-            {
-                sit2();
-            }
-        }
 
         }
     }
