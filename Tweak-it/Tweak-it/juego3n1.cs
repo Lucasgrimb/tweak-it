@@ -66,8 +66,9 @@ namespace Tweak_it
 
             sits[0] = "sit1";
             sits[1] = "sit2";
+            int x = rand.Next(0, sits.Length);
             randsit();
-                int x = rand.Next(0, sits.Length);
+       
 
            
         }
@@ -76,25 +77,18 @@ namespace Tweak_it
 
         private void pB3_Click(object sender, EventArgs e)
         {
-            if (x == 0)
+            if(x == 0)
             {
-                MessageBox.Show("emocion incorrecta, vlové a intentar!");
+                MessageBox.Show("emocion incorrecta, volve a intentar");
             }
         }
 
         private void pB4_Click(object sender, EventArgs e)
         {
-            if(x== 0)
+            if (x == 0)
             {
-                if (correcto2 == true)
-                {
-                    MessageBox.Show("felicidades, pasaste de nivel");
-                    sit2();
-                }
-                else
-                {
-                    correcto = true;
-                }
+                MessageBox.Show("emocion correcta");
+                correcto = true;
             }
         }
 
@@ -102,7 +96,7 @@ namespace Tweak_it
         {
             if (x == 0)
             {
-                MessageBox.Show("emocion incorrecta, vlové a intentar!");
+                MessageBox.Show("emocion incorrecta, volve a intentar");
             }
         }
 
@@ -110,7 +104,7 @@ namespace Tweak_it
         {
             if (x == 0)
             {
-                MessageBox.Show("causa incorrecta, vlové a intentar!");
+                MessageBox.Show("causa incorrecta, volve a intentar");
             }
         }
 
@@ -118,7 +112,7 @@ namespace Tweak_it
         {
             if (x == 0)
             {
-                MessageBox.Show("causa incorrecta, vlové a intentar!");
+                MessageBox.Show("causa incorrecta volve a intentar");
             }
         }
 
@@ -126,18 +120,15 @@ namespace Tweak_it
         {
             if (x == 0)
             {
-                if (correcto = true)
+                if (correcto == true)
                 {
-                    MessageBox.Show("muy bien, pasaste de nivel");
-                    sit2();
+                    MessageBox.Show("Muy bien, pasaste de nivel");               
                 }
                 else
                 {
-                    correcto2 = false;
-                    MessageBox.Show("no elegiste la emocion correspondiente");
+                    MessageBox.Show("debes elegir la emocion correcta");
                 }
             }
-            
         }
 
         private void sit1()
