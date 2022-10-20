@@ -58,7 +58,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -163,6 +163,9 @@
     <EmbeddedResource Include="j2N1.resx">
       <DependentUpon>j2N1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="j2N2.resx">
+      <DependentUpon>j2N2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="juego1.resx">
       <DependentUpon>juego1.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,7 +191,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Tweak-it_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
