@@ -137,6 +137,7 @@ namespace Tweak_it
                 pBdibujos[j].Image = ndibujos[f];
                 ndibujos.RemoveAt(f);
             }
+
         }
 
         private void pB1p_Click(object sender, EventArgs e)
