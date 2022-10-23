@@ -58,17 +58,17 @@ namespace Tweak_it
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
             // Agrego imagenes a las listas
-            pictos.Add(Tweak_it.Properties.Resources.contento);
-            pictos.Add(Tweak_it.Properties.Resources.triste);
-            pictos.Add(Tweak_it.Properties.Resources.enfadado);
-            pictos.Add(Tweak_it.Properties.Resources.asustado);
-            pictos.Add(Tweak_it.Properties.Resources.sorprendido);
-            pictos.Add(Tweak_it.Properties.Resources.cansado);
-            pictos.Add(Tweak_it.Properties.Resources.hambriento);
-            pictos.Add(Tweak_it.Properties.Resources.sediento);
-            pictos.Add(Tweak_it.Properties.Resources.enfermo);
-            pictos.Add(Tweak_it.Properties.Resources.aburrido);
-            pictos.Add(Tweak_it.Properties.Resources.preocupado);
+            pictos.Add(Tweak_it.Properties.Resources.Contento);
+            pictos.Add(Tweak_it.Properties.Resources.Triste);
+            pictos.Add(Tweak_it.Properties.Resources.Enojado);
+            pictos.Add(Tweak_it.Properties.Resources.Asustado);
+            pictos.Add(Tweak_it.Properties.Resources.Sorprendido);
+            pictos.Add(Tweak_it.Properties.Resources.Cansado);
+            pictos.Add(Tweak_it.Properties.Resources.Hambriento);
+            pictos.Add(Tweak_it.Properties.Resources.Sediento);
+            pictos.Add(Tweak_it.Properties.Resources.Enfermo);
+            pictos.Add(Tweak_it.Properties.Resources.Aburrido);
+            pictos.Add(Tweak_it.Properties.Resources.Preocupado);
 
             dibujos.Add(Tweak_it.Properties.Resources.contentoD);
             dibujos.Add(Tweak_it.Properties.Resources.tristeD);
@@ -79,7 +79,7 @@ namespace Tweak_it
             dibujos.Add(Tweak_it.Properties.Resources.hambrientoD);
             dibujos.Add(Tweak_it.Properties.Resources.sedientoD);
             dibujos.Add(Tweak_it.Properties.Resources.enfermoD);
-            dibujos.Add(Tweak_it.Properties.Resources.aburridoD);
+            dibujos.Add(Tweak_it.Properties.Resources.Aburrido);
             dibujos.Add(Tweak_it.Properties.Resources.preocupadoD);
             
 

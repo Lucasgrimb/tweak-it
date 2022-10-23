@@ -41,9 +41,9 @@ namespace Tweak_it
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             //Cargo la imagen de la compu y las meto en el array      
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.contento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.triste);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.enfadado);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Contento);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Triste);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Enojado);
 
 
             randomizarImages();

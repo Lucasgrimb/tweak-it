@@ -205,28 +205,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aburrido.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\aburridoD.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\asustado.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\asustadoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cansado.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cansadoD.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\confundir.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\contento.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\contentoD.png" />
@@ -238,28 +226,16 @@
     <None Include="Resources\enfadadoD.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\enfermo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\enfermoD.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hambriento.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\hambrientoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nervioso.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nerviosoD.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\orgulloso.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\preocupado.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\preocupadoD.png" />
@@ -271,13 +247,7 @@
     <None Include="Resources\sedientoD.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sorprendido.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\sorprendidoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\triste.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tristeD.png" />
@@ -326,6 +296,51 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aburrido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asustado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cansado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confundido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enfermo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enojado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hambriento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miedo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nervioso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preocupado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sediento .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sorprendido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Triste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verguenza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

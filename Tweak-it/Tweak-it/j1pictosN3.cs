@@ -49,21 +49,20 @@ namespace Tweak_it
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             // Agrego las imagenes de resources a la lista con las emociones que se usarán en el nivel
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.contento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.triste);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.enfadado);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.asustado);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.sorprendido);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.cansado);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.hambriento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.sediento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.enfermo);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.aburrido);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.vergüenza);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.nervioso);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.confundir);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.orgulloso);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.preocupado);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Contento);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Triste);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Enojado);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Asustado);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Sorprendido);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Cansado);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Hambriento);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Sediento);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Enfermo);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Aburrido);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Verguenza);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Nervioso);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Confundido);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.Preocupado);
 
 
             // Con esta funcion asigno seis emociones de la lista a los pBoxes
