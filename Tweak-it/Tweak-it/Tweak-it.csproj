@@ -98,6 +98,24 @@
     <Compile Include="j1dibujosN3.Designer.cs">
       <DependentUpon>j1dibujosN3.cs</DependentUpon>
     </Compile>
+    <Compile Include="j1fotosN1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j1fotosN1.Designer.cs">
+      <DependentUpon>j1fotosN1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="j1fotosN2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j1fotosN2.Designer.cs">
+      <DependentUpon>j1fotosN2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="j1fotosN3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="j1fotosN3.Designer.cs">
+      <DependentUpon>j1fotosN3.cs</DependentUpon>
+    </Compile>
     <Compile Include="j1pictosN2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +174,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="j1dibujosN2.resx">
       <DependentUpon>j1dibujosN2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j1fotosN1.resx">
+      <DependentUpon>j1fotosN1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j1fotosN2.resx">
+      <DependentUpon>j1fotosN2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="j1fotosN3.resx">
+      <DependentUpon>j1fotosN3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="j1pictosN2.resx">
       <DependentUpon>j1pictosN2.cs</DependentUpon>
@@ -341,6 +368,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Verguenza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AburridoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsustadoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CansadoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConfundidoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContentoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnfermoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnojadoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HambrientoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NerviosoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PreocupadoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SedientoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SorprendidoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TristeF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerguenzaF.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Tweak_it
 {
-    public partial class j1pictosN3 : Form
+    public partial class j1fotosN3 : Form
     {
         // creo las listas y arrays
         PictureBox[] pictureBoxesArray = new PictureBox[10];
@@ -18,14 +18,14 @@ namespace Tweak_it
         Random raux = new Random();
         int nivel = 0;
 
-        public j1pictosN3()
+        public j1fotosN3()
         {
             InitializeComponent();
         }
 
-        private void j1pictosN3_Load(object sender, EventArgs e)
+        private void j1fotosN3_Load(object sender, EventArgs e)
         {
-            j1pictosN2 j1p2 = new j1pictosN2();
+            j1fotosN2 j1p2 = new j1fotosN2();
             j1p2.Show();
             //agrego pBoxes al array 
             pictureBoxesArray[0] = pB2;
@@ -49,27 +49,29 @@ namespace Tweak_it
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             // Agrego las imagenes de resources a la lista con las emociones que se usarán en el nivel
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Contento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Triste);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Enojado);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Asustado);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Sorprendido);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Cansado);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Hambriento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Sediento);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Enfermo);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Aburrido);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Verguenza);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Nervioso);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Confundido);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.Preocupado);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.ContentoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.TristeF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.EnojadoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.AsustadoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.SorprendidoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.CansadoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.HambrientoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.SedientoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.EnfermoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.AburridoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.VerguenzaF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.NerviosoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.ConfundidoF);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.PreocupadoF);
 
 
             // Con esta funcion asigno seis emociones de la lista a los pBoxes
             randomizarImages();
         }
+
         private void checkResult(PictureBox pB)
         {
+            MessageBox.Show(pB.Image.ToString());
             if (pB.Image == pB1.Image)
             {
                 randomizarImages();
@@ -80,6 +82,7 @@ namespace Tweak_it
                 MessageBox.Show("emocion incorrecta, volve a intentarlo");
             }
         }
+
         private void randomizarImages()
         {
             //Asigno una emocion a cada pBox aleatoriamente
@@ -104,7 +107,7 @@ namespace Tweak_it
         private void pB2_Click(object sender, EventArgs e)
         {
             checkResult(pB2);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
@@ -113,31 +116,34 @@ namespace Tweak_it
         private void pB3_Click(object sender, EventArgs e)
         {
             checkResult(pB3);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
         }
-        private void pictureBox4_Click(object sender, EventArgs e)
+
+        private void pB4_Click(object sender, EventArgs e)
         {
             checkResult(pB4);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
         }
-        private void pictureBox5_Click(object sender, EventArgs e)
+
+        private void pB5_Click(object sender, EventArgs e)
         {
             checkResult(pB5);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
         }
+
         private void pB6_Click(object sender, EventArgs e)
         {
             checkResult(pB6);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
@@ -145,8 +151,8 @@ namespace Tweak_it
 
         private void pB7_Click(object sender, EventArgs e)
         {
-            checkResult(pB7);
-            if (nivel == 10)
+            checkResult((PictureBox)sender);
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
@@ -155,7 +161,7 @@ namespace Tweak_it
         private void pB8_Click(object sender, EventArgs e)
         {
             checkResult(pB8);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
@@ -164,7 +170,7 @@ namespace Tweak_it
         private void pB9_Click(object sender, EventArgs e)
         {
             checkResult(pB9);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
@@ -173,7 +179,7 @@ namespace Tweak_it
         private void pB10_Click(object sender, EventArgs e)
         {
             checkResult(pB10);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
@@ -182,18 +188,17 @@ namespace Tweak_it
         private void pB11_Click(object sender, EventArgs e)
         {
             checkResult(pB11);
-            if (nivel == 10)
+            if (nivel == 5)
             {
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
             }
         }
 
-        private void btnN2_Click(object sender, EventArgs e)
+        private void btn1_Click(object sender, EventArgs e)
         {
-            j1pictosN2 j2p = new j1pictosN2();
+            j1fotosN2 j2p = new j1fotosN2();
             j2p.Show();
             this.Hide();
-
         }
     }
 }

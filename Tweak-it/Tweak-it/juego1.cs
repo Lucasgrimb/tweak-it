@@ -42,5 +42,12 @@ namespace Tweak_it
             j1d.Show();
             this.Hide();
         }
+
+        private void fotos_Click(object sender, EventArgs e)
+        {
+            j1fotosN1 jf1 = new j1fotosN1();
+            jf1.Show();
+            this.Hide();
+        }
     }
 }
