@@ -21,5 +21,12 @@ namespace Tweak_it
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Crear_Usuario cr = new Crear_Usuario();
+            this.Hide();
+            cr.Show();
+        }
     }
 }
