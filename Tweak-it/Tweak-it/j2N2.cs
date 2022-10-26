@@ -61,11 +61,131 @@ namespace Tweak_it
                 pBfotos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
+            // Agrego imagenes a las listas
+            pictos.Add(Tweak_it.Properties.Resources.Contento);
+            pictos.Add(Tweak_it.Properties.Resources.Triste);
+            pictos.Add(Tweak_it.Properties.Resources.Enojado);
+            pictos.Add(Tweak_it.Properties.Resources.Asustado);
+            pictos.Add(Tweak_it.Properties.Resources.Sorprendido);
+            pictos.Add(Tweak_it.Properties.Resources.Cansado);
+            pictos.Add(Tweak_it.Properties.Resources.Hambriento);
+            pictos.Add(Tweak_it.Properties.Resources.Sediento);
+            pictos.Add(Tweak_it.Properties.Resources.Enfermo);
+            pictos.Add(Tweak_it.Properties.Resources.Aburrido);
+            pictos.Add(Tweak_it.Properties.Resources.Preocupado);
+            pictos.Add(Tweak_it.Properties.Resources.Verguenza);
+            pictos.Add(Tweak_it.Properties.Resources.Nervioso);
+            pictos.Add(Tweak_it.Properties.Resources.Confundido);
+
+            dibujos.Add(Tweak_it.Properties.Resources.ContentoD);
+            dibujos.Add(Tweak_it.Properties.Resources.TristeD);
+            dibujos.Add(Tweak_it.Properties.Resources.EnojadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.AsustadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.SorprendidoD);
+            dibujos.Add(Tweak_it.Properties.Resources.CansadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.HambrientoD);
+            dibujos.Add(Tweak_it.Properties.Resources.SedientoD);
+            dibujos.Add(Tweak_it.Properties.Resources.EnfermoD);
+            dibujos.Add(Tweak_it.Properties.Resources.AburridoD);
+            dibujos.Add(Tweak_it.Properties.Resources.PreocupadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.VerguenzaD);
+            dibujos.Add(Tweak_it.Properties.Resources.NerviosoD);
+            dibujos.Add(Tweak_it.Properties.Resources.ConfundidoD);
+
+            fotos.Add(Tweak_it.Properties.Resources.ContentoF);
+            fotos.Add(Tweak_it.Properties.Resources.TristeF);
+            fotos.Add(Tweak_it.Properties.Resources.EnojadoF);
+            fotos.Add(Tweak_it.Properties.Resources.AsustadoF);
+            fotos.Add(Tweak_it.Properties.Resources.SorprendidoF);
+            fotos.Add(Tweak_it.Properties.Resources.CansadoF);
+            fotos.Add(Tweak_it.Properties.Resources.HambrientoF);
+            fotos.Add(Tweak_it.Properties.Resources.SedientoF);
+            fotos.Add(Tweak_it.Properties.Resources.EnfermoF);
+            fotos.Add(Tweak_it.Properties.Resources.AburridoF);
+            fotos.Add(Tweak_it.Properties.Resources.PreocupadoF);
+            fotos.Add(Tweak_it.Properties.Resources.VerguenzaF);
+            fotos.Add(Tweak_it.Properties.Resources.NerviosoF);
+            fotos.Add(Tweak_it.Properties.Resources.ConfundidoF);
+
+
+            //Asigno tag para cada emocion
+            pictos[0].Tag = "contento";
+            pictos[1].Tag = "triste";
+            pictos[2].Tag = "enfadado";
+            pictos[3].Tag = "asustado";
+            pictos[4].Tag = "sorprendido";
+            pictos[5].Tag = "cansado";
+            pictos[6].Tag = "hambriento";
+            pictos[7].Tag = "sediento";
+            pictos[8].Tag = "enfermo";
+            pictos[9].Tag = "aburrido";
+            pictos[10].Tag = "preocupado";
+
+            dibujos[0].Tag = "contento";
+            dibujos[1].Tag = "triste";
+            dibujos[2].Tag = "enfadado";
+            dibujos[3].Tag = "asustado";
+            dibujos[4].Tag = "sorprendido";
+            dibujos[5].Tag = "cansado";
+            dibujos[6].Tag = "hambriento";
+            dibujos[7].Tag = "sediento";
+            dibujos[8].Tag = "enfermo";
+            dibujos[9].Tag = "aburrido";
+            dibujos[10].Tag = "preocupado";
+
+            fotos[0].Tag = "contento";
+            fotos[1].Tag = "triste";
+            fotos[2].Tag = "enfadado";
+            fotos[3].Tag = "asustado";
+            fotos[4].Tag = "sorprendido";
+            fotos[5].Tag = "cansado";
+            fotos[6].Tag = "hambriento";
+            fotos[7].Tag = "sediento";
+            fotos[8].Tag = "enfermo";
+            fotos[9].Tag = "aburrido";
+            fotos[10].Tag = "preocupado";
+
+            randomizarImagenes();
+
         }
+
+        private void randomizarImagenes()
+        {
+            //asigno emociones a pBpictos
+
+            for (int i = 0; i < 5; i++)
+            {
+                int x = rand.Next(0, pictos.Count);
+
+                pBpictos[i].Image = pictos[x];
+                pBpictos[i].Tag = i.ToString();
+                ndibujos.Add(dibujos[x]);
+                nfotos.Add(fotos[x]);
+                pictos.RemoveAt(x);
+                dibujos.RemoveAt(x);
+                fotos.RemoveAt(x);
+            }
+            for (int j = 0; j < 5; j++)
+            {
+                int f = rand.Next(0, ndibujos.Count);
+                pBdibujos[j].Image = ndibujos[f];
+                ndibujos.RemoveAt(f);
+            }
+            for (int j = 0; j < 5; j++)
+            {
+                int f = rand.Next(0, nfotos.Count);
+                pBfotos[j].Image = nfotos[f];
+                nfotos.RemoveAt(f);
+            }
+
+        }
+
+
+
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pb2p_Click(object sender, EventArgs e)

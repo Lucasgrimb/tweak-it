@@ -79,7 +79,7 @@ namespace Tweak_it
             dibujos.Add(Tweak_it.Properties.Resources.HambrientoD);
             dibujos.Add(Tweak_it.Properties.Resources.SedientoD);
             dibujos.Add(Tweak_it.Properties.Resources.EnfermoD);
-            dibujos.Add(Tweak_it.Properties.Resources.Aburrido);
+            dibujos.Add(Tweak_it.Properties.Resources.AburridoD);
             dibujos.Add(Tweak_it.Properties.Resources.PreocupadoD);
             
 
@@ -188,6 +188,10 @@ namespace Tweak_it
                         j2.Show();
                         this.Hide();
                         pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
                     }
 
                 }
@@ -217,14 +221,23 @@ namespace Tweak_it
                     {
                         randomizarImagenes();
                         cont = 0;
+                        pb1 = false;
                         pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
+
                     }
                     else if (cont == 5 && pictos.Count() == 1)
                     {
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
+                        pb1 = false;
                         pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
                     }
 
                 }
@@ -254,14 +267,22 @@ namespace Tweak_it
                     {
                         randomizarImagenes();
                         cont = 0;
+                        pb1 = false;
+                        pb2 = false;
                         pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
                     }
                     else if (cont == 5 && pictos.Count() == 1)
                     {
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
+                        pb1 = false;
+                        pb2 = false;
                         pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
                     }
 
                 }
@@ -291,14 +312,22 @@ namespace Tweak_it
                     {
                         randomizarImagenes();
                         cont = 0;
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
                         pb4 = false;
+                        pb5 = false;
                     }
                     else if (cont == 5 && pictos.Count() == 1)
                     {
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
                         pb4 = false;
+                        pb5 = false;
                     }
 
                 }
@@ -328,6 +357,10 @@ namespace Tweak_it
                     {
                         randomizarImagenes();
                         cont = 0;
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
                         pb5 = false;
                     }
                     else if (cont == 5 && pictos.Count() == 1)
@@ -335,6 +368,10 @@ namespace Tweak_it
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
                         pb5 = false;
                     }
 
