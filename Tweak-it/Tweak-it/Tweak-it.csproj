@@ -423,5 +423,26 @@
   <ItemGroup>
     <None Include="Resources\VerguenzaD.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\que emocion esta sintiendo_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\que emocion esta sintiendo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\que emocion esta sintiendo_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

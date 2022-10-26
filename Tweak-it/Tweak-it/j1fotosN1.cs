@@ -35,6 +35,7 @@ namespace Tweak_it
                 pictureBoxesArray[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
+           
 
             //Cargo la imagen de la compu y las meto en el array      
             posiblesEmociones.Add(Tweak_it.Properties.Resources.ContentoF);
@@ -116,6 +117,11 @@ namespace Tweak_it
             juego1 j1 = new juego1();
             j1.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
