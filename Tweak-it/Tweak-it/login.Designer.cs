@@ -40,6 +40,7 @@
             this.txtapellido = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -83,6 +84,7 @@
             this.btnAlegre.TabIndex = 4;
             this.btnAlegre.Text = "Alegre";
             this.btnAlegre.UseVisualStyleBackColor = true;
+            this.btnAlegre.Click += new System.EventHandler(this.btnAlegre_Click);
             // 
             // btnTriste
             // 
@@ -92,6 +94,7 @@
             this.btnTriste.TabIndex = 5;
             this.btnTriste.Text = "Triste";
             this.btnTriste.UseVisualStyleBackColor = true;
+            this.btnTriste.Click += new System.EventHandler(this.btnTriste_Click);
             // 
             // btnEnojado
             // 
@@ -101,6 +104,7 @@
             this.btnEnojado.TabIndex = 6;
             this.btnEnojado.Text = "Enojado";
             this.btnEnojado.UseVisualStyleBackColor = true;
+            this.btnEnojado.Click += new System.EventHandler(this.btnEnojado_Click);
             // 
             // btnCrear_Usuario
             // 
@@ -139,11 +143,22 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Apellido:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1735, 32);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 57);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Profesor";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtapellido);
@@ -156,6 +171,7 @@
             this.Controls.Add(this.txtnombre);
             this.Name = "login";
             this.Text = "login";
+            this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +190,6 @@
         private System.Windows.Forms.TextBox txtapellido;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -18,7 +18,7 @@ namespace Tweak_it
         public Crear_Usuario()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C: \Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
         private void Crear_Usuario_Load(object sender, EventArgs e)
@@ -32,17 +32,29 @@ namespace Tweak_it
             {
                 MessageBox.Show("Completa los campos");
             } 
-            else
+            else if (comboBox1.SelectedItem.ToString()=="Padre/Profesor")
             { 
             connection.Open();
             command.Connection = connection;
-            command.CommandText = "INSERT INTO info (Nombre, Apellido, Edad) VALUES ('" + txtname.Text + "', '" + txtapellido.Text + "', '" + txtedad.Text + "')";
+            command.CommandText = "INSERT INTO info (Nombre, Apellido, Edad, Rol) VALUES ('" + txtname.Text + "', '" + txtapellido.Text + "', '" + txtedad.Text + "', '"+"Admin"+"')";
             command.ExecuteNonQuery();
             MessageBox.Show("Su cuenta a sido guardada correctamente, ahora inicie sesión");
             login lg = new login();
             this.Hide();
             lg.Show();
             connection.Close();
+            }
+            else if (comboBox1.SelectedItem.ToString() == "Estudiante")
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO info (Nombre, Apellido, Edad, Rol) VALUES ('" + txtname.Text + "', '" + txtapellido.Text + "', '" + txtedad.Text + "', '" + "Estudiante" + "')";
+                command.ExecuteNonQuery();
+                MessageBox.Show("Su cuenta a sido guardada correctamente, ahora inicie sesión");
+                login lg = new login();
+                this.Hide();
+                lg.Show();
+                connection.Close();
             }
         }
     }

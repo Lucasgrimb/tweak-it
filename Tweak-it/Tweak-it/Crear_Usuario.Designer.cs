@@ -37,6 +37,7 @@ namespace Tweak_it
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -102,7 +103,7 @@ namespace Tweak_it
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(310, 295);
+            this.button1.Location = new System.Drawing.Point(311, 333);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 39);
             this.button1.TabIndex = 7;
@@ -110,11 +111,23 @@ namespace Tweak_it
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Padre/Profesor",
+            "Estudiante"});
+            this.comboBox1.Location = new System.Drawing.Point(316, 283);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 8;
+            // 
             // Crear_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -141,5 +154,6 @@ namespace Tweak_it
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
