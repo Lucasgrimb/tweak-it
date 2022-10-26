@@ -70,17 +70,17 @@ namespace Tweak_it
             pictos.Add(Tweak_it.Properties.Resources.Aburrido);
             pictos.Add(Tweak_it.Properties.Resources.Preocupado);
 
-            dibujos.Add(Tweak_it.Properties.Resources.contentoD);
-            dibujos.Add(Tweak_it.Properties.Resources.tristeD);
-            dibujos.Add(Tweak_it.Properties.Resources.enfadadoD);
-            dibujos.Add(Tweak_it.Properties.Resources.asustadoD);
-            dibujos.Add(Tweak_it.Properties.Resources.sorprendidoD);
-            dibujos.Add(Tweak_it.Properties.Resources.cansadoD);
-            dibujos.Add(Tweak_it.Properties.Resources.hambrientoD);
-            dibujos.Add(Tweak_it.Properties.Resources.sedientoD);
-            dibujos.Add(Tweak_it.Properties.Resources.enfermoD);
+            dibujos.Add(Tweak_it.Properties.Resources.ContentoD);
+            dibujos.Add(Tweak_it.Properties.Resources.TristeD);
+            dibujos.Add(Tweak_it.Properties.Resources.EnojadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.AsustadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.SorprendidoD);
+            dibujos.Add(Tweak_it.Properties.Resources.CansadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.HambrientoD);
+            dibujos.Add(Tweak_it.Properties.Resources.SedientoD);
+            dibujos.Add(Tweak_it.Properties.Resources.EnfermoD);
             dibujos.Add(Tweak_it.Properties.Resources.Aburrido);
-            dibujos.Add(Tweak_it.Properties.Resources.preocupadoD);
+            dibujos.Add(Tweak_it.Properties.Resources.PreocupadoD);
             
 
 

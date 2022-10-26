@@ -40,15 +40,15 @@ namespace Tweak_it
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
 
             // Agrego las imagenes de resources a la lista con las emociones que se usarán en el nivel
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.contentoD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.tristeD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.enfadadoD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.asustadoD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.sorprendidoD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.cansadoD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.hambrientoD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.sedientoD);
-            posiblesEmociones.Add(Tweak_it.Properties.Resources.enfermoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.ContentoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.TristeD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.EnojadoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.AsustadoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.SorprendidoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.CansadoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.HambrientoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.SedientoD);
+            posiblesEmociones.Add(Tweak_it.Properties.Resources.EnfermoD);
 
 
             // Con esta funcion asigno seis emociones de la lista a los pBoxes

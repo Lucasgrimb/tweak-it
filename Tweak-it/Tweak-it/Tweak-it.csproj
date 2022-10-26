@@ -175,6 +175,9 @@
     <EmbeddedResource Include="j1dibujosN2.resx">
       <DependentUpon>j1dibujosN2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="j1dibujosN3.resx">
+      <DependentUpon>j1dibujosN3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="j1fotosN1.resx">
       <DependentUpon>j1fotosN1.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,19 +235,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aburridoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\asustadoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cansadoD.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\confundir.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\contentoD.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\enfadado.png" />
@@ -253,31 +244,10 @@
     <None Include="Resources\enfadadoD.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\enfermoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hambrientoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nerviosoD.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\orgulloso.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\preocupadoD.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\sediento.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sedientoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sorprendidoD.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tristeD.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\vergüenza.png" />
@@ -410,6 +380,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\VerguenzaF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AburridoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsustadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CansadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConfundidoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContentoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnfermoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnojadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HambrientoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NerviosoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PreocupadoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SedientoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SorprendidoD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TristeD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerguenzaD.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,7 +19,7 @@ namespace Tweak_it.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -73,6 +73,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap AburridoD {
+            get {
+                object obj = ResourceManager.GetObject("AburridoD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap AburridoF {
             get {
                 object obj = ResourceManager.GetObject("AburridoF", resourceCulture);
@@ -93,9 +103,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap asustadoD {
+        public static System.Drawing.Bitmap AsustadoD {
             get {
-                object obj = ResourceManager.GetObject("asustadoD", resourceCulture);
+                object obj = ResourceManager.GetObject("AsustadoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +133,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap cansadoD {
+        public static System.Drawing.Bitmap CansadoD {
             get {
-                object obj = ResourceManager.GetObject("cansadoD", resourceCulture);
+                object obj = ResourceManager.GetObject("CansadoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,16 +146,6 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap CansadoF {
             get {
                 object obj = ResourceManager.GetObject("CansadoF", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Chicojarron {
-            get {
-                object obj = ResourceManager.GetObject("Chicojarron", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +166,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Confundido {
             get {
                 object obj = ResourceManager.GetObject("Confundido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ConfundidoD {
+            get {
+                object obj = ResourceManager.GetObject("ConfundidoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +223,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap contentoD {
+        public static System.Drawing.Bitmap ContentoD {
             get {
-                object obj = ResourceManager.GetObject("contentoD", resourceCulture);
+                object obj = ResourceManager.GetObject("ContentoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,16 +243,6 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap enfadadoD {
-            get {
-                object obj = ResourceManager.GetObject("enfadadoD", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap Enfermo {
             get {
                 object obj = ResourceManager.GetObject("Enfermo", resourceCulture);
@@ -253,9 +253,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap enfermoD {
+        public static System.Drawing.Bitmap EnfermoD {
             get {
-                object obj = ResourceManager.GetObject("enfermoD", resourceCulture);
+                object obj = ResourceManager.GetObject("EnfermoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +283,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap EnojadoD {
+            get {
+                object obj = ResourceManager.GetObject("EnojadoD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap EnojadoF {
             get {
                 object obj = ResourceManager.GetObject("EnojadoF", resourceCulture);
@@ -303,9 +313,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap hambrientoD {
+        public static System.Drawing.Bitmap HambrientoD {
             get {
-                object obj = ResourceManager.GetObject("hambrientoD", resourceCulture);
+                object obj = ResourceManager.GetObject("HambrientoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +363,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap nerviosoD {
+        public static System.Drawing.Bitmap NerviosoD {
             get {
-                object obj = ResourceManager.GetObject("nerviosoD", resourceCulture);
+                object obj = ResourceManager.GetObject("NerviosoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +393,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap preocupadoD {
+        public static System.Drawing.Bitmap PreocupadoD {
             get {
-                object obj = ResourceManager.GetObject("preocupadoD", resourceCulture);
+                object obj = ResourceManager.GetObject("PreocupadoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +453,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap sedientoD {
+        public static System.Drawing.Bitmap SedientoD {
             get {
-                object obj = ResourceManager.GetObject("sedientoD", resourceCulture);
+                object obj = ResourceManager.GetObject("SedientoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,9 +503,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap sorprendidoD {
+        public static System.Drawing.Bitmap SorprendidoD {
             get {
-                object obj = ResourceManager.GetObject("sorprendidoD", resourceCulture);
+                object obj = ResourceManager.GetObject("SorprendidoD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,9 +533,9 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap tristeD {
+        public static System.Drawing.Bitmap TristeD {
             get {
-                object obj = ResourceManager.GetObject("tristeD", resourceCulture);
+                object obj = ResourceManager.GetObject("TristeD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -546,6 +556,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Verguenza {
             get {
                 object obj = ResourceManager.GetObject("Verguenza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap VerguenzaD {
+            get {
+                object obj = ResourceManager.GetObject("VerguenzaD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

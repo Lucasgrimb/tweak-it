@@ -44,7 +44,7 @@ namespace Tweak_it
             situaciones[0, 2] = Tweak_it.Properties.Resources.Contento;
             situaciones[0, 3] = Tweak_it.Properties.Resources.Enojado;
             situaciones[0, 4] = Tweak_it.Properties.Resources.Asustado;
-            situaciones[0, 5] = Tweak_it.Properties.Resources.Chicojarron;
+           // situaciones[0, 5] = Tweak_it.Properties.Resources.Chicojarron;
             situaciones[0, 6] = Tweak_it.Properties.Resources.Jarrón;
             situaciones[0, 7] = Tweak_it.Properties.Resources.Chicoromp;
 

@@ -118,15 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="asustadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\asustadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cansadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cansadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Chicojarron" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chicojarron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Chicoromp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chicoromp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,26 +127,8 @@
   <data name="Consigna2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Consigna2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="contentoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contentoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="enfadadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\enfadadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="enfermoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\enfermoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hambrientoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hambrientoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Jarrón" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jarrón.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nerviosoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nerviosoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="preocupadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\preocupadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Razon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Razon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,20 +139,11 @@
   <data name="RazónC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RazónC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sedientoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sedientoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Situacion2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Situacion2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Situación1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Situación1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sorprendidoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sorprendidoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tristeD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tristeD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Aburrido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aburrido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -267,5 +231,47 @@
   </data>
   <data name="VerguenzaF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VerguenzaF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AburridoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AburridoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AsustadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AsustadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CansadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CansadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConfundidoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConfundidoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContentoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContentoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnfermoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnfermoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnojadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnojadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HambrientoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HambrientoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NerviosoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NerviosoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreocupadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PreocupadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SedientoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SedientoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SorprendidoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SorprendidoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TristeD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TristeD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VerguenzaD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VerguenzaD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
