@@ -78,12 +78,17 @@
             // 
             // btnAlegre
             // 
+            this.btnAlegre.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlegre.BackgroundImage = global::Tweak_it.Properties.Resources.Chico_exprecion_contento;
+            this.btnAlegre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlegre.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAlegre.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAlegre.ForeColor = System.Drawing.Color.Transparent;
             this.btnAlegre.Location = new System.Drawing.Point(676, 491);
             this.btnAlegre.Name = "btnAlegre";
             this.btnAlegre.Size = new System.Drawing.Size(132, 108);
             this.btnAlegre.TabIndex = 4;
-            this.btnAlegre.Text = "Alegre";
-            this.btnAlegre.UseVisualStyleBackColor = true;
+            this.btnAlegre.UseVisualStyleBackColor = false;
             this.btnAlegre.Click += new System.EventHandler(this.btnAlegre_Click);
             // 
             // btnTriste
@@ -157,6 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);

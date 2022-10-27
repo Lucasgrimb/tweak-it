@@ -484,5 +484,11 @@
   <ItemGroup>
     <None Include="Resources\Logo perro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + textos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chico exprecion contento.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

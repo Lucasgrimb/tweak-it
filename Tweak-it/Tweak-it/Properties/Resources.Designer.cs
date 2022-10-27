@@ -153,6 +153,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Chico_exprecion_contento {
+            get {
+                object obj = ResourceManager.GetObject("Chico exprecion contento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Chicoromp {
             get {
                 object obj = ResourceManager.GetObject("Chicoromp", resourceCulture);
@@ -346,6 +356,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap fondo___texto {
             get {
                 object obj = ResourceManager.GetObject("fondo + texto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___textos {
+            get {
+                object obj = ResourceManager.GetObject("fondo + textos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
