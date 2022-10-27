@@ -174,6 +174,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
+                    j1pictosN1.puntos++;
                     aux = "x";
                     pb1 = true;
                     if (cont == 5 && pictos.Count() > 1)
