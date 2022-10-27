@@ -113,7 +113,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1919, 1068);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn1);
@@ -125,6 +125,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "j1fotosN1";
             this.Text = "j1fotosN1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.j1fotosN1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).EndInit();
