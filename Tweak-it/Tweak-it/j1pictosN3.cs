@@ -74,6 +74,7 @@ namespace Tweak_it
             {
                 randomizarImages();
                 nivel++;
+
             }
             else
             {

@@ -17,6 +17,7 @@ namespace Tweak_it
         List<Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
         int nivel = 0;
+       
 
         public j1pictosN2()
         {
@@ -61,6 +62,7 @@ namespace Tweak_it
             {
                 randomizarImages();
                 nivel++;
+                j1pictosN1.puntos++;
             }
             else
             {

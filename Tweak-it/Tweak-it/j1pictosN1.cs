@@ -15,7 +15,8 @@ namespace Tweak_it
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List<Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
-        
+
+        public static int puntos;
         
         int nivel = 0;
 
@@ -74,6 +75,7 @@ namespace Tweak_it
             {
                 randomizarImages();
                 nivel++;
+                puntos++;
             }
             else
             {
