@@ -32,6 +32,8 @@ namespace Tweak_it
         }
         private void login_Load(object sender, EventArgs e)
         {
+            j1fotosN1 jn1 = new j1fotosN1();
+            jn1.Show();
             connection = new OleDbConnection();
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }

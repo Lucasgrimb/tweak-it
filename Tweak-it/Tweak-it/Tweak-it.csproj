@@ -475,5 +475,14 @@
   <ItemGroup>
     <None Include="Resources\que emocion esta sintiendo_2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + texto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha para atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo perro.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

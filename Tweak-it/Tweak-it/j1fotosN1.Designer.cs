@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(j1fotosN1));
             this.pB1 = new System.Windows.Forms.PictureBox();
             this.pB2 = new System.Windows.Forms.PictureBox();
             this.pB3 = new System.Windows.Forms.PictureBox();
             this.pB4 = new System.Windows.Forms.PictureBox();
             this.btn1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pB1
@@ -82,32 +82,40 @@
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(42, 23);
+            this.btn1.BackColor = System.Drawing.Color.Transparent;
+            this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
+            this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.ForeColor = System.Drawing.Color.Transparent;
+            this.btn1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn1.Location = new System.Drawing.Point(135, 81);
             this.btn1.Margin = new System.Windows.Forms.Padding(6);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(150, 44);
+            this.btn1.Size = new System.Drawing.Size(145, 84);
             this.btn1.TabIndex = 5;
-            this.btn1.Text = "Atrás";
-            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.BackgroundImage = global::Tweak_it.Properties.Resources.que_emocion_esta_sintiendo_2;
-            this.pictureBox1.Location = new System.Drawing.Point(258, 414);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1469, 244);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Tweak_it.Properties.Resources.Logo_perro;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(1647, 865);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(248, 123);
+            this.button1.TabIndex = 6;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // j1fotosN1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tweak_it.Properties.Resources.Final1;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1919, 1068);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.pB4);
             this.Controls.Add(this.pB3);
@@ -122,7 +130,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,6 +141,6 @@
         private System.Windows.Forms.PictureBox pB3;
         private System.Windows.Forms.PictureBox pB4;
         private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

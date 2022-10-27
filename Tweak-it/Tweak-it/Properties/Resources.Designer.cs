@@ -323,9 +323,29 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap flecha_para_atras {
+            get {
+                object obj = ResourceManager.GetObject("flecha_para_atras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Fondo {
             get {
                 object obj = ResourceManager.GetObject("Fondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___texto {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +396,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Jarrón {
             get {
                 object obj = ResourceManager.GetObject("Jarrón", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Logo_perro {
+            get {
+                object obj = ResourceManager.GetObject("Logo perro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
