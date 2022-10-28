@@ -64,10 +64,10 @@ namespace Tweak_it
                 posiblesEmociones.RemoveAt(i);
                 contador++;
             }
-            for (int j = 0; j < 3; j++)
+          for (int j = 0; j < 3; j++)
             {
-                posiblesEmociones.Add(pictureBoxesArray[j].Image);
-            }
+               posiblesEmociones.Add(pictureBoxesArray[j].Image);
+           }
 
             //Asigno emocion a Pb1
             pB1.Image = pictureBoxesArray[raux.Next(0, pictureBoxesArray.Length)].Image;
