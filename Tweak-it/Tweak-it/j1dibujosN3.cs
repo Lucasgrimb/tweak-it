@@ -92,7 +92,7 @@ namespace Tweak_it
                 posiblesEmociones.RemoveAt(i);
                 contador++;
             }
-            // Vuelvo a agregar las emociones que salieron a la lista para que puedan volver a salir cuando quiero juegar de nuevo y se uso la funcion randomizarImagenes.
+            // Vuelvo a agregar las emociones que salieron a la lista.
             for (int j = 0; j < 10; j++)
             {
                 posiblesEmociones.Add(pictureBoxesArray[j].Image);

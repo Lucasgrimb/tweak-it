@@ -169,7 +169,6 @@ namespace Tweak_it
         private void randomizarImagenes()
         {
             //asigno emociones a pBpictos
-
             for (int i = 0; i < 5; i++)
             {
                 int x = rand.Next(0, pictos.Count);
@@ -194,7 +193,6 @@ namespace Tweak_it
                 pBfotos[j].Image = nfotos[f];
                 nfotos.RemoveAt(f);
             }
-
         }
 
         private void click1 (object sender, EventArgs e)
@@ -264,35 +262,30 @@ namespace Tweak_it
 
         private void pb1f_Click(object sender, EventArgs e)
         {
-            if (pb1 == false)
-            {
-                if (pb1f.Image.Tag.ToString() == aux && pb1f.Image.Tag.ToString() == aux2)
-                {
+            if (pb1 == false){
+
+                if (pb1f.Image.Tag.ToString() == aux && pb1f.Image.Tag.ToString() == aux2){
                     MessageBox.Show("Correcto");
                     cont++;
                     j1pictosN1.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb1 = true;
-                    if (cont == 5 && pictos.Count() > 4)
-                    {
+
+                    if (cont == 5 && pictos.Count() > 4){
                         randomizarImagenes();
                         cont = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
-                        pb5 = false;
-                    }
-                    else if (cont == 5 && pictos.Count() == 4)
-                    {
+                        pb5 = false; }
+
+                    else if (cont == 5 && pictos.Count() == 4){
                         MessageBox.Show("Felicitaciones completaste el juego");
                         Form1 f1 = new Form1();
                         f1.Show();
-                        this.Hide();
-
-                    }
-
+                        this.Hide(); }
                 }
                 else
                 {
