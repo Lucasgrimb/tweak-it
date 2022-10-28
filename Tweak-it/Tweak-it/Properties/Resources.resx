@@ -334,4 +334,55 @@
   <data name="Chicojarron" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chicojarron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="duele" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\duele.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elnesta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elnesta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="estenferma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estenferma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="garganta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garganta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jugfut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jugfut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ndejan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ndejan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="niños" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\niños.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="papaest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\papaest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="secayo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\secayo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sit3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sit4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sit5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sit6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sit6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="suelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\suelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yogurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yogurt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

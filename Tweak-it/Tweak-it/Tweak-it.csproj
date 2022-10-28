@@ -475,5 +475,56 @@
   <ItemGroup>
     <None Include="Resources\Chicojarron.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elnesta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jugfut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ndejan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\niños.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estenferma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papaest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sit4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secayo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sit5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yogurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garganta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sit6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

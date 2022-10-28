@@ -206,7 +206,7 @@ namespace Tweak_it
         private void click2(object sender, EventArgs e)
         {
             var x = sender as PictureBox;
-            aux = x.Image.Tag.ToString();
+            aux2 = x.Image.Tag.ToString();
         }
 
        

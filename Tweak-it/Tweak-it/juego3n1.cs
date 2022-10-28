@@ -13,13 +13,12 @@ namespace Tweak_it
    
     public partial class juego3n1 : Form
     {
-        Image[,] situaciones = new Image[2, 8];
-        String [] sits = new String [2];
-        Random rand = new Random();
+        Image[,] situaciones = new Image[6, 8];
         int x;
         bool correcto = false;
         bool correcto2 = false;
         int a = 0;
+
         public juego3n1()
 
         {
@@ -57,9 +56,44 @@ namespace Tweak_it
             situaciones[1, 6] = Tweak_it.Properties.Resources.Razón1;
             situaciones[1, 7] = Tweak_it.Properties.Resources.RazónC;
 
+            situaciones[2, 0] = Tweak_it.Properties.Resources.sit3;
+            situaciones[2, 1] = Tweak_it.Properties.Resources.elnesta;
+            situaciones[2, 2] = Tweak_it.Properties.Resources.TristeD;
+            situaciones[2, 3] = Tweak_it.Properties.Resources.EnojadoD;
+            situaciones[2, 4] = Tweak_it.Properties.Resources.NerviosoD;
+            situaciones[2, 5] = Tweak_it.Properties.Resources.niños;
+            situaciones[2, 6] = Tweak_it.Properties.Resources.ndejan;
+            situaciones[2, 7] = Tweak_it.Properties.Resources.jugfut;
 
-    
-        
+            situaciones[3, 0] = Tweak_it.Properties.Resources.sit4;
+            situaciones[3, 1] = Tweak_it.Properties.Resources.papaest;
+            situaciones[3, 2] = Tweak_it.Properties.Resources.AburridoD;
+            situaciones[3, 3] = Tweak_it.Properties.Resources.PreocupadoD;
+            situaciones[3, 4] = Tweak_it.Properties.Resources.EnfermoD;
+            situaciones[3, 5] = Tweak_it.Properties.Resources.mama;
+            situaciones[3, 6] = Tweak_it.Properties.Resources.niños;
+            situaciones[3, 7] = Tweak_it.Properties.Resources.estenferma;
+
+            situaciones[4, 0] = Tweak_it.Properties.Resources.sit5;
+            situaciones[4, 1] = Tweak_it.Properties.Resources.elnesta;
+            situaciones[4, 2] = Tweak_it.Properties.Resources.TristeD;
+            situaciones[4, 3] = Tweak_it.Properties.Resources.EnojadoD;
+            situaciones[4, 4] = Tweak_it.Properties.Resources.VerguenzaD;
+            situaciones[4, 5] = Tweak_it.Properties.Resources.secayo;
+            situaciones[4, 6] = Tweak_it.Properties.Resources.yogurt;
+            situaciones[4, 7] = Tweak_it.Properties.Resources.suelo;
+
+            situaciones[5, 0] = Tweak_it.Properties.Resources.sit6;
+            situaciones[5, 1] = Tweak_it.Properties.Resources.elnesta;
+            situaciones[5, 2] = Tweak_it.Properties.Resources.AsustadoD;
+            situaciones[5, 3] = Tweak_it.Properties.Resources.EnfermoD;
+            situaciones[5, 4] = Tweak_it.Properties.Resources.SorprendidoD;
+            situaciones[5, 5] = Tweak_it.Properties.Resources.duele;
+            situaciones[5, 6] = Tweak_it.Properties.Resources.garganta;
+            situaciones[5, 7] = Tweak_it.Properties.Resources.oidos;
+
+
+
 
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
             pB2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -81,7 +115,7 @@ namespace Tweak_it
 
         private void pB3_Click(object sender, EventArgs e)
         {
-            if(a == 0)
+            if (a == 0)
             {
                 MessageBox.Show("emocion incorrecta, volve a intentar");
             }
@@ -89,6 +123,26 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion incorrecta, volve a intentar");
             }
+            else if (a == 2)
+            {
+                MessageBox.Show("emocion correcta");
+                correcto = true;
+            }
+            else if (a == 3)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+            else if (a == 4)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+            else  
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+
+
+
         }
 
         private void pB4_Click(object sender, EventArgs e)
@@ -101,7 +155,26 @@ namespace Tweak_it
             else if (a == 1)
             {
                 MessageBox.Show("emocion incorrecta, volve a intentar");
+            }          
+            else if (a == 2)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
             }
+            else if (a == 3)
+            {
+                MessageBox.Show("emocion correcta");
+                correcto = true;
+            }
+            else if (a == 4)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+            else
+            {
+                MessageBox.Show("emocion correcta");
+                correcto = true;
+            }
+
         }
 
         private void pB5_Click(object sender, EventArgs e)
@@ -110,10 +183,27 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion incorrecta, volve a intentar");
             }
-            if (a == 1)
+            else if (a == 1)
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+            }
+            else if (a == 2)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+            else if (a == 3)
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
+            }
+            else if (a == 4)
+            {
+                MessageBox.Show("emocion correcta");
+                correcto = true;
+            }
+            else 
+            {
+                MessageBox.Show("emocion incorrecta, volve a intentar");
             }
         }
 
@@ -123,10 +213,50 @@ namespace Tweak_it
             {
                 MessageBox.Show("causa incorrecta, volve a intentar");
             }
-            if (a == 1)
+            else if (a == 1)
             {
                 MessageBox.Show("causa incorrecta, volve a intentar");
             }
+            else if (a == 2)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            else if (a == 3)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            else if (a == 4)
+            {
+                if (correcto == true)
+                {
+                    MessageBox.Show("Muy bien, pasaste de nivel");
+                    correcto = false;
+                    sit6();
+                    a++;
+                    j1pictosN1.puntos++;
+                }
+                else
+                {
+                    MessageBox.Show("debes elegir la emocion correcta");
+                }
+            }
+            else if (a == 5)
+            {
+                if (correcto == true)
+                {
+                    MessageBox.Show("Muy bien, completaste el juego");
+                    correcto = false;
+                    j1pictosN1.puntos++;
+                    Form1 f1 = new Form1();
+                    f1.Show();
+                    this.Hide();                
+                }
+                else
+                {
+                    MessageBox.Show("debes elegir la emocion correcta");
+                }
+            }
+
         }
 
         private void pB7_Click(object sender, EventArgs e)
@@ -135,9 +265,36 @@ namespace Tweak_it
             {
                 MessageBox.Show("causa incorrecta volve a intentar");
             }
-            if (a == 1)
+            else if (a == 1)
             {
                 MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            else if (a == 2)
+            {
+                if (correcto == true)
+                {
+                    MessageBox.Show("Muy bien, pasaste de nivel");
+                    correcto = false;
+                    sit4();
+                    a++;
+                    j1pictosN1.puntos++;
+                }
+                else
+                {
+                    MessageBox.Show("debes elegir la emocion correcta");
+                }
+            }
+            else if (a == 3)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            else if(a==4)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            else 
+            {
+                MessageBox.Show("causa incorrecta volve a intentar");
             }
         }
 
@@ -158,12 +315,32 @@ namespace Tweak_it
                     MessageBox.Show("debes elegir la emocion correcta");
                 }
             }
-            if (a == 1)
+            else if (a == 1)
             {
                 if (correcto == true)
                 {
                     MessageBox.Show("Muy bien, pasaste de nivel");
                     correcto = false;
+                    a++;
+                    sit3();
+                    j1pictosN1.puntos++;
+                }
+                else
+                {
+                    MessageBox.Show("debes elegir la emocion correcta");
+                }
+            }
+            else if (a == 2)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            else if (a == 3)
+            {
+                if (correcto == true)
+                {
+                    MessageBox.Show("Muy bien, pasaste de nivel");
+                    correcto = false;
+                    sit5();
                     a++;
                     j1pictosN1.puntos++;
                 }
@@ -171,6 +348,14 @@ namespace Tweak_it
                 {
                     MessageBox.Show("debes elegir la emocion correcta");
                 }
+            }
+            else if (a == 4)
+            {
+                MessageBox.Show("causa incorrecta, volve a intentar");
+            }
+            else 
+            {
+                MessageBox.Show("causa incorrecta volve a intentar");
             }
         }
 
@@ -198,7 +383,56 @@ namespace Tweak_it
             pB8.Image = situaciones[1, 7];
         }
 
-
+        private void sit3()
+        {
+            pB1.Image = situaciones[2, 0];
+            pB2.Image = situaciones[2, 1];
+            pB3.Image = situaciones[2, 2];
+            pB4.Image = situaciones[2, 3];
+            pB5.Image = situaciones[2, 4];
+            pB6.Image = situaciones[2, 5];
+            pB7.Image = situaciones[2, 6];
+            pB8.Image = situaciones[2, 7];
         }
+
+        private void sit4()
+        {
+            pB1.Image = situaciones[3, 0];
+            pB2.Image = situaciones[3, 1];
+            pB3.Image = situaciones[3, 2];
+            pB4.Image = situaciones[3, 3];
+            pB5.Image = situaciones[3, 4];
+            pB6.Image = situaciones[3, 5];
+            pB7.Image = situaciones[3, 6];
+            pB8.Image = situaciones[3, 7];
+        }
+
+        private void sit5()
+        {
+            pB1.Image = situaciones[4, 0];
+            pB2.Image = situaciones[4, 1];
+            pB3.Image = situaciones[4, 2];
+            pB4.Image = situaciones[4, 3];
+            pB5.Image = situaciones[4, 4];
+            pB6.Image = situaciones[4, 5];
+            pB7.Image = situaciones[4, 6];
+            pB8.Image = situaciones[4, 7];
+        }
+
+        private void sit6()
+        {
+            pB1.Image = situaciones[5, 0];
+            pB2.Image = situaciones[5, 1];
+            pB3.Image = situaciones[5, 2];
+            pB4.Image = situaciones[5, 3];
+            pB5.Image = situaciones[5, 4];
+            pB6.Image = situaciones[5, 5];
+            pB7.Image = situaciones[5, 6];
+            pB8.Image = situaciones[5, 7];
+        }
+
+
+
+    }
     }
 
