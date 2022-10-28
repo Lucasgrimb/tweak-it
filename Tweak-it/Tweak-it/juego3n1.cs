@@ -41,21 +41,25 @@ namespace Tweak_it
 
             situaciones[0, 0] = Tweak_it.Properties.Resources.Situación1;
             situaciones[0, 1] = Tweak_it.Properties.Resources.Consigna1;
-            situaciones[0, 2] = Tweak_it.Properties.Resources.Contento;
-            situaciones[0, 3] = Tweak_it.Properties.Resources.Enojado;
-            situaciones[0, 4] = Tweak_it.Properties.Resources.Asustado;
-           // situaciones[0, 5] = Tweak_it.Properties.Resources.Chicojarron;
+            situaciones[0, 2] = Tweak_it.Properties.Resources.ContentoD;
+            situaciones[0, 3] = Tweak_it.Properties.Resources.EnojadoD;
+            situaciones[0, 4] = Tweak_it.Properties.Resources.AsustadoD;
+            situaciones[0, 5] = Tweak_it.Properties.Resources.Chicojarron;
             situaciones[0, 6] = Tweak_it.Properties.Resources.Jarrón;
             situaciones[0, 7] = Tweak_it.Properties.Resources.Chicoromp;
 
             situaciones[1, 0] = Tweak_it.Properties.Resources.Situacion2;
             situaciones[1, 1] = Tweak_it.Properties.Resources.Consigna2;
-            situaciones[1, 2] = Tweak_it.Properties.Resources.Triste;
-            situaciones[1, 3] = Tweak_it.Properties.Resources.Aburrido;
-            situaciones[1, 4] = Tweak_it.Properties.Resources.Contento;
+            situaciones[1, 2] = Tweak_it.Properties.Resources.TristeD;
+            situaciones[1, 3] = Tweak_it.Properties.Resources.AburridoD;
+            situaciones[1, 4] = Tweak_it.Properties.Resources.ContentoD;
             situaciones[1, 5] = Tweak_it.Properties.Resources.Razon2;
             situaciones[1, 6] = Tweak_it.Properties.Resources.Razón1;
             situaciones[1, 7] = Tweak_it.Properties.Resources.RazónC;
+
+
+    
+        
 
             pB1.SizeMode = PictureBoxSizeMode.StretchImage;
             pB2.SizeMode = PictureBoxSizeMode.StretchImage;

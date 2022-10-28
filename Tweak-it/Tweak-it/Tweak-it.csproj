@@ -311,9 +311,6 @@
     <None Include="Resources\vergüenza.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Chicojarron.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Chicoromp.png" />
   </ItemGroup>
   <ItemGroup>
@@ -537,6 +534,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rectangulo usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicojarron.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
