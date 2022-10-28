@@ -182,6 +182,10 @@ namespace Tweak_it
                         randomizarImagenes();
                         cont = 0;
                         pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
                     }
                     else if (cont == 5 && pictos.Count() == 1)
                     {

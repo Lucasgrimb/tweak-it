@@ -209,48 +209,7 @@ namespace Tweak_it
             aux = x.Image.Tag.ToString();
         }
 
-        private void click3(object sender, EventArgs e)
-        {
-            var x = sender as PictureBox;
-            if (pb1 == false)
-            {
-                if (x.Image.Tag.ToString() == aux && x.Image.Tag.ToString() == aux2)
-                {
-                    MessageBox.Show("Correcto");
-                    cont++;
-                    j1pictosN1.puntos++;
-                    aux = "x";
-                    pb1 = true;
-                    if (cont == 5 && pictos.Count() > 1)
-                    {
-                        randomizarImagenes();
-                        cont = 0;
-                        pb1 = false;
-                    }
-                    else if (cont == 5 && pictos.Count() == 1)
-                    {
-                        j2N2 j2 = new j2N2();
-                        j2.Show();
-                        this.Hide();
-                        pb1 = false;
-                        pb2 = false;
-                        pb3 = false;
-                        pb4 = false;
-                        pb5 = false;
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show("incorrecto, volve a intentarlo");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Ya matcheaste esta emocion");
-            }
-
-        }
+       
 
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -305,27 +264,217 @@ namespace Tweak_it
 
         private void pb1f_Click(object sender, EventArgs e)
         {
+            if (pb1 == false)
+            {
+                if (pb1f.Image.Tag.ToString() == aux && pb1f.Image.Tag.ToString() == aux2)
+                {
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    j1pictosN1.puntos++;
+                    aux = "x";
+                    aux2 = "x";
+                    pb1 = true;
+                    if (cont == 5 && pictos.Count() > 4)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 4)
+                    {
+                        MessageBox.Show("Felicitaciones completaste el juego");
+                        Form1 f1 = new Form1();
+                        f1.Show();
+                        this.Hide();
 
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("incorrecto, volve a intentarlo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya matcheaste esta emocion");
+            }
         }
 
         private void pb2f_Click(object sender, EventArgs e)
         {
+            if (pb2 == false)
+            {
+                if (pb2f.Image.Tag.ToString() == aux && pb2f.Image.Tag.ToString() == aux2)
+                {
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    j1pictosN1.puntos++;
+                    aux = "x";
+                    aux2 = "x";
+                    pb2 = true;
+                    if (cont == 5 && pictos.Count() > 4)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 4)
+                    {
+                        MessageBox.Show("Felicitaciones completaste el juego");
+                        Form1 f1 = new Form1();
+                        f1.Show();
+                        this.Hide();
 
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("incorrecto, volve a intentarlo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya matcheaste esta emocion");
+            }
         }
 
         private void pb3f_Click(object sender, EventArgs e)
         {
+            if (pb3 == false)
+            {
+                if (pb3f.Image.Tag.ToString() == aux && pb3f.Image.Tag.ToString() == aux2)
+                {
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    j1pictosN1.puntos++;
+                    aux = "x";
+                    aux2 = "x";
+                    pb3 = true;
+                    if (cont == 5 && pictos.Count() > 4)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 4)
+                    {
+                        MessageBox.Show("Felicitaciones completaste el juego");
+                        Form1 f1 = new Form1();
+                        f1.Show();
+                        this.Hide();
 
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("incorrecto, volve a intentarlo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya matcheaste esta emocion");
+            }
         }
 
         private void pb4f_Click(object sender, EventArgs e)
         {
+            if (pb4 == false)
+            {
+                if (pb4f.Image.Tag.ToString() == aux && pb4f.Image.Tag.ToString() == aux2)
+                {
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    j1pictosN1.puntos++;
+                    aux = "x";
+                    aux2 = "x";
+                    pb4 = true;
+                    if (cont == 5 && pictos.Count() > 4)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 4)
+                    {
+                        MessageBox.Show("Felicitaciones completaste el juego");
+                        Form1 f1 = new Form1();
+                        f1.Show();
+                        this.Hide();
 
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("incorrecto, volve a intentarlo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya matcheaste esta emocion");
+            }
         }
 
         private void pb5f_Click(object sender, EventArgs e)
         {
+            if (pb5 == false)
+            {
+                if (pb5f.Image.Tag.ToString() == aux && pb5f.Image.Tag.ToString() == aux2)
+                {
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    j1pictosN1.puntos++;
+                    aux = "x";
+                    aux2 = "x";
+                    pb5 = true;
+                    if (cont == 5 && pictos.Count() > 4)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 4)
+                    {
+                        MessageBox.Show("Felicitaciones completaste el juego");
+                        Form1 f1 = new Form1();
+                        f1.Show();
+                        this.Hide();
 
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("incorrecto, volve a intentarlo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya matcheaste esta emocion");
+            }
         }
     }
 }
