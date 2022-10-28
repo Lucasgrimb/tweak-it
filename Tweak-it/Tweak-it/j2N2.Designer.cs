@@ -62,144 +62,159 @@
             // 
             // pb1p
             // 
-            this.pb1p.Location = new System.Drawing.Point(86, 12);
+            this.pb1p.Location = new System.Drawing.Point(172, 23);
+            this.pb1p.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb1p.Name = "pb1p";
-            this.pb1p.Size = new System.Drawing.Size(106, 75);
+            this.pb1p.Size = new System.Drawing.Size(212, 144);
             this.pb1p.TabIndex = 1;
             this.pb1p.TabStop = false;
-            this.pb1p.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pb1p.Click += new System.EventHandler(this.click1);
             // 
             // pb2p
             // 
-            this.pb2p.Location = new System.Drawing.Point(86, 103);
+            this.pb2p.Location = new System.Drawing.Point(172, 198);
+            this.pb2p.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb2p.Name = "pb2p";
-            this.pb2p.Size = new System.Drawing.Size(106, 75);
+            this.pb2p.Size = new System.Drawing.Size(212, 144);
             this.pb2p.TabIndex = 2;
             this.pb2p.TabStop = false;
-            this.pb2p.Click += new System.EventHandler(this.pb2p_Click);
+            this.pb2p.Click += new System.EventHandler(this.click1);
             // 
             // pb3p
             // 
-            this.pb3p.Location = new System.Drawing.Point(86, 184);
+            this.pb3p.Location = new System.Drawing.Point(172, 354);
+            this.pb3p.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb3p.Name = "pb3p";
-            this.pb3p.Size = new System.Drawing.Size(106, 75);
+            this.pb3p.Size = new System.Drawing.Size(212, 144);
             this.pb3p.TabIndex = 3;
             this.pb3p.TabStop = false;
-            this.pb3p.Click += new System.EventHandler(this.pb3p_Click);
+            this.pb3p.Click += new System.EventHandler(this.click1);
             // 
             // pb4p
             // 
-            this.pb4p.Location = new System.Drawing.Point(86, 276);
+            this.pb4p.Location = new System.Drawing.Point(172, 531);
+            this.pb4p.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb4p.Name = "pb4p";
-            this.pb4p.Size = new System.Drawing.Size(106, 75);
+            this.pb4p.Size = new System.Drawing.Size(212, 144);
             this.pb4p.TabIndex = 4;
             this.pb4p.TabStop = false;
-            this.pb4p.Click += new System.EventHandler(this.pb4p_Click);
+            this.pb4p.Click += new System.EventHandler(this.click1);
             // 
             // pb5p
             // 
-            this.pb5p.Location = new System.Drawing.Point(86, 363);
+            this.pb5p.Location = new System.Drawing.Point(172, 698);
+            this.pb5p.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb5p.Name = "pb5p";
-            this.pb5p.Size = new System.Drawing.Size(106, 75);
+            this.pb5p.Size = new System.Drawing.Size(212, 144);
             this.pb5p.TabIndex = 5;
             this.pb5p.TabStop = false;
-            this.pb5p.Click += new System.EventHandler(this.pb5p_Click);
+            this.pb5p.Click += new System.EventHandler(this.click1);
             // 
             // pb5d
             // 
-            this.pb5d.Location = new System.Drawing.Point(365, 363);
+            this.pb5d.Location = new System.Drawing.Point(730, 698);
+            this.pb5d.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb5d.Name = "pb5d";
-            this.pb5d.Size = new System.Drawing.Size(106, 75);
+            this.pb5d.Size = new System.Drawing.Size(212, 144);
             this.pb5d.TabIndex = 10;
             this.pb5d.TabStop = false;
-            this.pb5d.Click += new System.EventHandler(this.pb5b_Click);
+            this.pb5d.Click += new System.EventHandler(this.click2);
             // 
             // pb4d
             // 
-            this.pb4d.Location = new System.Drawing.Point(365, 276);
+            this.pb4d.Location = new System.Drawing.Point(730, 531);
+            this.pb4d.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb4d.Name = "pb4d";
-            this.pb4d.Size = new System.Drawing.Size(106, 75);
+            this.pb4d.Size = new System.Drawing.Size(212, 144);
             this.pb4d.TabIndex = 9;
             this.pb4d.TabStop = false;
-            this.pb4d.Click += new System.EventHandler(this.pb4d_Click);
+            this.pb4d.Click += new System.EventHandler(this.click2);
             // 
             // pb3d
             // 
-            this.pb3d.Location = new System.Drawing.Point(365, 184);
+            this.pb3d.Location = new System.Drawing.Point(730, 354);
+            this.pb3d.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb3d.Name = "pb3d";
-            this.pb3d.Size = new System.Drawing.Size(106, 75);
+            this.pb3d.Size = new System.Drawing.Size(212, 144);
             this.pb3d.TabIndex = 8;
             this.pb3d.TabStop = false;
-            this.pb3d.Click += new System.EventHandler(this.pb3d_Click);
+            this.pb3d.Click += new System.EventHandler(this.click2);
             // 
             // pb2d
             // 
-            this.pb2d.Location = new System.Drawing.Point(365, 103);
+            this.pb2d.Location = new System.Drawing.Point(730, 198);
+            this.pb2d.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb2d.Name = "pb2d";
-            this.pb2d.Size = new System.Drawing.Size(106, 75);
+            this.pb2d.Size = new System.Drawing.Size(212, 144);
             this.pb2d.TabIndex = 7;
             this.pb2d.TabStop = false;
-            this.pb2d.Click += new System.EventHandler(this.pb2d_Click);
+            this.pb2d.Click += new System.EventHandler(this.click2);
             // 
             // pb1d
             // 
-            this.pb1d.Location = new System.Drawing.Point(365, 12);
+            this.pb1d.Location = new System.Drawing.Point(730, 23);
+            this.pb1d.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb1d.Name = "pb1d";
-            this.pb1d.Size = new System.Drawing.Size(106, 75);
+            this.pb1d.Size = new System.Drawing.Size(212, 144);
             this.pb1d.TabIndex = 6;
             this.pb1d.TabStop = false;
-            this.pb1d.Click += new System.EventHandler(this.pb1d_Click);
+            this.pb1d.Click += new System.EventHandler(this.click2);
             // 
             // pb5f
             // 
-            this.pb5f.Location = new System.Drawing.Point(621, 363);
+            this.pb5f.Location = new System.Drawing.Point(1242, 698);
+            this.pb5f.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb5f.Name = "pb5f";
-            this.pb5f.Size = new System.Drawing.Size(106, 75);
+            this.pb5f.Size = new System.Drawing.Size(212, 144);
             this.pb5f.TabIndex = 15;
             this.pb5f.TabStop = false;
             this.pb5f.Click += new System.EventHandler(this.pb5f_Click);
             // 
             // pb4f
             // 
-            this.pb4f.Location = new System.Drawing.Point(621, 276);
+            this.pb4f.Location = new System.Drawing.Point(1242, 531);
+            this.pb4f.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb4f.Name = "pb4f";
-            this.pb4f.Size = new System.Drawing.Size(106, 75);
+            this.pb4f.Size = new System.Drawing.Size(212, 144);
             this.pb4f.TabIndex = 14;
             this.pb4f.TabStop = false;
             this.pb4f.Click += new System.EventHandler(this.pb4f_Click);
             // 
             // pb3f
             // 
-            this.pb3f.Location = new System.Drawing.Point(621, 184);
+            this.pb3f.Location = new System.Drawing.Point(1242, 354);
+            this.pb3f.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb3f.Name = "pb3f";
-            this.pb3f.Size = new System.Drawing.Size(106, 75);
+            this.pb3f.Size = new System.Drawing.Size(212, 144);
             this.pb3f.TabIndex = 13;
             this.pb3f.TabStop = false;
             this.pb3f.Click += new System.EventHandler(this.pb3f_Click);
             // 
             // pb2f
             // 
-            this.pb2f.Location = new System.Drawing.Point(621, 103);
+            this.pb2f.Location = new System.Drawing.Point(1242, 198);
+            this.pb2f.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb2f.Name = "pb2f";
-            this.pb2f.Size = new System.Drawing.Size(106, 75);
+            this.pb2f.Size = new System.Drawing.Size(212, 144);
             this.pb2f.TabIndex = 12;
             this.pb2f.TabStop = false;
             this.pb2f.Click += new System.EventHandler(this.pb2f_Click);
             // 
             // pb1f
             // 
-            this.pb1f.Location = new System.Drawing.Point(621, 12);
+            this.pb1f.Location = new System.Drawing.Point(1242, 23);
+            this.pb1f.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pb1f.Name = "pb1f";
-            this.pb1f.Size = new System.Drawing.Size(106, 75);
+            this.pb1f.Size = new System.Drawing.Size(212, 144);
             this.pb1f.TabIndex = 11;
             this.pb1f.TabStop = false;
             this.pb1f.Click += new System.EventHandler(this.pb1f_Click);
             // 
             // j2N2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.pb5f);
             this.Controls.Add(this.pb4f);
             this.Controls.Add(this.pb3f);
@@ -215,6 +230,7 @@
             this.Controls.Add(this.pb3p);
             this.Controls.Add(this.pb2p);
             this.Controls.Add(this.pb1p);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "j2N2";
             this.Text = "j2N2";
             this.Load += new System.EventHandler(this.j2N2_Load);

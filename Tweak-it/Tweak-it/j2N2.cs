@@ -20,6 +20,14 @@ namespace Tweak_it
         List<Image> fotos = new List<Image>();
         List<Image> ndibujos = new List<Image>();
         List<Image> nfotos = new List<Image>();
+        string aux;
+        string aux2;
+        int cont = 0;
+        bool pb1 = false;
+        bool pb2 = false;
+        bool pb3 = false;
+        bool pb4 = false;
+        bool pb5 = false;
 
         Random rand = new Random();
         public j2N2()
@@ -120,6 +128,9 @@ namespace Tweak_it
             pictos[8].Tag = "enfermo";
             pictos[9].Tag = "aburrido";
             pictos[10].Tag = "preocupado";
+            pictos[11].Tag = "verguenza";
+            pictos[12].Tag = "nervioso";
+            pictos[13].Tag = "confundido";
 
             dibujos[0].Tag = "contento";
             dibujos[1].Tag = "triste";
@@ -132,6 +143,9 @@ namespace Tweak_it
             dibujos[8].Tag = "enfermo";
             dibujos[9].Tag = "aburrido";
             dibujos[10].Tag = "preocupado";
+            dibujos[11].Tag = "verguenza";
+            dibujos[12].Tag = "nervioso";
+            dibujos[13].Tag = "confundido";
 
             fotos[0].Tag = "contento";
             fotos[1].Tag = "triste";
@@ -144,6 +158,9 @@ namespace Tweak_it
             fotos[8].Tag = "enfermo";
             fotos[9].Tag = "aburrido";
             fotos[10].Tag = "preocupado";
+            fotos[11].Tag = "verguenza";
+            fotos[12].Tag = "nervioso";
+            fotos[13].Tag = "confundido";
 
             randomizarImagenes();
 
@@ -180,7 +197,60 @@ namespace Tweak_it
 
         }
 
+        private void click1 (object sender, EventArgs e)
+        {
+            var x = sender as PictureBox;
+            aux = x.Image.Tag.ToString();
+        }
 
+        private void click2(object sender, EventArgs e)
+        {
+            var x = sender as PictureBox;
+            aux = x.Image.Tag.ToString();
+        }
+
+        private void click3(object sender, EventArgs e)
+        {
+            var x = sender as PictureBox;
+            if (pb1 == false)
+            {
+                if (x.Image.Tag.ToString() == aux && x.Image.Tag.ToString() == aux2)
+                {
+                    MessageBox.Show("Correcto");
+                    cont++;
+                    j1pictosN1.puntos++;
+                    aux = "x";
+                    pb1 = true;
+                    if (cont == 5 && pictos.Count() > 1)
+                    {
+                        randomizarImagenes();
+                        cont = 0;
+                        pb1 = false;
+                    }
+                    else if (cont == 5 && pictos.Count() == 1)
+                    {
+                        j2N2 j2 = new j2N2();
+                        j2.Show();
+                        this.Hide();
+                        pb1 = false;
+                        pb2 = false;
+                        pb3 = false;
+                        pb4 = false;
+                        pb5 = false;
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("incorrecto, volve a intentarlo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ya matcheaste esta emocion");
+            }
+
+        }
 
 
         private void pictureBox2_Click(object sender, EventArgs e)
