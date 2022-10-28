@@ -162,6 +162,18 @@
     <Compile Include="juego3n1.Designer.cs">
       <DependentUpon>juego3n1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_PROFESOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_PROFESOR.Designer.cs">
+      <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -205,6 +217,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="juego3n1.resx">
       <DependentUpon>juego3n1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_PROFESOR.resx">
+      <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -474,6 +492,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Chicojarron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + textos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chico exprecion contento1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chico exprecion enojado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chico exprecion triste1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chico exprecion enojado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + texto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton listo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton listo v2.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

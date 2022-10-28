@@ -123,6 +123,26 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Boton_listo {
+            get {
+                object obj = ResourceManager.GetObject("Boton listo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Boton_listo_v2 {
+            get {
+                object obj = ResourceManager.GetObject("Boton listo v2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Cansado {
             get {
                 object obj = ResourceManager.GetObject("Cansado", resourceCulture);
@@ -163,6 +183,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Chico_exprecion_contento1 {
+            get {
+                object obj = ResourceManager.GetObject("Chico exprecion contento1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Chico_exprecion_enojado {
             get {
                 object obj = ResourceManager.GetObject("Chico exprecion enojado", resourceCulture);
@@ -173,9 +203,39 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Chico_exprecion_enojado1 {
+            get {
+                object obj = ResourceManager.GetObject("Chico exprecion enojado1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Chico_exprecion_enojado2 {
+            get {
+                object obj = ResourceManager.GetObject("Chico exprecion enojado2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Chico_exprecion_triste {
             get {
                 object obj = ResourceManager.GetObject("Chico exprecion triste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Chico_exprecion_triste1 {
+            get {
+                object obj = ResourceManager.GetObject("Chico exprecion triste1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +453,29 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___texto1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___textos {
             get {
                 object obj = ResourceManager.GetObject("fondo + textos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___textos1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + textos1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
