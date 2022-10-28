@@ -95,11 +95,6 @@ namespace Tweak_it
             checkResult(pB2);
            if (nivel == 10)
             {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + nivel + " WHERE Nombre='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
-                command.ExecuteNonQuery();
-                connection.Close();
-
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
                 this.Hide();    
@@ -111,10 +106,6 @@ namespace Tweak_it
             checkResult(pB3);
             if (nivel == 10)
             {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + nivel + " WHERE Nombre='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
-                command.ExecuteNonQuery();
-                connection.Close();
 
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
@@ -127,11 +118,6 @@ namespace Tweak_it
             checkResult(pB4);
             if (nivel == 10)
             {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + nivel + " WHERE Nombre='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
-                command.ExecuteNonQuery();
-                connection.Close();
-
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
                 this.Hide();
@@ -140,10 +126,6 @@ namespace Tweak_it
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            connection.Open();
-            OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + puntos + " WHERE NOMBRE='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
-            command.ExecuteNonQuery();
-            connection.Close();
 
             juego1 j1 = new juego1();
             j1.Show();
