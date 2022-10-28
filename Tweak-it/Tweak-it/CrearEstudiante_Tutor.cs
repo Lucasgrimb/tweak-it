@@ -30,5 +30,10 @@ namespace Tweak_it
             this.Hide();
             cup.Show();
         }
+
+        private void CrearEstudiante_Tutor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

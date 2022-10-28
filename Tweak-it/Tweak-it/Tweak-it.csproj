@@ -517,5 +517,26 @@
   <ItemGroup>
     <None Include="Resources\Chico exprecion contento.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Listo!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Listo!1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chico exprecion triste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chico exprecion enojado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangulo usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangulo usuario1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,20 +44,18 @@
             // pB1
             // 
             this.pB1.BackColor = System.Drawing.Color.Transparent;
-            this.pB1.Location = new System.Drawing.Point(1584, 148);
-            this.pB1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pB1.Location = new System.Drawing.Point(792, 77);
             this.pB1.Name = "pB1";
-            this.pB1.Size = new System.Drawing.Size(600, 577);
+            this.pB1.Size = new System.Drawing.Size(300, 300);
             this.pB1.TabIndex = 1;
             this.pB1.TabStop = false;
             // 
             // pB2
             // 
             this.pB2.BackColor = System.Drawing.Color.Transparent;
-            this.pB2.Location = new System.Drawing.Point(610, 1181);
-            this.pB2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pB2.Location = new System.Drawing.Point(305, 614);
             this.pB2.Name = "pB2";
-            this.pB2.Size = new System.Drawing.Size(600, 577);
+            this.pB2.Size = new System.Drawing.Size(300, 300);
             this.pB2.TabIndex = 2;
             this.pB2.TabStop = false;
             this.pB2.Click += new System.EventHandler(this.pB2_Click);
@@ -66,10 +64,9 @@
             // 
             this.pB3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pB3.BackColor = System.Drawing.Color.Transparent;
-            this.pB3.Location = new System.Drawing.Point(1584, 1204);
-            this.pB3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pB3.Location = new System.Drawing.Point(1240, 614);
             this.pB3.Name = "pB3";
-            this.pB3.Size = new System.Drawing.Size(600, 577);
+            this.pB3.Size = new System.Drawing.Size(300, 300);
             this.pB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pB3.TabIndex = 3;
             this.pB3.TabStop = false;
@@ -79,8 +76,7 @@
             // pB4
             // 
             this.pB4.BackColor = System.Drawing.Color.Transparent;
-            this.pB4.Location = new System.Drawing.Point(2494, 1214);
-            this.pB4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pB4.Location = new System.Drawing.Point(792, 614);
             this.pB4.Name = "pB4";
             this.pB4.Size = new System.Drawing.Size(300, 300);
             this.pB4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -96,10 +92,9 @@
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.ForeColor = System.Drawing.Color.Transparent;
             this.btn1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn1.Location = new System.Drawing.Point(276, 148);
-            this.btn1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn1.Location = new System.Drawing.Point(138, 77);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(144, 85);
+            this.btn1.Size = new System.Drawing.Size(72, 44);
             this.btn1.TabIndex = 5;
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
@@ -112,21 +107,21 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(3224, 1677);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(1612, 872);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(330, 167);
+            this.button1.Size = new System.Drawing.Size(165, 87);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // j1fotosN1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(2724, 1910);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.pB4);
@@ -134,7 +129,6 @@
             this.Controls.Add(this.pB2);
             this.Controls.Add(this.pB1);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "j1fotosN1";
             this.Text = "j1fotosN1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -163,6 +163,26 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Chico_exprecion_enojado {
+            get {
+                object obj = ResourceManager.GetObject("Chico exprecion enojado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Chico_exprecion_triste {
+            get {
+                object obj = ResourceManager.GetObject("Chico exprecion triste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Chicoromp {
             get {
                 object obj = ResourceManager.GetObject("Chicoromp", resourceCulture);
@@ -423,6 +443,26 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Listo_ {
+            get {
+                object obj = ResourceManager.GetObject("Listo!", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Listo_1 {
+            get {
+                object obj = ResourceManager.GetObject("Listo!1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Logo_perro {
             get {
                 object obj = ResourceManager.GetObject("Logo perro", resourceCulture);
@@ -503,6 +543,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Profesor {
+            get {
+                object obj = ResourceManager.GetObject("Profesor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap que_emocion_esta_sintiendo_ {
             get {
                 object obj = ResourceManager.GetObject("que emocion esta sintiendo_", resourceCulture);
@@ -556,6 +606,26 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap RazónC {
             get {
                 object obj = ResourceManager.GetObject("RazónC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Rectangulo_usuario {
+            get {
+                object obj = ResourceManager.GetObject("Rectangulo usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Rectangulo_usuario1 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangulo usuario1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

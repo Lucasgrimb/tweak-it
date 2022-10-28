@@ -62,6 +62,7 @@ namespace Tweak_it
             this.Controls.Add(this.button1);
             this.Name = "CrearEstudiante_Tutor";
             this.Text = "CrearEstudiante_Tutor";
+            this.Load += new System.EventHandler(this.CrearEstudiante_Tutor_Load);
             this.ResumeLayout(false);
 
         }
