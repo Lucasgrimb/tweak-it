@@ -7,22 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j1pictosN1 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List<Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
-
-        public static int puntos;
         
         int nivel = 0;
+        public static int puntos = puntos +=1;
 
         public j1pictosN1()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
         private void j1pictos_Load(object sender, EventArgs e)
@@ -75,7 +78,6 @@ namespace Tweak_it
             {
                 randomizarImages();
                 nivel++;
-                puntos++;
             }
             else
             {
@@ -93,9 +95,14 @@ namespace Tweak_it
             checkResult(pB2);
            if (nivel == 10)
             {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + nivel + " WHERE Nombre='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
-                this.Hide();
+                this.Hide();    
             }
         }
 
@@ -104,6 +111,11 @@ namespace Tweak_it
             checkResult(pB3);
             if (nivel == 10)
             {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + nivel + " WHERE Nombre='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
                 this.Hide();
@@ -115,6 +127,11 @@ namespace Tweak_it
             checkResult(pB4);
             if (nivel == 10)
             {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + nivel + " WHERE Nombre='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
                 this.Hide();
@@ -123,6 +140,11 @@ namespace Tweak_it
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
+            connection.Open();
+            OleDbCommand command = new OleDbCommand("UPDATE info SET Puntos= " + puntos + " WHERE NOMBRE='" + login.name + "' AND Apellido='" + login.Password + "'", connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+
             juego1 j1 = new juego1();
             j1.Show();
             this.Hide();

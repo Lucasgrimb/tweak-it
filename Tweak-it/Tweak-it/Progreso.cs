@@ -52,6 +52,7 @@ namespace Tweak_it
                 {
                     ROL = Reader.GetString(1);
                     ID2 = Reader.GetInt32(0);
+                    i++;
                 }
 
 
