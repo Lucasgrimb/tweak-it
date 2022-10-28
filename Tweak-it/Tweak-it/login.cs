@@ -45,7 +45,7 @@ namespace Tweak_it
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Crear_Usuario cr = new Crear_Usuario();
+            Crear_Usuario_Estudiante cr = new Crear_Usuario_Estudiante();
             this.Hide();
             cr.Show();
         }
