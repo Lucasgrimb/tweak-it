@@ -1,7 +1,7 @@
 ﻿
 namespace Tweak_it
 {
-    partial class Crear_Usuario
+    partial class Crear_Usuario_Profesor
     {
         /// <summary>
         /// Required designer variable.
@@ -31,114 +31,80 @@ namespace Tweak_it
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtname = new System.Windows.Forms.TextBox();
-            this.txtapellido = new System.Windows.Forms.TextBox();
-            this.txtedad = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label1.Location = new System.Drawing.Point(168, 51);
+            this.label1.Location = new System.Drawing.Point(174, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingresa los datos del alumno";
+            this.label1.Size = new System.Drawing.Size(464, 39);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Ingresa los datos del profesor";
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(285, 150);
+            this.txtname.Location = new System.Drawing.Point(291, 186);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(188, 20);
-            this.txtname.TabIndex = 1;
+            this.txtname.TabIndex = 9;
             // 
-            // txtapellido
+            // txtPass
             // 
-            this.txtapellido.Location = new System.Drawing.Point(285, 197);
-            this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(188, 20);
-            this.txtapellido.TabIndex = 2;
-            // 
-            // txtedad
-            // 
-            this.txtedad.Location = new System.Drawing.Point(285, 241);
-            this.txtedad.Name = "txtedad";
-            this.txtedad.Size = new System.Drawing.Size(188, 20);
-            this.txtedad.TabIndex = 3;
+            this.txtPass.Location = new System.Drawing.Point(291, 233);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(188, 20);
+            this.txtPass.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(210, 153);
+            this.label2.Location = new System.Drawing.Point(216, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 17);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 12;
             this.label2.Text = "Nombre:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(210, 198);
+            this.label3.Location = new System.Drawing.Point(200, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Apellido:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(210, 242);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Edad:";
+            this.label3.Size = new System.Drawing.Size(85, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Contraseña:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(311, 333);
+            this.button1.Location = new System.Drawing.Point(316, 280);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 39);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 15;
             this.button1.Text = "Crear Usuario";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Padre/Profesor",
-            "Estudiante"});
-            this.comboBox1.Location = new System.Drawing.Point(316, 283);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // Crear_Usuario
+            // Crear_Usuario_Profesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtedad);
-            this.Controls.Add(this.txtapellido);
+            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.label1);
-            this.Name = "Crear_Usuario";
-            this.Text = "Crear_Usuario";
-            this.Load += new System.EventHandler(this.Crear_Usuario_Load);
+            this.Name = "Crear_Usuario_Profesor";
+            this.Text = "Crear_Usuario_Profesor";
+            this.Load += new System.EventHandler(this.Crear_Usuario_Profesor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,12 +114,9 @@ namespace Tweak_it
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.TextBox txtapellido;
-        private System.Windows.Forms.TextBox txtedad;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

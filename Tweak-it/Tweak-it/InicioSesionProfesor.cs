@@ -56,9 +56,9 @@ namespace Tweak_it
                     else if (Rol2 == "Admin")
                     {
                         MessageBox.Show("Has ingresado correctamente");
-                        Progreso prg = new Progreso();
+                        MenuTutor mn = new MenuTutor();
                         this.Hide();
-                        prg.Show();
+                        mn.Show();
                     }
                 }
                 connection.Close();

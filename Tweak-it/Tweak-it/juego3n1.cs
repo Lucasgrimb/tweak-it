@@ -147,6 +147,7 @@ namespace Tweak_it
                     correcto = false;
                     sit2();
                     a++;
+                    j1pictosN1.puntos++;
                 }
                 else
                 {
@@ -160,6 +161,7 @@ namespace Tweak_it
                     MessageBox.Show("Muy bien, pasaste de nivel");
                     correcto = false;
                     a++;
+                    j1pictosN1.puntos++;
                 }
                 else
                 {
