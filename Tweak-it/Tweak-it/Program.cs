@@ -19,6 +19,6 @@ namespace Tweak_it
             Application.Run(new Form1());
            
     }
-        public static int points;
+
     }
 }
