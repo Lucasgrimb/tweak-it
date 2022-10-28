@@ -18,7 +18,7 @@ namespace Tweak_it
         List<Image> dibujos = new List<Image>();
         List<Image> ndibujos = new List<Image>();
         Random rand = new Random();
-        String aux;
+        String aux;       
         int cont = 0;
         bool pb1 = false;
         bool pb2 = false;
