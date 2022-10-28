@@ -183,6 +183,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Chicojarron {
+            get {
+                object obj = ResourceManager.GetObject("Chicojarron", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Chicoromp {
             get {
                 object obj = ResourceManager.GetObject("Chicoromp", resourceCulture);
