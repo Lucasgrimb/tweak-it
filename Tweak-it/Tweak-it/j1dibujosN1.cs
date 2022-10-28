@@ -16,6 +16,7 @@ namespace Tweak_it
         List<Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
         int nivel = 0;
+        Tweak_it.Program.int.po
 
         public j1dibujosN1()
         {

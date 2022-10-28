@@ -41,9 +41,10 @@
             // 
             // btnAtras
             // 
+            this.btnAtras.Image = global::Tweak_it.Properties.Resources.flecha_para_atras;
             this.btnAtras.Location = new System.Drawing.Point(94, 58);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(111, 63);
+            this.btnAtras.Size = new System.Drawing.Size(283, 158);
             this.btnAtras.TabIndex = 9;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
@@ -51,7 +52,7 @@
             // 
             // pB4
             // 
-            this.pB4.Location = new System.Drawing.Point(904, 333);
+            this.pB4.Location = new System.Drawing.Point(991, 323);
             this.pB4.Name = "pB4";
             this.pB4.Size = new System.Drawing.Size(182, 138);
             this.pB4.TabIndex = 8;
@@ -88,7 +89,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1224, 694);
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto;
+            this.ClientSize = new System.Drawing.Size(1701, 762);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pB4);
             this.Controls.Add(this.pB3);
@@ -96,6 +98,7 @@
             this.Controls.Add(this.pB1);
             this.Name = "j1dibujosN1";
             this.Text = "j1dibujosN1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.j1dibujosN1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pB4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).EndInit();
