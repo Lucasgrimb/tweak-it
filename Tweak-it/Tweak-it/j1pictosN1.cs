@@ -131,6 +131,11 @@ namespace Tweak_it
             j1.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

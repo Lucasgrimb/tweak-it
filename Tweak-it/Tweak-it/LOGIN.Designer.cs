@@ -126,6 +126,7 @@ namespace Tweak_it
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "LOGIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.LOGIN_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

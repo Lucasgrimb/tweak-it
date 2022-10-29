@@ -52,5 +52,10 @@ namespace Tweak_it
                 txtNombre.ForeColor = Color.DimGray;
             }
         }
+
+        private void LOGIN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
