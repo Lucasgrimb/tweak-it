@@ -70,8 +70,11 @@ namespace Tweak_it
         {
 
         }
-<<<<<<< Updated upstream
-=======
+
+        private void LOGIN_Load_1(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnAlegre_Click(object sender, EventArgs e)
         {
