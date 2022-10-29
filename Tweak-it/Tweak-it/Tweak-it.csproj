@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -78,6 +78,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrearAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearAlumno.Designer.cs">
+      <DependentUpon>CrearAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearProfesor.Designer.cs">
+      <DependentUpon>CrearProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="LOGIN_PROFESOR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,8 +186,32 @@
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuCrearUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCrearUsuarios.Designer.cs">
+      <DependentUpon>MenuCrearUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPROFE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPROFE.Designer.cs">
+      <DependentUpon>MenuPROFE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Progreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progreso.Designer.cs">
+      <DependentUpon>Progreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrearAlumno.resx">
+      <DependentUpon>CrearAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearProfesor.resx">
+      <DependentUpon>CrearProfesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGIN_PROFESOR.resx">
       <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +259,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCrearUsuarios.resx">
+      <DependentUpon>MenuCrearUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPROFE.resx">
+      <DependentUpon>MenuPROFE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progreso.resx">
+      <DependentUpon>Progreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -558,6 +603,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo + texto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton listo v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton_listo_v2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profesor-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ver alumnos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ver alumnos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ver alumnos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo  y texto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear un nuevo profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear un nuevo alumno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo y texto profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_crear-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_crear-removebg-preview2323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto 323232.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

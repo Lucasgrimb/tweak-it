@@ -7,12 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
    
     public partial class juego3n1 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+        DateTime TiempoFinal = DateTime.Now;
+
         Image[,] situaciones = new Image[6, 8];
         int x;
         bool correcto = false;
@@ -22,6 +27,7 @@ namespace Tweak_it
 
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -430,8 +436,20 @@ namespace Tweak_it
             pB8.Image = situaciones[5, 7];
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TimeSpan ts = TiempoFinal - LOGIN.TiempoInicio;
+            double tiempo = ts.TotalMinutes;
+            int TiempoFinal2 = (int)tiempo;
 
+            connection.Open();
+            command.Connection = connection;
+            command.CommandText = "UPDATE info SET TiempoEnPantalla=" + TiempoFinal2 + " WHERE Nombre='" + LOGIN.nombre + "' AND Apellido='" + LOGIN.apellido + "'";
+            command.ExecuteNonQuery();
+            connection.Close();
 
+            Application.Exit();
+        }
     }
     }
 
