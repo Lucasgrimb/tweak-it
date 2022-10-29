@@ -206,6 +206,5 @@ namespace Tweak_it
             this.Hide();
             f1.Show();
         }
->>>>>>> Stashed changes
     }
 }
