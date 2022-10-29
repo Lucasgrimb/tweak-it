@@ -199,12 +199,6 @@
       <DependentUpon>MenuPROFE.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Progreso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Progreso.Designer.cs">
-      <DependentUpon>Progreso.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrearAlumno.resx">
       <DependentUpon>CrearAlumno.cs</DependentUpon>
