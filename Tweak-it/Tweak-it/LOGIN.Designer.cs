@@ -82,6 +82,7 @@ namespace Tweak_it
             this.btnAlegre.Size = new System.Drawing.Size(350, 350);
             this.btnAlegre.TabIndex = 2;
             this.btnAlegre.UseVisualStyleBackColor = false;
+            this.btnAlegre.Click += new System.EventHandler(this.btnAlegre_Click);
             // 
             // btnTriste
             // 
@@ -95,6 +96,7 @@ namespace Tweak_it
             this.btnTriste.Size = new System.Drawing.Size(350, 350);
             this.btnTriste.TabIndex = 3;
             this.btnTriste.UseVisualStyleBackColor = false;
+            this.btnTriste.Click += new System.EventHandler(this.btnTriste_Click);
             // 
             // btnEnojado
             // 
@@ -108,6 +110,7 @@ namespace Tweak_it
             this.btnEnojado.Size = new System.Drawing.Size(350, 350);
             this.btnEnojado.TabIndex = 4;
             this.btnEnojado.UseVisualStyleBackColor = false;
+            this.btnEnojado.Click += new System.EventHandler(this.btnEnojado_Click);
             // 
             // LOGIN
             // 

@@ -57,5 +57,10 @@ namespace Tweak_it
         {
 
         }
+
+        private void LOGIN_PROFESOR_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

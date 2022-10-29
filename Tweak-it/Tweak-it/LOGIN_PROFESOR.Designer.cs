@@ -83,6 +83,7 @@ namespace Tweak_it
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LOGIN_PROFESOR";
             this.Text = "Crear_Usuario";
+            this.Load += new System.EventHandler(this.LOGIN_PROFESOR_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
