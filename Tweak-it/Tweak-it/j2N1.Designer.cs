@@ -39,6 +39,7 @@
             this.pB2d = new System.Windows.Forms.PictureBox();
             this.pB1d = new System.Windows.Forms.PictureBox();
             this.btn1 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3p)).BeginInit();
@@ -54,7 +55,7 @@
             // pB1p
             // 
             this.pB1p.Location = new System.Drawing.Point(94, 6);
-            this.pB1p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB1p.Margin = new System.Windows.Forms.Padding(2);
             this.pB1p.Name = "pB1p";
             this.pB1p.Size = new System.Drawing.Size(83, 69);
             this.pB1p.TabIndex = 0;
@@ -64,7 +65,7 @@
             // pB2p
             // 
             this.pB2p.Location = new System.Drawing.Point(94, 98);
-            this.pB2p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB2p.Margin = new System.Windows.Forms.Padding(2);
             this.pB2p.Name = "pB2p";
             this.pB2p.Size = new System.Drawing.Size(83, 69);
             this.pB2p.TabIndex = 1;
@@ -74,7 +75,7 @@
             // pB3p
             // 
             this.pB3p.Location = new System.Drawing.Point(94, 194);
-            this.pB3p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB3p.Margin = new System.Windows.Forms.Padding(2);
             this.pB3p.Name = "pB3p";
             this.pB3p.Size = new System.Drawing.Size(83, 69);
             this.pB3p.TabIndex = 2;
@@ -84,7 +85,7 @@
             // pB4p
             // 
             this.pB4p.Location = new System.Drawing.Point(94, 298);
-            this.pB4p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB4p.Margin = new System.Windows.Forms.Padding(2);
             this.pB4p.Name = "pB4p";
             this.pB4p.Size = new System.Drawing.Size(83, 69);
             this.pB4p.TabIndex = 3;
@@ -94,7 +95,7 @@
             // pB5p
             // 
             this.pB5p.Location = new System.Drawing.Point(94, 385);
-            this.pB5p.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB5p.Margin = new System.Windows.Forms.Padding(2);
             this.pB5p.Name = "pB5p";
             this.pB5p.Size = new System.Drawing.Size(83, 69);
             this.pB5p.TabIndex = 4;
@@ -103,8 +104,8 @@
             // 
             // pB5d
             // 
-            this.pB5d.Location = new System.Drawing.Point(407, 385);
-            this.pB5d.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB5d.Location = new System.Drawing.Point(386, 385);
+            this.pB5d.Margin = new System.Windows.Forms.Padding(2);
             this.pB5d.Name = "pB5d";
             this.pB5d.Size = new System.Drawing.Size(83, 69);
             this.pB5d.TabIndex = 9;
@@ -113,8 +114,8 @@
             // 
             // pB4d
             // 
-            this.pB4d.Location = new System.Drawing.Point(407, 298);
-            this.pB4d.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB4d.Location = new System.Drawing.Point(386, 298);
+            this.pB4d.Margin = new System.Windows.Forms.Padding(2);
             this.pB4d.Name = "pB4d";
             this.pB4d.Size = new System.Drawing.Size(83, 69);
             this.pB4d.TabIndex = 8;
@@ -123,8 +124,8 @@
             // 
             // pB3d
             // 
-            this.pB3d.Location = new System.Drawing.Point(407, 194);
-            this.pB3d.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB3d.Location = new System.Drawing.Point(386, 194);
+            this.pB3d.Margin = new System.Windows.Forms.Padding(2);
             this.pB3d.Name = "pB3d";
             this.pB3d.Size = new System.Drawing.Size(83, 69);
             this.pB3d.TabIndex = 7;
@@ -133,8 +134,8 @@
             // 
             // pB2d
             // 
-            this.pB2d.Location = new System.Drawing.Point(407, 98);
-            this.pB2d.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB2d.Location = new System.Drawing.Point(386, 98);
+            this.pB2d.Margin = new System.Windows.Forms.Padding(2);
             this.pB2d.Name = "pB2d";
             this.pB2d.Size = new System.Drawing.Size(83, 69);
             this.pB2d.TabIndex = 6;
@@ -143,8 +144,8 @@
             // 
             // pB1d
             // 
-            this.pB1d.Location = new System.Drawing.Point(407, 6);
-            this.pB1d.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pB1d.Location = new System.Drawing.Point(386, 6);
+            this.pB1d.Margin = new System.Windows.Forms.Padding(2);
             this.pB1d.Name = "pB1d";
             this.pB1d.Size = new System.Drawing.Size(83, 69);
             this.pB1d.TabIndex = 5;
@@ -154,7 +155,7 @@
             // btn1
             // 
             this.btn1.Location = new System.Drawing.Point(20, 15);
-            this.btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn1.Margin = new System.Windows.Forms.Padding(2);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(46, 23);
             this.btn1.TabIndex = 10;
@@ -162,11 +163,22 @@
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(485, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(66, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "CERRAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // j2N1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 486);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.pB5d);
             this.Controls.Add(this.pB4d);
@@ -178,7 +190,7 @@
             this.Controls.Add(this.pB3p);
             this.Controls.Add(this.pB2p);
             this.Controls.Add(this.pB1p);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "j2N1";
             this.Text = "j2N1";
             this.Load += new System.EventHandler(this.j2N1_Load);
@@ -209,5 +221,6 @@
         private System.Windows.Forms.PictureBox pB2d;
         private System.Windows.Forms.PictureBox pB1d;
         private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -14,6 +14,9 @@ namespace Tweak_it
     public partial class j1pictosN1 : Form
     {
         OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+        DateTime TiempoFinal = DateTime.Now;
+        public static TimeSpan ts;
 
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List<Image> posiblesEmociones = new List<Image>();
@@ -134,7 +137,21 @@ namespace Tweak_it
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
 
+=======
+            //TimeSpan ts = TiempoFinal - LOGIN.TiempoInicio;
+            //double tiempo = ts.TotalSeconds;
+            //int TiempoFinal2 = (int)tiempo;
+
+            //connection.Open();
+            //command.Connection = connection;
+            //command.CommandText = "UPDATE info SET TiempoEnPantalla=" + TiempoFinal2 + " WHERE Nombre='" + LOGIN.nombre + "' AND Apellido='" + LOGIN.apellido + "'";
+            //command.ExecuteNonQuery();
+            //connection.Close();
+
+            //Application.Exit();
+>>>>>>> Stashed changes
         }
     }
 }

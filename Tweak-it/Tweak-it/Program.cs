@@ -17,8 +17,18 @@ namespace Tweak_it
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+<<<<<<< Updated upstream
            
     }
 
+=======
+<<<<<<< HEAD
+        }
+=======
+           
+    }
+
+>>>>>>> e0f993b0677c9117ad9d248831c270ba6fbce01f
+>>>>>>> Stashed changes
     }
 }

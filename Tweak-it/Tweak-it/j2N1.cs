@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j2N1 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+        DateTime TiempoFinal = DateTime.Now;
+
         PictureBox[] pBpictos = new PictureBox[5];
         PictureBox[] pBdibujos = new PictureBox[5];
         List<Image> pictos = new List<Image>();
@@ -30,6 +35,8 @@ namespace Tweak_it
         public j2N1()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
+
         }
 
         private void j2N1_Load(object sender, EventArgs e)
@@ -398,6 +405,11 @@ namespace Tweak_it
             Form1 f1 = new Form1();
             f1.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

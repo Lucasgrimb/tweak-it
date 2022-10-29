@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j1dibujosN2 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+        DateTime TiempoFinal = DateTime.Now;
+
         // creo las listas y arrays
         PictureBox[] pictureBoxesArray = new PictureBox[6];
         List<Image> posiblesEmociones = new List<Image>();
@@ -21,6 +26,7 @@ namespace Tweak_it
         public j1dibujosN2()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
         private void j1dibujosN2_Load(object sender, EventArgs e)
         {
@@ -162,6 +168,20 @@ namespace Tweak_it
             }
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            TimeSpan ts = TiempoFinal - LOGIN.TiempoInicio;
+            double tiempo = ts.TotalMinutes;
+            int TiempoFinal2 = (int)tiempo;
+
+            connection.Open();
+            command.Connection = connection;
+            command.CommandText = "UPDATE info SET TiempoEnPantalla=" + TiempoFinal2 + " WHERE Nombre='" + LOGIN.nombre + "' AND Apellido='" + LOGIN.apellido + "'";
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            Application.Exit();
+        }
     }
 }
