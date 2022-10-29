@@ -78,6 +78,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrearEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearEstudiante.Designer.cs">
+      <DependentUpon>CrearEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearProfesor.Designer.cs">
+      <DependentUpon>CrearProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="LOGIN_PROFESOR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,8 +186,32 @@
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuCrearUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCrearUsuarios.Designer.cs">
+      <DependentUpon>MenuCrearUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Profesor.Designer.cs">
+      <DependentUpon>Menu_Profesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Progreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progreso.Designer.cs">
+      <DependentUpon>Progreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrearEstudiante.resx">
+      <DependentUpon>CrearEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearProfesor.resx">
+      <DependentUpon>CrearProfesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGIN_PROFESOR.resx">
       <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +259,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCrearUsuarios.resx">
+      <DependentUpon>MenuCrearUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Profesor.resx">
+      <DependentUpon>Menu_Profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progreso.resx">
+      <DependentUpon>Progreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -567,6 +612,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Boton_listo_v2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto menu profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ver alumnos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ver alumnos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo  y texto progreso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto menu profesor crear usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ver alumnos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear un nuevo alumno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear un nuevo profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto menu profesor crear usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear un nuevo profesor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto crear alumno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton crear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crear un nuevo profesor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo y texto crear Profesor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

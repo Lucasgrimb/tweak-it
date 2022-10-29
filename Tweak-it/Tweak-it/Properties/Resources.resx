@@ -121,8 +121,8 @@
   <data name="Profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo + textos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo + textos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fondo y texto menu profesor crear usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo y texto menu profesor crear usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="EnojadoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EnojadoF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,14 +154,11 @@
   <data name="suelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\suelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hambriento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hambriento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ver alumnos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ver alumnos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="secayo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\secayo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rectangulo usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rectangulo usuario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Consigna1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Consigna1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,6 +181,9 @@
   <data name="ndejan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ndejan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton crear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton crear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="duele" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\duele.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,6 +195,9 @@
   </data>
   <data name="Chico exprecion triste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chico exprecion triste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crear usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crear usuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NerviosoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NerviosoF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,11 +214,20 @@
   <data name="sit3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sit3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AburridoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AburridoF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sit6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sit6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondo + texto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo + texto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo y texto crear alumno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo y texto crear alumno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crear un nuevo alumno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crear un nuevo alumno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Aburrido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aburrido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -228,6 +240,9 @@
   </data>
   <data name="Verguenza" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Verguenza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crear un nuevo profesor2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crear un nuevo profesor2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CansadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CansadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -243,6 +258,9 @@
   </data>
   <data name="AburridoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AburridoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo  y texto progreso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo  y texto progreso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Confundido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Confundido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,8 +301,8 @@
   <data name="Sorprendido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sorprendido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chicojarron" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chicojarron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Hambriento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hambriento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sit5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sit5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,8 +310,8 @@
   <data name="ContentoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ContentoF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TristeF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TristeF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo + textos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo + textos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,8 +322,11 @@
   <data name="Chico exprecion triste1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chico exprecion triste1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SedientoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SedientoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chicojarron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chicojarron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ver alumnos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ver alumnos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ConfundidoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ConfundidoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,14 +334,23 @@
   <data name="niños" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\niños.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ver alumnos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ver alumnos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="RazónC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RazónC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crear un nuevo profesor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crear un nuevo profesor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AsustadoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AsustadoF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Enfermo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enfermo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crear un nuevo profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crear un nuevo profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="elnesta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elnesta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -364,11 +394,14 @@
   <data name="flecha_para_atras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flecha para atras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fondo y texto menu profesor crear usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo y texto menu profesor crear usuario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EnfermoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EnfermoF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AburridoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AburridoF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TristeF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TristeF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Consigna2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Consigna2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -379,8 +412,11 @@
   <data name="que emocion esta sintiendo_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\que emocion esta sintiendo_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="garganta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garganta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangulo usuario1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangulo usuario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fondo y texto menu profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo y texto menu profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="VerguenzaF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VerguenzaF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -388,11 +424,17 @@
   <data name="Final1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Final1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SedientoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SedientoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EnojadoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EnojadoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Asustado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Asustado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="garganta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garganta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Chico exprecion contento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chico exprecion contento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -408,5 +450,8 @@
   </data>
   <data name="Boton_listo_v2-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Boton_listo_v2-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo y texto crear Profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo y texto crear Profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
