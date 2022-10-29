@@ -34,6 +34,8 @@ namespace Tweak_it
             this.btnAlegre = new System.Windows.Forms.Button();
             this.btnTriste = new System.Windows.Forms.Button();
             this.btnEnojado = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -112,12 +114,24 @@ namespace Tweak_it
             this.btnEnojado.UseVisualStyleBackColor = false;
             this.btnEnojado.Click += new System.EventHandler(this.btnEnojado_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Tweak_it.Properties.Resources.Profesor_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(1650, 85);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos1;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnEnojado);
             this.Controls.Add(this.btnTriste);
             this.Controls.Add(this.btnAlegre);
@@ -129,6 +143,8 @@ namespace Tweak_it
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "LOGIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.LOGIN_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,5 +157,6 @@ namespace Tweak_it
         private System.Windows.Forms.Button btnAlegre;
         private System.Windows.Forms.Button btnTriste;
         private System.Windows.Forms.Button btnEnojado;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

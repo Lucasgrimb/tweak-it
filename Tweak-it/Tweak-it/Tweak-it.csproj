@@ -559,5 +559,14 @@
   <ItemGroup>
     <None Include="Resources\fondo + texto1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profesor-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton listo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton_listo_v2-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -136,5 +136,17 @@ namespace Tweak_it
             command.ExecuteNonQuery();
             connection.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            LOGIN_PROFESOR lp = new LOGIN_PROFESOR();
+            this.Hide();
+            lp.Show();
+        }
+
+        private void LOGIN_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

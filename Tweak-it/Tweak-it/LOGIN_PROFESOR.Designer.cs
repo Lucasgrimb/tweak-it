@@ -31,6 +31,8 @@ namespace Tweak_it
         {
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUser
@@ -70,6 +72,18 @@ namespace Tweak_it
             this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
             this.txtPass.Leave += new System.EventHandler(this.txtPass_Leave);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Tweak_it.Properties.Resources.Boton_listo_v2_removebg_preview;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(809, 760);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(310, 90);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // LOGIN_PROFESOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -78,12 +92,14 @@ namespace Tweak_it
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LOGIN_PROFESOR";
             this.Text = "Crear_Usuario";
             this.Load += new System.EventHandler(this.LOGIN_PROFESOR_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,5 +109,6 @@ namespace Tweak_it
 
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -123,6 +123,26 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Boton_listo {
+            get {
+                object obj = ResourceManager.GetObject("Boton listo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Boton_listo_v2_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Boton_listo_v2-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Cansado {
             get {
                 object obj = ResourceManager.GetObject("Cansado", resourceCulture);
@@ -706,6 +726,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Profesor {
             get {
                 object obj = ResourceManager.GetObject("Profesor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Profesor_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Profesor-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
