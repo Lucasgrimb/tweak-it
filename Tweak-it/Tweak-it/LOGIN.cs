@@ -15,7 +15,7 @@ namespace Tweak_it
     {
         OleDbConnection connection = new OleDbConnection();
 
-        string A = "Alegre";
+        string A = "Contento";
         string T = "Triste";
         string E = "Enojado";
 
@@ -30,39 +30,30 @@ namespace Tweak_it
             connection.ConnectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
-        private void txtNombre_Enter(object sender, EventArgs e)
-        {
-            if(txtNombre.Text == "NOMBRE")
-            {
-                txtNombre.Text = "";
-                txtNombre.ForeColor = Color.DimGray ;
-            }
-        }
-
         private void txtNombre_Leave(object sender, EventArgs e)
         {
-            if(txtNombre.Text == "")
+            if(txtname.Text == "")
             {
-                txtNombre.Text = "NOMBRE";
-                txtNombre.ForeColor = Color.DimGray;
+                txtname.Text = "NOMBRE";
+                txtname.ForeColor = Color.DimGray;
             }
         }
 
         private void txtApellido_Enter(object sender, EventArgs e)
         {
-            if (txtApellido.Text == "APELLIDO")
+            if (txtape.Text == "APELLIDO")
             {
-                txtApellido.Text = "";
-                txtApellido.ForeColor = Color.DimGray;
+                txtape.Text = "";
+                txtape.ForeColor = Color.DimGray;
             }
         }
 
         private void txtApellido_Leave(object sender, EventArgs e)
         {
-            if (txtApellido.Text == "")
+            if (txtape.Text == "")
             {
-                txtApellido.Text = "APELLIDO";
-                txtApellido.ForeColor = Color.DimGray;
+                txtape.Text = "APELLIDO";
+                txtape.ForeColor = Color.DimGray;
             }
         }
 
@@ -74,38 +65,6 @@ namespace Tweak_it
         private void LOGIN_Load_1(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnAlegre_Click(object sender, EventArgs e)
-        {
-            connection.Open();
-            string query = ("SELECT Nombre, Apellido, Id FROM info WHERE Nombre= '" + txtNombre.Text + "' AND Apellido= '" + txtApellido.Text + "'");
-            OleDbCommand command = new OleDbCommand(query, connection);
-            OleDbDataAdapter Adapter = new OleDbDataAdapter();
-            Adapter.SelectCommand = command;
-            OleDbDataReader Reader = command.ExecuteReader();
-
-            int i = 0;
-
-            while (Reader.Read())
-            {
-                MessageBox.Show("Bienvenido, " + Reader.GetString(0));
-                ID = Reader.GetInt32(2);
-                nombre = txtNombre.Text;
-                apellido = txtApellido.Text;
-                i++;
-            }
-
-            DateTime dt = DateTime.Now;
-            OleDbCommand command2 = new OleDbCommand();
-            command2.Connection = connection;
-            command2.CommandText = "INSERT INTO ConsultaEmociones (Emocion, Fecha, id_user) VALUES ('" + A + "', '" + dt.ToShortDateString() + "', " + ID + ")";
-            command2.ExecuteNonQuery();
-            connection.Close();
-
-            Form1 f1 = new Form1();
-            this.Hide();
-            f1.Show();
         }
 
         private void LOGIN_TextChanged(object sender, EventArgs e)
@@ -147,10 +106,78 @@ namespace Tweak_it
             //}
         }
 
-        private void btnTriste_Click(object sender, EventArgs e)
+        private void txtname_Enter(object sender, EventArgs e)
+        {
+            if(txtname.Text == "NOMBRE")
+            {
+               txtname.Text = "";
+                txtname.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtname_Leave(object sender, EventArgs e)
+        {
+            if(txtname.Text == "")
+            {
+                txtname.Text = "NOMBRE";
+                txtname.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtape_Enter(object sender, EventArgs e)
+        {
+            if(txtape.Text == "APELLIDO")
+            {
+                txtape.Text = "";
+                txtape.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtape_Leave(object sender, EventArgs e)
+        {
+            if(txtape.Text == "")
+            {
+                txtape.Text = "APELLIDO";
+                txtape.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void contento_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string query = ("SELECT Nombre, Apellido, Id FROM info WHERE Nombre= '" + txtNombre.Text + "' AND Apellido= '" + txtApellido.Text + "'");
+            string query = ("SELECT Nombre, Apellido, Id FROM info WHERE Nombre= '" + txtname.Text + "' AND Apellido= '" + txtape.Text + "'");
+            OleDbCommand command = new OleDbCommand(query, connection);
+            OleDbDataAdapter Adapter = new OleDbDataAdapter();
+            Adapter.SelectCommand = command;
+            OleDbDataReader Reader = command.ExecuteReader();
+
+            int i = 0;
+
+            while (Reader.Read())
+            {
+                MessageBox.Show("Bienvenido, " + Reader.GetString(0));
+                ID = Reader.GetInt32(2);
+                nombre = txtname.Text;
+                apellido = txtape.Text;
+                i++;
+            }
+
+            DateTime dt = DateTime.Now;
+            OleDbCommand command2 = new OleDbCommand();
+            command2.Connection = connection;
+            command2.CommandText = "INSERT INTO ConsultaEmociones (Emocion, Fecha, id_user) VALUES ('" + A + "', '" + dt.ToShortDateString() + "', " + ID + ")";
+            command2.ExecuteNonQuery();
+            connection.Close();
+
+            Form1 f1 = new Form1();
+            this.Hide();
+            f1.Show();
+        }
+
+        private void triste_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string query = ("SELECT Nombre, Apellido, Id FROM info WHERE Nombre= '" + txtname.Text + "' AND Apellido= '" + txtape.Text + "'");
             OleDbCommand command = new OleDbCommand(query, connection);
             OleDbDataAdapter Adapter = new OleDbDataAdapter();
             Adapter.SelectCommand = command;
@@ -177,10 +204,10 @@ namespace Tweak_it
             f1.Show();
         }
 
-        private void btnEnojado_Click(object sender, EventArgs e)
+        private void enojado_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string query = ("SELECT Nombre, Apellido, Id FROM info WHERE Nombre= '" + txtNombre.Text + "' AND Apellido= '" + txtApellido.Text + "'");
+            string query = ("SELECT Nombre, Apellido, Id FROM info WHERE Nombre= '" + txtname.Text + "' AND Apellido= '" + txtape.Text + "'");
             OleDbCommand command = new OleDbCommand(query, connection);
             OleDbDataAdapter Adapter = new OleDbDataAdapter();
             Adapter.SelectCommand = command;

@@ -137,21 +137,7 @@ namespace Tweak_it
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< Updated upstream
 
-=======
-            //TimeSpan ts = TiempoFinal - LOGIN.TiempoInicio;
-            //double tiempo = ts.TotalSeconds;
-            //int TiempoFinal2 = (int)tiempo;
-
-            //connection.Open();
-            //command.Connection = connection;
-            //command.CommandText = "UPDATE info SET TiempoEnPantalla=" + TiempoFinal2 + " WHERE Nombre='" + LOGIN.nombre + "' AND Apellido='" + LOGIN.apellido + "'";
-            //command.ExecuteNonQuery();
-            //connection.Close();
-
-            //Application.Exit();
->>>>>>> Stashed changes
         }
     }
 }

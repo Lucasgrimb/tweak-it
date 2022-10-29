@@ -39,43 +39,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAtras
-            // 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
             this.btnAtras.Location = new System.Drawing.Point(47, 30);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(56, 33);
-=======
->>>>>>> Stashed changes
+
             this.btnAtras.Image = global::Tweak_it.Properties.Resources.flecha_para_atras;
             this.btnAtras.Location = new System.Drawing.Point(94, 58);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(283, 158);
-<<<<<<< Updated upstream
-=======
->>>>>>> e0f993b0677c9117ad9d248831c270ba6fbce01f
->>>>>>> Stashed changes
+
             this.btnAtras.TabIndex = 9;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click_1);
-            // 
-            // pB4
-            // 
-<<<<<<< Updated upstream
+
             this.pB4.Location = new System.Drawing.Point(991, 323);
-=======
-<<<<<<< HEAD
+
             this.pB4.Location = new System.Drawing.Point(452, 173);
             this.pB4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-=======
+
             this.pB4.Location = new System.Drawing.Point(991, 323);
->>>>>>> e0f993b0677c9117ad9d248831c270ba6fbce01f
->>>>>>> Stashed changes
+
             this.pB4.Name = "pB4";
             this.pB4.Size = new System.Drawing.Size(91, 72);
             this.pB4.TabIndex = 8;
@@ -125,18 +111,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< Updated upstream
+
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto;
             this.ClientSize = new System.Drawing.Size(1701, 762);
-=======
-<<<<<<< HEAD
+
+
             this.ClientSize = new System.Drawing.Size(612, 361);
             this.Controls.Add(this.button1);
-=======
+
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto;
             this.ClientSize = new System.Drawing.Size(1701, 762);
->>>>>>> e0f993b0677c9117ad9d248831c270ba6fbce01f
->>>>>>> Stashed changes
+
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pB4);
             this.Controls.Add(this.pB3);
