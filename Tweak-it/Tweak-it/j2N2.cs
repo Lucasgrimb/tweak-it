@@ -163,7 +163,7 @@ namespace Tweak_it
             fotos[13].Tag = "confundido";
 
             randomizarImagenes();
-
+           
         }
 
         private void randomizarImagenes()
@@ -172,9 +172,7 @@ namespace Tweak_it
             for (int i = 0; i < 5; i++)
             {
                 int x = rand.Next(0, pictos.Count);
-
                 pBpictos[i].Image = pictos[x];
-                pBpictos[i].Tag = i.ToString();
                 ndibujos.Add(dibujos[x]);
                 nfotos.Add(fotos[x]);
                 pictos.RemoveAt(x);

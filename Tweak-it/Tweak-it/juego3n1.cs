@@ -16,7 +16,6 @@ namespace Tweak_it
         Image[,] situaciones = new Image[6, 8];
         int x;
         bool correcto = false;
-        bool correcto2 = false;
         int a = 0;
 
         public juego3n1()
