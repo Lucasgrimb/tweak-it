@@ -96,6 +96,7 @@ namespace Tweak_it
             this.Name = "CrearProfesor";
             this.Text = "CrearProfesor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CrearProfesor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

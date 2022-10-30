@@ -153,6 +153,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Boton_listo1 {
+            get {
+                object obj = ResourceManager.GetObject("Boton listo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Cansado {
             get {
                 object obj = ResourceManager.GetObject("Cansado", resourceCulture);
@@ -653,6 +663,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Frame_1__17_1 {
+            get {
+                object obj = ResourceManager.GetObject("Frame 1 (17)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap garganta {
             get {
                 object obj = ResourceManager.GetObject("garganta", resourceCulture);
@@ -1136,6 +1156,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap TristeF {
             get {
                 object obj = ResourceManager.GetObject("TristeF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Vector_1 {
+            get {
+                object obj = ResourceManager.GetObject("Vector 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -75,5 +75,10 @@ namespace Tweak_it
                 mp.Show();
             }
         }
+
+        private void CrearProfesor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -667,5 +667,14 @@
   <ItemGroup>
     <None Include="Resources\Frame 1 %2817%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 1 %2817%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boton listo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
