@@ -62,6 +62,7 @@ namespace Tweak_it
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
+            this.txtApellido.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.txtApellido.Location = new System.Drawing.Point(837, 358);
             this.txtApellido.Multiline = true;
             this.txtApellido.Name = "txtApellido";
@@ -140,7 +141,6 @@ namespace Tweak_it
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "LOGIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LOGIN_Load);

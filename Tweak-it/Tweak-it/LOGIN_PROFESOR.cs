@@ -27,7 +27,7 @@ namespace Tweak_it
             if(txtUser.Text == "USUARIO")
             {
                 txtUser.Text = "";
-                txtUser.ForeColor = Color.LightGray;
+                txtUser.ForeColor = Color.DimGray;
             }
         }
         
@@ -46,7 +46,7 @@ namespace Tweak_it
             if (txtPass.Text == "CONTRASEÑA")
             {
                 txtPass.Text = "";
-                txtPass.ForeColor = Color.LightGray;
+                txtPass.ForeColor = Color.DimGray;
             }
         }
 
@@ -78,7 +78,7 @@ namespace Tweak_it
             else 
             {
                 connection.Open();
-                command = new OleDbCommand("SELECT Nombre, Apellido, Rol FROM info WHERE Nombre='" + txtUser.Text + "', Apellido='" + txtPass.Text + "'", connection);
+                command = new OleDbCommand("SELECT Nombre, Apellido, Rol FROM info WHERE Nombre='" + txtUser.Text + "' AND Apellido='" + txtPass.Text + "'", connection);
                 OleDbDataReader Reader = command.ExecuteReader();
 
                 int i = 0;
@@ -86,19 +86,26 @@ namespace Tweak_it
                 while (Reader.Read())
                 {
                     ROL = Reader.GetString(2);
+                    MessageBox.Show("Bienvenido, " + Reader.GetString(0));
                     i++;
+                    
+                    if (ROL == "Admin")
+                    {
+                        MessageBox.Show("Has ingresado correctamente " + Reader.GetString(0));
+                    }
+                    else if (ROL == "Estudiante")
+                    {
+                        MessageBox.Show("Este usuario no tiene acceso a la seccion Profesor");
+                    }
+                    else if (i == 0)
+                    {
+                        MessageBox.Show("Usuario incorrecto o contraseña incorrecta");
+                    }
                 }
-
-                if(ROL == "Admin")
-                {
-                    MessageBox.Show("Has ingresado correctamente " + Reader.GetString(0));
-                }
-                else if (ROL == "Estudiante")
-                {
-                    MessageBox.Show("Este usuario no tiene acceso a la seccion Profesor");
-                }
+                connection.Close();
 
             }
+                    
         }
     }
 }
