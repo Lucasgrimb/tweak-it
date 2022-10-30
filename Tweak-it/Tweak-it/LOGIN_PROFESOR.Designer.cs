@@ -32,7 +32,9 @@ namespace Tweak_it
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUser
@@ -41,8 +43,7 @@ namespace Tweak_it
             this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.txtUser.ForeColor = System.Drawing.Color.DimGray;
-            this.txtUser.HideSelection = false;
-            this.txtUser.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.txtUser.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtUser.Location = new System.Drawing.Point(737, 458);
             this.txtUser.Multiline = true;
             this.txtUser.Name = "txtUser";
@@ -60,8 +61,7 @@ namespace Tweak_it
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.txtPass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPass.HideSelection = false;
-            this.txtPass.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.txtPass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtPass.Location = new System.Drawing.Point(737, 623);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
@@ -84,6 +84,17 @@ namespace Tweak_it
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Tweak_it.Properties.Resources.Frame_1__17_;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(1725, 82);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
             // LOGIN_PROFESOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,14 +103,17 @@ namespace Tweak_it
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LOGIN_PROFESOR";
             this.Text = "Crear_Usuario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LOGIN_PROFESOR_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,5 +124,6 @@ namespace Tweak_it
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

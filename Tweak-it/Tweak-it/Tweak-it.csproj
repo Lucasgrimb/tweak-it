@@ -90,6 +90,12 @@
     <Compile Include="CrearProfesor.Designer.cs">
       <DependentUpon>CrearProfesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Informacion_Alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion_Alumnos.Designer.cs">
+      <DependentUpon>Informacion_Alumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="LOGIN_PROFESOR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CrearProfesor.resx">
       <DependentUpon>CrearProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion_Alumnos.resx">
+      <DependentUpon>Informacion_Alumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN_PROFESOR.resx">
       <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
@@ -648,6 +657,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo y texto crear Profesor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo  y texto informacion de alumnos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mostrar informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frame 1 %2817%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

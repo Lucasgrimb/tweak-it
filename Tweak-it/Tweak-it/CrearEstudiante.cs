@@ -93,5 +93,10 @@ namespace Tweak_it
                 lg.Show();
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

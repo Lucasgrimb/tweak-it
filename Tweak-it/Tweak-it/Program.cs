@@ -18,7 +18,7 @@ namespace Tweak_it
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LOGIN_PROFESOR());
            
-    }
+        }
 
     }
 }

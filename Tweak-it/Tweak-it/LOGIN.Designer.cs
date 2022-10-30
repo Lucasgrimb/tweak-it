@@ -35,7 +35,9 @@ namespace Tweak_it
             this.btnTriste = new System.Windows.Forms.Button();
             this.btnEnojado = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -44,9 +46,8 @@ namespace Tweak_it
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombre.HideSelection = false;
-            this.txtNombre.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.txtNombre.Location = new System.Drawing.Point(837, 297);
+            this.txtNombre.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtNombre.Location = new System.Drawing.Point(837, 304);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(303, 39);
@@ -62,8 +63,8 @@ namespace Tweak_it
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.txtApellido.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.txtApellido.Location = new System.Drawing.Point(837, 358);
+            this.txtApellido.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtApellido.Location = new System.Drawing.Point(837, 362);
             this.txtApellido.Multiline = true;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(303, 39);
@@ -119,19 +120,32 @@ namespace Tweak_it
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Tweak_it.Properties.Resources.Profesor_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(1650, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(1651, 261);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 140);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Tweak_it.Properties.Resources.Frame_1__17_;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(1725, 82);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos1;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnEnojado);
             this.Controls.Add(this.btnTriste);
@@ -145,6 +159,7 @@ namespace Tweak_it
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +173,6 @@ namespace Tweak_it
         private System.Windows.Forms.Button btnTriste;
         private System.Windows.Forms.Button btnEnojado;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

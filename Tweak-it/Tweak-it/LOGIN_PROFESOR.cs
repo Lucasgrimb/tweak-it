@@ -14,7 +14,6 @@ namespace Tweak_it
     public partial class LOGIN_PROFESOR : Form
     {
         OleDbConnection connection = new OleDbConnection();
-        OleDbCommand command;
 
         public static String ROL;
         public LOGIN_PROFESOR()
@@ -71,14 +70,16 @@ namespace Tweak_it
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if(txtUser.Text == "" || txtPass.Text == "")
+            if (txtUser.Text == "" || txtPass.Text == "")
             {
                 MessageBox.Show("Completa los campos");
             }
-            else 
+            else
             {
                 connection.Open();
-                command = new OleDbCommand("SELECT Nombre, Apellido, Rol FROM info WHERE Nombre='" + txtUser.Text + "' AND Apellido='" + txtPass.Text + "'", connection);
+                OleDbCommand command = new OleDbCommand();
+                command.CommandText = "SELECT Nombre, Apellido, Rol FROM info WHERE Nombre='" + txtUser.Text + "' AND Apellido='" + txtPass.Text + "'";
+                command.Connection = connection;
                 OleDbDataReader Reader = command.ExecuteReader();
 
                 int i = 0;
@@ -88,24 +89,14 @@ namespace Tweak_it
                     ROL = Reader.GetString(2);
                     MessageBox.Show("Bienvenido, " + Reader.GetString(0));
                     i++;
-                    
-                    if (ROL == "Admin")
-                    {
-                        MessageBox.Show("Has ingresado correctamente " + Reader.GetString(0));
-                    }
-                    else if (ROL == "Estudiante")
-                    {
-                        MessageBox.Show("Este usuario no tiene acceso a la seccion Profesor");
-                    }
-                    else if (i == 0)
-                    {
-                        MessageBox.Show("Usuario incorrecto o contraseña incorrecta");
-                    }
                 }
                 connection.Close();
 
             }
-                    
+
         }
+
+        
+        
     }
 }
