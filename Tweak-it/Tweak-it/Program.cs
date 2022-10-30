@@ -16,7 +16,7 @@ namespace Tweak_it
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CrearProfesor());
+            Application.Run(new LOGIN());
            
         }
 

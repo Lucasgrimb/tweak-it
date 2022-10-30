@@ -98,5 +98,10 @@ namespace Tweak_it
         {
             Application.Exit();
         }
+
+        private void CrearEstudiante_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

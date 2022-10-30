@@ -31,28 +31,25 @@ namespace Tweak_it
         {
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.btnAlegre = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnContento = new System.Windows.Forms.Button();
             this.btnTriste = new System.Windows.Forms.Button();
             this.btnEnojado = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.Silver;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombre.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtNombre.Location = new System.Drawing.Point(837, 304);
+            this.txtNombre.Location = new System.Drawing.Point(841, 302);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(303, 39);
+            this.txtNombre.Size = new System.Drawing.Size(303, 36);
             this.txtNombre.TabIndex = 0;
-            this.txtNombre.Text = "\r\nNOMBRE";
+            this.txtNombre.Text = "NOMBRE";
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
@@ -61,105 +58,106 @@ namespace Tweak_it
             // 
             this.txtApellido.BackColor = System.Drawing.Color.Silver;
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.txtApellido.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtApellido.Location = new System.Drawing.Point(837, 362);
+            this.txtApellido.Location = new System.Drawing.Point(841, 365);
             this.txtApellido.Multiline = true;
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(303, 39);
+            this.txtApellido.Size = new System.Drawing.Size(303, 36);
             this.txtApellido.TabIndex = 1;
-            this.txtApellido.Text = "\r\nAPELLIDO";
+            this.txtApellido.Text = "APELLIDO";
             this.txtApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtApellido.Enter += new System.EventHandler(this.txtApellido_Enter);
+            this.txtApellido.Enter += new System.EventHandler(this.textBox1_Enter);
             this.txtApellido.Leave += new System.EventHandler(this.txtApellido_Leave);
             // 
-            // btnAlegre
+            // button1
             // 
-            this.btnAlegre.BackColor = System.Drawing.Color.Transparent;
-            this.btnAlegre.BackgroundImage = global::Tweak_it.Properties.Resources.Chico_exprecion_contento1;
-            this.btnAlegre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlegre.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnAlegre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlegre.Location = new System.Drawing.Point(420, 549);
-            this.btnAlegre.Name = "btnAlegre";
-            this.btnAlegre.Size = new System.Drawing.Size(350, 350);
-            this.btnAlegre.TabIndex = 2;
-            this.btnAlegre.UseVisualStyleBackColor = false;
-            this.btnAlegre.Click += new System.EventHandler(this.btnAlegre_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Tweak_it.Properties.Resources.Frame_1__17_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1725, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 53);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::Tweak_it.Properties.Resources.Profesor_removebg_preview;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(1575, 253);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 181);
+            this.button2.TabIndex = 3;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnContento
+            // 
+            this.btnContento.BackColor = System.Drawing.Color.Transparent;
+            this.btnContento.BackgroundImage = global::Tweak_it.Properties.Resources.Chico_exprecion_contento;
+            this.btnContento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnContento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnContento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContento.Location = new System.Drawing.Point(448, 523);
+            this.btnContento.Name = "btnContento";
+            this.btnContento.Size = new System.Drawing.Size(310, 281);
+            this.btnContento.TabIndex = 4;
+            this.btnContento.UseVisualStyleBackColor = false;
+            this.btnContento.Click += new System.EventHandler(this.btnContento_Click);
             // 
             // btnTriste
             // 
             this.btnTriste.BackColor = System.Drawing.Color.Transparent;
-            this.btnTriste.BackgroundImage = global::Tweak_it.Properties.Resources.Chico_exprecion_triste1;
+            this.btnTriste.BackgroundImage = global::Tweak_it.Properties.Resources.Chico_exprecion_triste;
             this.btnTriste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTriste.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnTriste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTriste.Location = new System.Drawing.Point(813, 549);
+            this.btnTriste.Location = new System.Drawing.Point(829, 523);
             this.btnTriste.Name = "btnTriste";
-            this.btnTriste.Size = new System.Drawing.Size(350, 350);
-            this.btnTriste.TabIndex = 3;
+            this.btnTriste.Size = new System.Drawing.Size(310, 281);
+            this.btnTriste.TabIndex = 5;
             this.btnTriste.UseVisualStyleBackColor = false;
             this.btnTriste.Click += new System.EventHandler(this.btnTriste_Click);
             // 
             // btnEnojado
             // 
             this.btnEnojado.BackColor = System.Drawing.Color.Transparent;
-            this.btnEnojado.BackgroundImage = global::Tweak_it.Properties.Resources.Chico_exprecion_enojado1;
+            this.btnEnojado.BackgroundImage = global::Tweak_it.Properties.Resources.Chico_exprecion_enojado;
             this.btnEnojado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEnojado.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEnojado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnojado.Location = new System.Drawing.Point(1208, 549);
+            this.btnEnojado.Location = new System.Drawing.Point(1205, 523);
             this.btnEnojado.Name = "btnEnojado";
-            this.btnEnojado.Size = new System.Drawing.Size(350, 350);
-            this.btnEnojado.TabIndex = 4;
+            this.btnEnojado.Size = new System.Drawing.Size(310, 281);
+            this.btnEnojado.TabIndex = 6;
             this.btnEnojado.UseVisualStyleBackColor = false;
             this.btnEnojado.Click += new System.EventHandler(this.btnEnojado_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Tweak_it.Properties.Resources.Profesor_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(1651, 261);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 140);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::Tweak_it.Properties.Resources.Frame_1__17_;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1725, 82);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 50);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos1;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos_login;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnEnojado);
             this.Controls.Add(this.btnTriste);
-            this.Controls.Add(this.btnAlegre);
+            this.Controls.Add(this.btnContento);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Enabled = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LOGIN";
+            this.Text = "LOGIN";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LOGIN_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,10 +167,10 @@ namespace Tweak_it
 
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.Button btnAlegre;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnContento;
         private System.Windows.Forms.Button btnTriste;
         private System.Windows.Forms.Button btnEnojado;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

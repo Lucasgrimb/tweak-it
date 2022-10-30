@@ -131,6 +131,7 @@ namespace Tweak_it
             this.Name = "CrearEstudiante";
             this.Text = "CrearEstudiante";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CrearEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

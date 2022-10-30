@@ -563,6 +563,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___textos_login {
+            get {
+                object obj = ResourceManager.GetObject("fondo + textos login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___textos1 {
             get {
                 object obj = ResourceManager.GetObject("fondo + textos1", resourceCulture);
@@ -666,6 +676,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Frame_1__17_1 {
             get {
                 object obj = ResourceManager.GetObject("Frame 1 (17)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Frame_1__17_2 {
+            get {
+                object obj = ResourceManager.GetObject("Frame 1 (17)2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1166,6 +1186,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Vector_1 {
             get {
                 object obj = ResourceManager.GetObject("Vector 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Vector_11 {
+            get {
+                object obj = ResourceManager.GetObject("Vector 11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
