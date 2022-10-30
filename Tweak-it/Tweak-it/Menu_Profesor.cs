@@ -16,5 +16,19 @@ namespace Tweak_it
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            this.Hide();
+            f1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            this.Hide();
+            f1.Show();
+        }
     }
 }

@@ -102,12 +102,6 @@
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOGIN_PROFESOR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LOGIN_PROFESOR.Designer.cs">
-      <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +186,12 @@
     <Compile Include="juego3n1.Designer.cs">
       <DependentUpon>juego3n1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LOGIN_PROFESOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_PROFESOR.Designer.cs">
+      <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuCrearUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,9 +217,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN_PROFESOR.resx">
-      <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -262,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="juego3n1.resx">
       <DependentUpon>juego3n1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_PROFESOR.resx">
+      <DependentUpon>LOGIN_PROFESOR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuCrearUsuarios.resx">
       <DependentUpon>MenuCrearUsuarios.cs</DependentUpon>
@@ -684,6 +684,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondo + textos login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + texto login profesores.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

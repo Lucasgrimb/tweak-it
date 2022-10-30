@@ -543,6 +543,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___texto_login_profesores {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto login profesores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___texto1 {
             get {
                 object obj = ResourceManager.GetObject("fondo + texto1", resourceCulture);

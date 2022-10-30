@@ -13,98 +13,107 @@ namespace Tweak_it
 {
     public partial class LOGIN_PROFESOR : Form
     {
-        OleDbConnection connection = new OleDbConnection();
+        OleDbConnection connection;
 
-        public static String ROL;
+        string Rol;
         public LOGIN_PROFESOR()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
         }
-        private void txtUser_Enter(object sender, EventArgs e)
-        {
-            if(txtUser.Text == "USUARIO")
-            {
-                txtUser.Text = "";
-                txtUser.ForeColor = Color.DimGray;
-            }
-        }
-        
-        private void txtUser_Leave(object sender, EventArgs e)
-        {
-            if(txtUser.Text == "")
-            {
-                txtUser.Text = "USUARIO";
-                txtUser.ForeColor = Color.DimGray;
-            }
-        }
-        
 
-        private void txtPass_Enter(object sender, EventArgs e)
+        private void txtUsuario_Enter(object sender, EventArgs e)
         {
-            if (txtPass.Text == "CONTRASEÑA")
+            if (txtUsuario.Text == "USUARIO")
             {
-                txtPass.Text = "";
-                txtPass.ForeColor = Color.DimGray;
+                txtUsuario.Text = "";
             }
         }
 
-        private void txtPass_Leave(object sender, EventArgs e)
+        private void txtUsuario_Leave(object sender, EventArgs e)
         {
-            if(txtPass.Text == "")
+            if(txtUsuario.Text == "")
             {
-                txtPass.Text = "CONTRASEÑA";
-                txtPass.ForeColor = Color.DimGray;
+                txtUsuario.Text = "USUARIO";
             }
         }
 
-        private void txtUser_TextChanged(object sender, EventArgs e)
+        private void txtContraseña_Enter(object sender, EventArgs e)
         {
-
+            if(txtContraseña.Text == "CONTRASEÑA")
+            {
+                txtContraseña.Text = "";
+            }
         }
 
-        private void LOGIN_PROFESOR_Load(object sender, EventArgs e)
+        private void txtContraseña_Leave(object sender, EventArgs e)
         {
-
+            if(txtContraseña.Text == "")
+            {
+                txtContraseña.Text = "CONTRASEÑA";
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             LOGIN lg = new LOGIN();
             this.Hide();
             lg.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "" || txtPass.Text == "")
+            if(txtUsuario.Text == "" || txtContraseña.Text == "")
             {
                 MessageBox.Show("Completa los campos");
             }
             else
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
-                command.CommandText = "SELECT Nombre, Apellido, Rol FROM info WHERE Nombre='" + txtUser.Text + "' AND Apellido='" + txtPass.Text + "'";
-                command.Connection = connection;
-                OleDbDataReader Reader = command.ExecuteReader();
+                OleDbCommand query = new OleDbCommand("SELECT Nombre, Apellido, Rol FROM info WHERE Nombre='" + txtUsuario.Text + "' AND Apellido='" + txtContraseña.Text + "'", connection);
+                string dato = Convert.ToString(query);
+
+                OleDbDataReader Reader = query.ExecuteReader();
 
                 int i = 0;
 
                 while (Reader.Read())
                 {
-                    ROL = Reader.GetString(2);
-                    MessageBox.Show("Bienvenido, " + Reader.GetString(0));
+                    Rol = Reader.GetString(2);
                     i++;
-                }
-                connection.Close();
 
+                    if(Rol == "Admin")
+                    {
+                        MessageBox.Show("Has ingresado correctamente, " + Reader.GetString(0));
+                        Menu_Profesor mp = new Menu_Profesor();
+                        this.Hide();
+                        mp.Show();
+                    }
+                    else if(Rol == "Estudiante")
+                    {
+                        MessageBox.Show("Este usuario no tiene acceso a la seccion de Profesores");
+                    }
+                }
+
+                if (i == 0)
+                {
+                    MessageBox.Show("El usuario o la contraseña son incorrectas");
+                    txtUsuario.Text = "USUARIO";
+                    txtContraseña.Text = "CONTRASEÑA";
+                }
+
+                connection.Close();
             }
+        }
+
+        private void LOGIN_PROFESOR_Load(object sender, EventArgs e)
+        {
+            connection = new OleDbConnection();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
         }
     }
 }
