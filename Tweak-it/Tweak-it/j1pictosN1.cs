@@ -78,6 +78,7 @@ namespace Tweak_it
             {
                 randomizarImages();
                 nivel++;
+                variablescomp.puntos++;
             }
             else
             {
