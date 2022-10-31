@@ -688,5 +688,8 @@
   <ItemGroup>
     <None Include="Resources\fondo + texto login profesores.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto crear alumno1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
