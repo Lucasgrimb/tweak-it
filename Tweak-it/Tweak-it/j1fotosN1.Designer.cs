@@ -67,7 +67,7 @@
             // 
             this.pB3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pB3.BackColor = System.Drawing.Color.Transparent;
-            this.pB3.Location = new System.Drawing.Point(1912, 1088);
+            this.pB3.Location = new System.Drawing.Point(1497, 713);
             this.pB3.Margin = new System.Windows.Forms.Padding(6);
             this.pB3.Name = "pB3";
             this.pB3.Size = new System.Drawing.Size(410, 483);
@@ -80,10 +80,10 @@
             // pB4
             // 
             this.pB4.BackColor = System.Drawing.Color.Transparent;
-            this.pB4.Location = new System.Drawing.Point(1159, 176);
+            this.pB4.Location = new System.Drawing.Point(797, 26);
             this.pB4.Margin = new System.Windows.Forms.Padding(6);
             this.pB4.Name = "pB4";
-            this.pB4.Size = new System.Drawing.Size(407, 483);
+            this.pB4.Size = new System.Drawing.Size(347, 423);
             this.pB4.TabIndex = 4;
             this.pB4.TabStop = false;
             this.pB4.Click += new System.EventHandler(this.pB4_Click);
@@ -126,7 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.Final1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(2724, 1759);
+            this.ClientSize = new System.Drawing.Size(1894, 1009);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.pB4);
