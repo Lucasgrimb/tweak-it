@@ -19,16 +19,28 @@ namespace Tweak_it
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            Informacion_Alumnos  ia = new Informacion_Alumnos();
             this.Hide();
-            f1.Show();
+            ia.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
+            MenuCrearUsuarios f1 = new MenuCrearUsuarios();
             this.Hide();
             f1.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LOGIN_PROFESOR lp = new LOGIN_PROFESOR();
+            this.Hide();
+            lp.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -13,69 +13,117 @@ namespace Tweak_it
 {
     public partial class CrearEstudiante : Form
     {
-        OleDbConnection connection = new OleDbConnection();
-        OleDbCommand command = new OleDbCommand();
+        OleDbConnection connection;
         public CrearEstudiante()
         {
             InitializeComponent();
+        }
+
+        private void CrearEstudiantes_Load(object sender, EventArgs e)
+        {
+            connection = new OleDbConnection();
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
         }
 
-        private void txtUser_Enter(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text == "NOMBRE")
-            {
-                txtNombre.Text = "";
-                txtNombre.ForeColor = Color.DimGray;
-            }
+            Application.Exit();
         }
 
-        private void txtUser_Leave(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text == "")
-            {
-                txtNombre.Text = "NOMBRE";
-                txtNombre.ForeColor = Color.DimGray;
-            }
+            MenuCrearUsuarios mcu = new MenuCrearUsuarios();
+            this.Hide();
+            mcu.Show();
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
-        {
-            if (txtApellido.Text == "APELLIDO")
-            {
-                txtApellido.Text = "";
-                txtApellido.ForeColor = Color.DimGray;
-            }
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            if(txtApellido.Text == "")
-            {
-                txtApellido.Text = "APELLIDO";
-                txtApellido.ForeColor = Color.DimGray;
-            }
-        }
-
-        private void textBox2_Enter(object sender, EventArgs e)
+        private void txtEdad_Enter(object sender, EventArgs e)
         {
             if(txtEdad.Text == "EDAD")
             {
                 txtEdad.Text = "";
-                txtEdad.ForeColor = Color.DimGray;
             }
         }
 
-        private void textBox2_Leave(object sender, EventArgs e)
+        private void txtEdad_Leave(object sender, EventArgs e)
         {
             if(txtEdad.Text == "")
             {
                 txtEdad.Text = "EDAD";
-                txtEdad.ForeColor = Color.DimGray;
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "" || txtApellido.Text == "" || txtEdad.Text == "")
+            {
+                MessageBox.Show("Completa los campos");
+            }
+            else
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO info (Nombre, Apellido, Rol) VALUES ('" + txtNombre.Text + "', '" + txtApellido.Text + "','"+txtEdad.Text+"', '" + "Estudiante" + "')";
+                command.ExecuteNonQuery();
+                MessageBox.Show("El usuario del alumno ha sido creado correctamente");
+                connection.Close();
+
+                Menu_Profesor mp = new Menu_Profesor();
+                this.Hide();
+                mp.Show();
+            }
+        }
+
+        private void txtNombre_Enter_1(object sender, EventArgs e)
+        {
+            if(txtNombre.Text == "NOMBRE")
+            {
+                txtNombre.Text = "";
+            }
+        }
+
+        private void txtNombre_Leave_1(object sender, EventArgs e)
+        {
+            if(txtNombre.Text == "")
+            {
+                txtNombre.Text = "NOMBRE";
+            }
+        }
+
+        private void txtApellido_Enter_1(object sender, EventArgs e)
+        {
+            if(txtApellido.Text == "APELLIDO")
+            {
+                txtApellido.Text = "";
+            }
+        }
+
+        private void txtApellido_Leave_1(object sender, EventArgs e)
+        {
+            if(txtApellido.Text == "")
+            {
+                txtApellido.Text = "APELLIDO";
+            }
+        }
+
+        private void txtEdad_Enter_1(object sender, EventArgs e)
+        {
+            if(txtEdad.Text == "EDAD")
+            {
+                txtEdad.Text = "";
+            }
+        }
+
+        private void txtEdad_Leave_1(object sender, EventArgs e)
+        {
+            if(txtEdad.Text == "")
+            {
+                txtEdad.Text = "EDAD";
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
             if(txtNombre.Text == "" || txtApellido.Text == "" || txtEdad.Text == "")
             {
@@ -84,24 +132,17 @@ namespace Tweak_it
             else
             {
                 connection.Open();
+                OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
-                command.CommandText = "INSERT INTO info (Nombre, Apellido, Edad, Rol) VALUES ('" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtEdad + "', '" + "Estudiante" + "')";
+                command.CommandText = "INSERT INTO info (Nombre, Apellido, Edad, Rol) VALUES ('" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtEdad.Text + "', '" + "Estudiante" + "')";
                 command.ExecuteNonQuery();
-                MessageBox.Show("La cuenta del Alumno ha sido creada correctamente, ahora inicie sesión");
-                LOGIN lg = new LOGIN();
+                MessageBox.Show("El usuario del alumno ha sido creado correctamente");
+                connection.Close();
+
+                MenuCrearUsuarios mcu = new MenuCrearUsuarios();
                 this.Hide();
-                lg.Show();
+                mcu.Show();
             }
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void CrearEstudiante_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

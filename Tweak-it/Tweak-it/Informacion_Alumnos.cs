@@ -52,5 +52,17 @@ namespace Tweak_it
                 txtApellido.ForeColor = Color.DimGray;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Menu_Profesor mp = new Menu_Profesor();
+            this.Hide();
+            mp.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
