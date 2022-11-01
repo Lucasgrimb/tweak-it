@@ -35,7 +35,8 @@
             this.pB5 = new System.Windows.Forms.PictureBox();
             this.pB6 = new System.Windows.Forms.PictureBox();
             this.pB7 = new System.Windows.Forms.PictureBox();
-            this.btnN1 = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
@@ -47,83 +48,121 @@
             // 
             // pB1
             // 
-            this.pB1.Location = new System.Drawing.Point(435, 12);
+            this.pB1.BackColor = System.Drawing.Color.Transparent;
+            this.pB1.Location = new System.Drawing.Point(818, 151);
+            this.pB1.Margin = new System.Windows.Forms.Padding(2);
             this.pB1.Name = "pB1";
-            this.pB1.Size = new System.Drawing.Size(247, 191);
+            this.pB1.Size = new System.Drawing.Size(253, 228);
             this.pB1.TabIndex = 0;
             this.pB1.TabStop = false;
             this.pB1.Click += new System.EventHandler(this.pB1_Click);
             // 
             // pB2
             // 
-            this.pB2.Location = new System.Drawing.Point(88, 224);
+            this.pB2.BackColor = System.Drawing.Color.Transparent;
+            this.pB2.Location = new System.Drawing.Point(478, 522);
+            this.pB2.Margin = new System.Windows.Forms.Padding(2);
             this.pB2.Name = "pB2";
-            this.pB2.Size = new System.Drawing.Size(212, 172);
+            this.pB2.Size = new System.Drawing.Size(253, 228);
             this.pB2.TabIndex = 1;
             this.pB2.TabStop = false;
             this.pB2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pB3
             // 
-            this.pB3.Location = new System.Drawing.Point(451, 224);
+            this.pB3.BackColor = System.Drawing.Color.Transparent;
+            this.pB3.Location = new System.Drawing.Point(818, 522);
+            this.pB3.Margin = new System.Windows.Forms.Padding(2);
             this.pB3.Name = "pB3";
-            this.pB3.Size = new System.Drawing.Size(212, 172);
+            this.pB3.Size = new System.Drawing.Size(253, 228);
             this.pB3.TabIndex = 2;
             this.pB3.TabStop = false;
             this.pB3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pB4
             // 
-            this.pB4.Location = new System.Drawing.Point(833, 224);
+            this.pB4.BackColor = System.Drawing.Color.Transparent;
+            this.pB4.Location = new System.Drawing.Point(1155, 522);
+            this.pB4.Margin = new System.Windows.Forms.Padding(2);
             this.pB4.Name = "pB4";
-            this.pB4.Size = new System.Drawing.Size(212, 172);
+            this.pB4.Size = new System.Drawing.Size(253, 228);
             this.pB4.TabIndex = 3;
             this.pB4.TabStop = false;
             this.pB4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pB5
             // 
-            this.pB5.Location = new System.Drawing.Point(88, 433);
+            this.pB5.BackColor = System.Drawing.Color.Transparent;
+            this.pB5.Location = new System.Drawing.Point(478, 763);
+            this.pB5.Margin = new System.Windows.Forms.Padding(2);
             this.pB5.Name = "pB5";
-            this.pB5.Size = new System.Drawing.Size(212, 172);
+            this.pB5.Size = new System.Drawing.Size(253, 228);
             this.pB5.TabIndex = 4;
             this.pB5.TabStop = false;
             this.pB5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pB6
             // 
-            this.pB6.Location = new System.Drawing.Point(451, 433);
+            this.pB6.BackColor = System.Drawing.Color.Transparent;
+            this.pB6.Location = new System.Drawing.Point(818, 763);
+            this.pB6.Margin = new System.Windows.Forms.Padding(2);
             this.pB6.Name = "pB6";
-            this.pB6.Size = new System.Drawing.Size(212, 172);
+            this.pB6.Size = new System.Drawing.Size(253, 228);
             this.pB6.TabIndex = 5;
             this.pB6.TabStop = false;
             this.pB6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pB7
             // 
-            this.pB7.Location = new System.Drawing.Point(833, 433);
+            this.pB7.BackColor = System.Drawing.Color.Transparent;
+            this.pB7.Location = new System.Drawing.Point(1155, 763);
+            this.pB7.Margin = new System.Windows.Forms.Padding(2);
             this.pB7.Name = "pB7";
-            this.pB7.Size = new System.Drawing.Size(212, 172);
+            this.pB7.Size = new System.Drawing.Size(253, 228);
             this.pB7.TabIndex = 6;
             this.pB7.TabStop = false;
             this.pB7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // btnN1
+            // btnAtras
             // 
-            this.btnN1.Location = new System.Drawing.Point(97, 48);
-            this.btnN1.Name = "btnN1";
-            this.btnN1.Size = new System.Drawing.Size(89, 70);
-            this.btnN1.TabIndex = 7;
-            this.btnN1.Text = "nivel 1";
-            this.btnN1.UseVisualStyleBackColor = true;
-            this.btnN1.Click += new System.EventHandler(this.btnN1_Click);
+            this.btnAtras.BackColor = System.Drawing.Color.Transparent;
+            this.btnAtras.BackgroundImage = global::Tweak_it.Properties.Resources.Vector_1;
+            this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAtras.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Location = new System.Drawing.Point(149, 101);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(122, 68);
+            this.btnAtras.TabIndex = 7;
+            this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.UseWaitCursor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Tweak_it.Properties.Resources.Frame_1__17_;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1725, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 53);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // j1pictosN2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 632);
-            this.Controls.Add(this.btnN1);
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto_n1_pictos1;
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pB7);
             this.Controls.Add(this.pB6);
             this.Controls.Add(this.pB5);
@@ -131,8 +170,11 @@
             this.Controls.Add(this.pB3);
             this.Controls.Add(this.pB2);
             this.Controls.Add(this.pB1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "j1pictosN2";
             this.Text = "j1dibujos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.j1dibujos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).EndInit();
@@ -154,6 +196,7 @@
         private System.Windows.Forms.PictureBox pB5;
         private System.Windows.Forms.PictureBox pB6;
         private System.Windows.Forms.PictureBox pB7;
-        private System.Windows.Forms.Button btnN1;
+        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Button button1;
     }
 }

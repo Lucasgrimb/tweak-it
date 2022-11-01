@@ -16,7 +16,13 @@ namespace Tweak_it
         OleDbConnection connection;
         OleDbCommand command;
 
+        public static String name;
+        public static String lastname;
+
         public static int ID;
+
+        public static DateTime TiempoInicio = DateTime.Now;
+
         string C = "CONTENTO";
         string T = "TRISTE";
         string E = "ENOJADO";
@@ -89,6 +95,8 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Bienvenido. " + Reader.GetString(0));
                     ID = Reader.GetInt32(2);
+                    name = txtNombre.Text;
+                    lastname = txtApellido.Text;
                     i++;
 
                     Form1 f1 = new Form1();

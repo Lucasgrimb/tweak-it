@@ -691,5 +691,47 @@
   <ItemGroup>
     <None Include="Resources\Fondo y texto crear alumno1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + texto n1 pictos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + texto n1 pictos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo y texto eleccion de jeugo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato personaje 2 %28modi1%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MONO PERSONAJE PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAJARO PERSONAJE %28SIN FONDO%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAJARO PERSONAJE %28SIN FONDO%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo y texto eleccion de nivel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato personaje 2 %28modi1%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nivel 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nivel 3 p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nivel 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nivel 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + texto n1 pictos2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

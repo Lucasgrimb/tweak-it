@@ -14,6 +14,7 @@ namespace Tweak_it
     public partial class j1pictosN1 : Form
     {
         OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command;
 
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List<Image> posiblesEmociones = new List<Image>();
@@ -96,6 +97,18 @@ namespace Tweak_it
             checkResult(pB2);
            if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
                 this.Hide();    
@@ -107,6 +120,17 @@ namespace Tweak_it
             checkResult(pB3);
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
 
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
@@ -119,6 +143,18 @@ namespace Tweak_it
             checkResult(pB4);
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
                 this.Hide();
@@ -127,10 +163,25 @@ namespace Tweak_it
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-
-            juego1 j1 = new juego1();
+            eleccionNivelPictos j1 = new eleccionNivelPictos();
             j1.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            nivel = nivel + puntos;
+
+            command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+            OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla="+TF+ " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+            command.ExecuteNonQuery();
+            command2.ExecuteNonQuery();
+            connection.Close();
+            Application.Exit();
         }
     }
 }

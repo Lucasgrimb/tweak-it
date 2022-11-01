@@ -115,7 +115,7 @@ namespace Tweak_it
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            juego1 j1 = new juego1();
+            eleccionNivelPictos j1 = new eleccionNivelPictos();
             j1.Show();
             this.Hide();
         }
