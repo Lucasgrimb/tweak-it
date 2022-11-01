@@ -17,7 +17,7 @@ namespace Tweak_it
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new j1pictosN1());
+            Application.Run(new Informacion_Alumnos());
            
         }
       

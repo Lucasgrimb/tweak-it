@@ -37,6 +37,8 @@ namespace Tweak_it
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPuntos
@@ -44,7 +46,7 @@ namespace Tweak_it
             this.lblPuntos.AutoSize = true;
             this.lblPuntos.BackColor = System.Drawing.Color.Transparent;
             this.lblPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblPuntos.Location = new System.Drawing.Point(784, 647);
+            this.lblPuntos.Location = new System.Drawing.Point(784, 650);
             this.lblPuntos.Name = "lblPuntos";
             this.lblPuntos.Size = new System.Drawing.Size(136, 31);
             this.lblPuntos.TabIndex = 5;
@@ -55,7 +57,7 @@ namespace Tweak_it
             this.lblTmpEnPntlla.AutoSize = true;
             this.lblTmpEnPntlla.BackColor = System.Drawing.Color.Transparent;
             this.lblTmpEnPntlla.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblTmpEnPntlla.Location = new System.Drawing.Point(784, 717);
+            this.lblTmpEnPntlla.Location = new System.Drawing.Point(784, 716);
             this.lblTmpEnPntlla.Name = "lblTmpEnPntlla";
             this.lblTmpEnPntlla.Size = new System.Drawing.Size(317, 31);
             this.lblTmpEnPntlla.TabIndex = 6;
@@ -66,7 +68,7 @@ namespace Tweak_it
             this.lblAlegre.AutoSize = true;
             this.lblAlegre.BackColor = System.Drawing.Color.Transparent;
             this.lblAlegre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblAlegre.Location = new System.Drawing.Point(750, 795);
+            this.lblAlegre.Location = new System.Drawing.Point(757, 781);
             this.lblAlegre.Name = "lblAlegre";
             this.lblAlegre.Size = new System.Drawing.Size(385, 31);
             this.lblAlegre.TabIndex = 7;
@@ -137,13 +139,34 @@ namespace Tweak_it
             this.btnMostrar.BackColor = System.Drawing.Color.Transparent;
             this.btnMostrar.BackgroundImage = global::Tweak_it.Properties.Resources.Mostrar_informacion;
             this.btnMostrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrar.Location = new System.Drawing.Point(786, 472);
+            this.btnMostrar.Location = new System.Drawing.Point(790, 477);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(331, 106);
             this.btnMostrar.TabIndex = 13;
             this.btnMostrar.UseVisualStyleBackColor = false;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lbl2.Location = new System.Drawing.Point(757, 842);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(0, 31);
+            this.lbl2.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.Location = new System.Drawing.Point(757, 911);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 31);
+            this.label1.TabIndex = 15;
             // 
             // Informacion_Alumnos
             // 
@@ -151,6 +174,8 @@ namespace Tweak_it
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.Fondo__y_texto_informacion_de_alumnos;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl2);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
@@ -177,5 +202,7 @@ namespace Tweak_it
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label label1;
     }
 }

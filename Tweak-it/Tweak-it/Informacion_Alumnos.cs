@@ -94,6 +94,8 @@ namespace Tweak_it
             lblPuntos.Text = puntos +" "+ "PUNTOS TOTALES";
             lblTmpEnPntlla.Text = tiempo +" "+ "MINUTOS JUGADOS";
             lblAlegre.Text = "ESTUVO " + EmocionesRecibidas[1] + " "+ "EL " + " " + FechasRecbidas[1];
+            lbl2.Text = "ESTUVO " + EmocionesRecibidas[2] + " " + "EL " + " " + FechasRecbidas[2];
+            label1.Text = "ESTUVO " + EmocionesRecibidas[3] + " " + "EL " + " " + FechasRecbidas[3];
             connection.Close();
         }
 
