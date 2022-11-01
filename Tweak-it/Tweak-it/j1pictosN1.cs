@@ -14,7 +14,7 @@ namespace Tweak_it
     public partial class j1pictosN1 : Form
     {
         OleDbConnection connection = new OleDbConnection();
-        OleDbCommand command;
+        OleDbCommand command = new OleDbCommand();
 
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List<Image> posiblesEmociones = new List<Image>();
@@ -175,11 +175,9 @@ namespace Tweak_it
             var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
             int TF = Convert.ToInt32(Tiempo);
             nivel = nivel + puntos;
-
-            command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
-            OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla="+TF+ " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES ("+nivel+", "+LOGIN.ID+")";
             command.ExecuteNonQuery();
-            command2.ExecuteNonQuery();
             connection.Close();
             Application.Exit();
         }

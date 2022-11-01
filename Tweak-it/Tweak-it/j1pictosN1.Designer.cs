@@ -43,7 +43,7 @@
             // pB1
             // 
             this.pB1.BackColor = System.Drawing.Color.Transparent;
-            this.pB1.Location = new System.Drawing.Point(808, 667);
+            this.pB1.Location = new System.Drawing.Point(824, 118);
             this.pB1.Margin = new System.Windows.Forms.Padding(2);
             this.pB1.Name = "pB1";
             this.pB1.Size = new System.Drawing.Size(296, 296);
@@ -67,7 +67,7 @@
             // pB3
             // 
             this.pB3.BackColor = System.Drawing.Color.Transparent;
-            this.pB3.Location = new System.Drawing.Point(808, 101);
+            this.pB3.Location = new System.Drawing.Point(824, 667);
             this.pB3.Margin = new System.Windows.Forms.Padding(2);
             this.pB3.Name = "pB3";
             this.pB3.Size = new System.Drawing.Size(296, 296);

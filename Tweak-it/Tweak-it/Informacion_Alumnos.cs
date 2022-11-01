@@ -16,7 +16,9 @@ namespace Tweak_it
         OleDbConnection connection = new OleDbConnection();
         int ID;
         int tiempo;
-        int puntos;
+
+        public static int puntos;
+
 
         public Informacion_Alumnos()
         {
@@ -77,22 +79,21 @@ namespace Tweak_it
 
 
             connection.Open();
-            OleDbCommand Puntos_Tiempo = new OleDbCommand("SELECT Puntos, TiempoEnPantalla FROM info WHERE Apellido= '" + txtApellido.Text + "' AND Id= " + ID + "", connection);
-            string dato3 = Convert.ToString(Puntos_Tiempo);
-            OleDbDataReader Reader3 = Puntos_Tiempo.ExecuteReader();
+            string Puntos_Tiempo = "SELECT SUM (Puntos) FROM puntos WHERE id_usuario= " + ID + "";
+            OleDbCommand cmd = new OleDbCommand(Puntos_Tiempo, connection);
+
+            OleDbDataReader Reader3 = cmd.ExecuteReader();
 
             int i3 = 0;
 
             while (Reader3.Read())
             {
-                puntos = Reader3.GetInt32(0);
-                tiempo = Reader3.GetInt32(1);
-
+                puntos = Convert.ToInt32(cmd.ExecuteScalar());
                 i3++;
             }
 
             lblPuntos.Text = puntos +" "+ "PUNTOS TOTALES";
-            lblTmpEnPntlla.Text = tiempo +" "+ "MINUTOS JUGADOS";
+            //lblTmpEnPntlla.Text = tiempo +" "+ "MINUTOS JUGADOS";
             lblAlegre.Text = "ESTUVO " + EmocionesRecibidas[1] + " "+ "EL " + " " + FechasRecbidas[1];
             lbl2.Text = "ESTUVO " + EmocionesRecibidas[2] + " " + "EL " + " " + FechasRecbidas[2];
             label1.Text = "ESTUVO " + EmocionesRecibidas[3] + " " + "EL " + " " + FechasRecbidas[3];
