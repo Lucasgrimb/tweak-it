@@ -26,6 +26,7 @@ namespace Tweak_it
 
         private void j1dibujos_Load(object sender, EventArgs e)
         {
+            MessageBox.Show(Convert.ToString(variablescomp.puntos));
             //agrego pBoxes al array 
             pictureBoxesArray[0] = pB2;
             pictureBoxesArray[1] = pB3;

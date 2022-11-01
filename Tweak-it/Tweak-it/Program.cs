@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace Tweak_it
 {
+
     static class Program
     {
         /// <summary>
@@ -16,9 +17,14 @@ namespace Tweak_it
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CrearProfesor());
+            Application.Run(new j1pictosN1());
            
         }
+      
 
+    }
+    public static class variablescomp
+    {
+        public static int puntos;
     }
 }
