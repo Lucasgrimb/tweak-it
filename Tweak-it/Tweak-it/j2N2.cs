@@ -77,7 +77,7 @@ namespace Tweak_it
             }
 
             // Agrego imagenes a las listas
-            pictos.Add(Tweak_it.Properties.Resources.nivelento);
+            pictos.Add(Tweak_it.Properties.Resources.Contento);
             pictos.Add(Tweak_it.Properties.Resources.Triste);
             pictos.Add(Tweak_it.Properties.Resources.Enojado);
             pictos.Add(Tweak_it.Properties.Resources.Asustado);
@@ -92,7 +92,7 @@ namespace Tweak_it
             pictos.Add(Tweak_it.Properties.Resources.Nervioso);
             pictos.Add(Tweak_it.Properties.Resources.Confundido);
 
-            dibujos.Add(Tweak_it.Properties.Resources.nivelentoD);
+            dibujos.Add(Tweak_it.Properties.Resources.ContentoD);
             dibujos.Add(Tweak_it.Properties.Resources.TristeD);
             dibujos.Add(Tweak_it.Properties.Resources.EnojadoD);
             dibujos.Add(Tweak_it.Properties.Resources.AsustadoD);
@@ -107,7 +107,7 @@ namespace Tweak_it
             dibujos.Add(Tweak_it.Properties.Resources.NerviosoD);
             dibujos.Add(Tweak_it.Properties.Resources.ConfundidoD);
 
-            fotos.Add(Tweak_it.Properties.Resources.nivelentoF);
+            fotos.Add(Tweak_it.Properties.Resources.ContentoF);
             fotos.Add(Tweak_it.Properties.Resources.TristeF);
             fotos.Add(Tweak_it.Properties.Resources.EnojadoF);
             fotos.Add(Tweak_it.Properties.Resources.AsustadoF);
