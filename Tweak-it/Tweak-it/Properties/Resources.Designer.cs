@@ -513,6 +513,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Final2 {
+            get {
+                object obj = ResourceManager.GetObject("Final2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap flecha_para_atras {
             get {
                 object obj = ResourceManager.GetObject("flecha_para_atras", resourceCulture);

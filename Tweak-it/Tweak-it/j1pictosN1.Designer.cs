@@ -43,10 +43,10 @@
             // pB1
             // 
             this.pB1.BackColor = System.Drawing.Color.Transparent;
-            this.pB1.Location = new System.Drawing.Point(818, 151);
+            this.pB1.Location = new System.Drawing.Point(808, 667);
             this.pB1.Margin = new System.Windows.Forms.Padding(2);
             this.pB1.Name = "pB1";
-            this.pB1.Size = new System.Drawing.Size(253, 228);
+            this.pB1.Size = new System.Drawing.Size(296, 296);
             this.pB1.TabIndex = 0;
             this.pB1.TabStop = false;
             this.pB1.UseWaitCursor = true;
@@ -55,10 +55,10 @@
             // pB2
             // 
             this.pB2.BackColor = System.Drawing.Color.Transparent;
-            this.pB2.Location = new System.Drawing.Point(430, 594);
+            this.pB2.Location = new System.Drawing.Point(281, 667);
             this.pB2.Margin = new System.Windows.Forms.Padding(2);
             this.pB2.Name = "pB2";
-            this.pB2.Size = new System.Drawing.Size(253, 228);
+            this.pB2.Size = new System.Drawing.Size(296, 296);
             this.pB2.TabIndex = 1;
             this.pB2.TabStop = false;
             this.pB2.UseWaitCursor = true;
@@ -67,10 +67,10 @@
             // pB3
             // 
             this.pB3.BackColor = System.Drawing.Color.Transparent;
-            this.pB3.Location = new System.Drawing.Point(1200, 594);
+            this.pB3.Location = new System.Drawing.Point(808, 101);
             this.pB3.Margin = new System.Windows.Forms.Padding(2);
             this.pB3.Name = "pB3";
-            this.pB3.Size = new System.Drawing.Size(253, 228);
+            this.pB3.Size = new System.Drawing.Size(296, 296);
             this.pB3.TabIndex = 2;
             this.pB3.TabStop = false;
             this.pB3.UseWaitCursor = true;
@@ -79,10 +79,10 @@
             // pB4
             // 
             this.pB4.BackColor = System.Drawing.Color.Transparent;
-            this.pB4.Location = new System.Drawing.Point(818, 594);
+            this.pB4.Location = new System.Drawing.Point(1347, 667);
             this.pB4.Margin = new System.Windows.Forms.Padding(2);
             this.pB4.Name = "pB4";
-            this.pB4.Size = new System.Drawing.Size(253, 228);
+            this.pB4.Size = new System.Drawing.Size(296, 296);
             this.pB4.TabIndex = 3;
             this.pB4.TabStop = false;
             this.pB4.UseWaitCursor = true;
@@ -109,7 +109,7 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = global::Tweak_it.Properties.Resources.Frame_1__17_;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(1697, 101);
@@ -117,6 +117,7 @@
             this.button1.Size = new System.Drawing.Size(50, 53);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // j1pictosN1

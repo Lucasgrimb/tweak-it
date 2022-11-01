@@ -733,5 +733,8 @@
   <ItemGroup>
     <None Include="Resources\fondo + texto n1 pictos2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
