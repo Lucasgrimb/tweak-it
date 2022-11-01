@@ -553,6 +553,36 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___texto_n1_pictos {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto n1 pictos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___texto_n1_pictos1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto n1 pictos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___texto_n1_pictos2 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto n1 pictos2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___texto1 {
             get {
                 object obj = ResourceManager.GetObject("fondo + texto1", resourceCulture);
@@ -643,6 +673,26 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo_y_texto_eleccion_de_jeugo {
+            get {
+                object obj = ResourceManager.GetObject("fondo y texto eleccion de jeugo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Fondo_y_texto_eleccion_de_nivel {
+            get {
+                object obj = ResourceManager.GetObject("Fondo y texto eleccion de nivel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Fondo_y_texto_menu_profesor {
             get {
                 object obj = ResourceManager.GetObject("Fondo y texto menu profesor", resourceCulture);
@@ -716,6 +766,26 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap garganta {
             get {
                 object obj = ResourceManager.GetObject("garganta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap gato_personaje_2__modi1_ {
+            get {
+                object obj = ResourceManager.GetObject("gato personaje 2 (modi1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap gato_personaje_2__modi1_1 {
+            get {
+                object obj = ResourceManager.GetObject("gato personaje 2 (modi1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -823,6 +893,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap MONO_PERSONAJE_PNG {
+            get {
+                object obj = ResourceManager.GetObject("MONO PERSONAJE PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Mostrar_informacion {
             get {
                 object obj = ResourceManager.GetObject("Mostrar informacion", resourceCulture);
@@ -883,9 +963,69 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap nivel_1 {
+            get {
+                object obj = ResourceManager.GetObject("nivel 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap nivel_2 {
+            get {
+                object obj = ResourceManager.GetObject("nivel 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap nivel_3 {
+            get {
+                object obj = ResourceManager.GetObject("nivel 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap nivel_3_p {
+            get {
+                object obj = ResourceManager.GetObject("nivel 3 p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap oidos {
             get {
                 object obj = ResourceManager.GetObject("oidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PAJARO_PERSONAJE__SIN_FONDO_ {
+            get {
+                object obj = ResourceManager.GetObject("PAJARO PERSONAJE (SIN FONDO)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PAJARO_PERSONAJE__SIN_FONDO_1 {
+            get {
+                object obj = ResourceManager.GetObject("PAJARO PERSONAJE (SIN FONDO)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

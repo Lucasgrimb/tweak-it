@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j1pictosN2 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command;
+
+        public static int puntos = puntos += 1;
         // creo las listas y arrays
         PictureBox[] pictureBoxesArray = new PictureBox[6];
         List<Image> posiblesEmociones = new List<Image>();
@@ -22,6 +27,7 @@ namespace Tweak_it
         public j1pictosN2()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
         private void j1dibujos_Load(object sender, EventArgs e)
@@ -97,6 +103,18 @@ namespace Tweak_it
             checkResult(pB2);          
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN3 j1p3 = new j1pictosN3();
                 j1p3.Show();
                 this.Hide();
@@ -108,6 +126,18 @@ namespace Tweak_it
             checkResult(pB3);
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN3 j1p3 = new j1pictosN3();
                 j1p3.Show();
                 this.Hide();
@@ -119,6 +149,18 @@ namespace Tweak_it
             checkResult(pB4);
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes; 
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN3 j1p3 = new j1pictosN3();
                 j1p3.Show();
                 this.Hide();
@@ -130,6 +172,17 @@ namespace Tweak_it
             checkResult(pB5);
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+
                 j1pictosN3 j1p3 = new j1pictosN3();
                 j1p3.Show();
                 this.Hide();
@@ -141,6 +194,18 @@ namespace Tweak_it
             checkResult(pB6);
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN3 j1p3 = new j1pictosN3();
                 j1p3.Show();
                 this.Hide();
@@ -152,6 +217,18 @@ namespace Tweak_it
             checkResult(pB7);
             if (nivel == 10)
             {
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                nivel = nivel + puntos;
+
+                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.ExecuteNonQuery();
+                command2.ExecuteNonQuery();
+                connection.Close();
+
                 j1pictosN3 j1p3 = new j1pictosN3();
                 j1p3.Show();
                 this.Hide();
@@ -168,6 +245,31 @@ namespace Tweak_it
         private void pB1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Form1 jn1 = new Form1();
+            jn1.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            nivel = nivel + puntos;
+
+            command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+            OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+            command.ExecuteNonQuery();
+            command2.ExecuteNonQuery();
+            connection.Close();
+            Application.Exit();
+
+            Application.Exit();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tweak_it
 {
-    public partial class juego1 : Form
+    public partial class eleccionNivelPictos : Form
     {
-        public juego1()
+        public eleccionNivelPictos()
         {
             InitializeComponent();
         }
@@ -20,8 +20,8 @@ namespace Tweak_it
         private void pictogramas_Click(object sender, EventArgs e)
         {
             j1pictosN1 j1p = new j1pictosN1();
-            j1p.Show();
             this.Hide();
+            j1p.Show();
         }
 
         private void juego1_Load(object sender, EventArgs e)
@@ -29,24 +29,24 @@ namespace Tweak_it
             
         }
 
-        private void btnAtras_Click(object sender, EventArgs e)
-        {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
-        }
-
         private void dibujos_Click(object sender, EventArgs e)
         {
-            j1dibujosN1 j1d = new j1dibujosN1();
+            j1pictosN3 j1d = new j1pictosN3();
             j1d.Show();
             this.Hide();
         }
 
         private void fotos_Click(object sender, EventArgs e)
         {
-            j1fotosN1 jf1 = new j1fotosN1();
+            j1pictosN2 jf1 = new j1pictosN2();
             jf1.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
             this.Hide();
         }
     }
