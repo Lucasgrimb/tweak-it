@@ -174,7 +174,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                     aux = "x";
                     pb1 = true;
                     if (cont == 5 && pictos.Count() > 1)
@@ -222,6 +222,7 @@ namespace Tweak_it
                     cont++;
                     aux = "x";
                     pb2 = true;
+                    variablescomp.puntos++;
                     if (cont == 5 && pictos.Count() > 1)
                     {
                         randomizarImagenes();
@@ -266,6 +267,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
+                    variablescomp.puntos++;
                     aux = "x";
                     pb3 = true;
                     if (cont == 5 && pictos.Count() > 1)
@@ -311,6 +313,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
+                    variablescomp.puntos++;
                     aux = "x";
                     pb4 = true;
                     if (cont == 5 && pictos.Count() > 1)
@@ -356,6 +359,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
+                    variablescomp.puntos++;
                     aux = "x";
                     pb5 = true;
                     if (cont == 5 && pictos.Count() > 1)

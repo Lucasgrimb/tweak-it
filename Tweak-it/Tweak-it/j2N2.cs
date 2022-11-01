@@ -267,7 +267,7 @@ namespace Tweak_it
                 if (pb1f.Image.Tag.ToString() == aux && pb1f.Image.Tag.ToString() == aux2){
                     MessageBox.Show("Correcto");
                     cont++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb1 = true;
@@ -306,7 +306,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb2 = true;
@@ -349,7 +349,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb3 = true;
@@ -392,7 +392,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb4 = true;
@@ -435,7 +435,7 @@ namespace Tweak_it
                 {
                     MessageBox.Show("Correcto");
                     cont++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb5 = true;

@@ -127,6 +127,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                variablescomp.puntos++;
             }
             else if (a == 3)
             {
@@ -151,6 +152,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                variablescomp.puntos++;
             }
             else if (a == 1)
             {
@@ -164,6 +166,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                variablescomp.puntos++;
             }
             else if (a == 4)
             {
@@ -173,6 +176,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                variablescomp.puntos++;
             }
 
         }
@@ -187,6 +191,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                variablescomp.puntos++;
             }
             else if (a == 2)
             {
@@ -200,6 +205,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                variablescomp.puntos++;
             }
             else 
             {
@@ -233,7 +239,7 @@ namespace Tweak_it
                     correcto = false;
                     sit6();
                     a++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                 }
                 else
                 {
@@ -249,7 +255,8 @@ namespace Tweak_it
                     j1pictosN1.puntos++;
                     Form1 f1 = new Form1();
                     f1.Show();
-                    this.Hide();                
+                    this.Hide();
+                    variablescomp.puntos++;
                 }
                 else
                 {
@@ -278,6 +285,7 @@ namespace Tweak_it
                     sit4();
                     a++;
                     j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                 }
                 else
                 {
@@ -308,7 +316,7 @@ namespace Tweak_it
                     correcto = false;
                     sit2();
                     a++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                 }
                 else
                 {
@@ -323,7 +331,7 @@ namespace Tweak_it
                     correcto = false;
                     a++;
                     sit3();
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                 }
                 else
                 {
@@ -342,7 +350,7 @@ namespace Tweak_it
                     correcto = false;
                     sit5();
                     a++;
-                    j1pictosN1.puntos++;
+                    variablescomp.puntos++;
                 }
                 else
                 {
