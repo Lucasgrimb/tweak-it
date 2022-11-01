@@ -17,9 +17,9 @@ namespace Tweak_it
         OleDbCommand command;
 
         public static int ID;
-        string C = "Contento";
-        string T = "Triste";
-        string E = "Enojado";
+        string C = "CONTENTO";
+        string T = "TRISTE";
+        string E = "ENOJADO";
         public LOGIN()
         {
             InitializeComponent();

@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb; 
 
 namespace Tweak_it
 {
     public partial class Informacion_Alumnos : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        int ID;
+        int tiempo;
+        int puntos;
+
         public Informacion_Alumnos()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,9 +41,92 @@ namespace Tweak_it
 
         }
 
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            string[] EmocionesRecibidas = new string[4];
+            string[] FechasRecbidas = new string[4];
+
+            connection.Open();
+            OleDbCommand query = new OleDbCommand("SELECT Id FROM info WHERE Nombre= '" + txtNombre.Text + "' AND Apellido='" + txtApellido.Text + "'", connection);
+            string dato = Convert.ToString(query);
+            OleDbDataReader Reader = query.ExecuteReader();
+
+            int i = 0;
+
+            while (Reader.Read())
+            {
+                ID = Reader.GetInt32(0);
+                i++;
+            }
+            connection.Close();
+
+
+            connection.Open();
+            OleDbCommand Emocion_Fecha = new OleDbCommand("SELECT TOP 4 Emocion, Fecha FROM ConsultaEmociones WHERE id_user=" + ID + " ORDER BY Fecha DESC", connection);
+            string dato2 = Convert.ToString(Emocion_Fecha);
+            OleDbDataReader Reader2 = Emocion_Fecha.ExecuteReader();
+
+            int i2 = 0;
+            while (Reader2.Read())
+            {
+                EmocionesRecibidas[i2] = Reader2.GetString(0);
+                FechasRecbidas[i2] = Reader2.GetString(1);
+                i2++;
+            }
+            connection.Close();
+
+
+            connection.Open();
+            OleDbCommand Puntos_Tiempo = new OleDbCommand("SELECT Puntos, TiempoEnPantalla FROM info WHERE Apellido= '" + txtApellido.Text + "' AND Id= " + ID + "", connection);
+            string dato3 = Convert.ToString(Puntos_Tiempo);
+            OleDbDataReader Reader3 = Puntos_Tiempo.ExecuteReader();
+
+            int i3 = 0;
+
+            while (Reader3.Read())
+            {
+                puntos = Reader3.GetInt32(0);
+                tiempo = Reader3.GetInt32(1);
+
+                i3++;
+            }
+
+            lblPuntos.Text = puntos +" "+ "PUNTOS TOTALES";
+            lblTmpEnPntlla.Text = tiempo +" "+ "MINUTOS JUGADOS";
+            lblAlegre.Text = "ESTUVO " + EmocionesRecibidas[1] + " "+ "EL " + " " + FechasRecbidas[1];
+            connection.Close();
+        }
+
         private void txtNombre_Enter(object sender, EventArgs e)
         {
+            if (txtNombre.Text == "NOMBRE")
+            {
+                txtNombre.Text = "";
+            }
+        }
 
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            if(txtNombre.Text == "")
+            {
+                txtNombre.Text = "NOMBRE";
+            }
+        }
+
+        private void txtApellido_Enter(object sender, EventArgs e)
+        {
+            if(txtApellido.Text == "APELLIDO")
+            {
+                txtApellido.Text = "";
+            }
+        }
+
+        private void txtApellido_Leave(object sender, EventArgs e)
+        {
+            if(txtApellido.Text == "")
+            {
+                txtApellido.Text = "APELLIDO";
+            }
         }
     }
 }
