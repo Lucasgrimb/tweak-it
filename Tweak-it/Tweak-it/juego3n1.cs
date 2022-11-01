@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
@@ -19,10 +20,16 @@ namespace Tweak_it
         bool correcto2 = false;
         int a = 0;
 
+        int nivel = 0;
+        int puntos;
+
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
         public juego3n1()
 
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -127,6 +134,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                nivel++;
                 variablescomp.puntos++;
             }
             else if (a == 3)
@@ -152,6 +160,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                nivel++;
                 variablescomp.puntos++;
             }
             else if (a == 1)
@@ -166,6 +175,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                nivel++;
                 variablescomp.puntos++;
             }
             else if (a == 4)
@@ -176,6 +186,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                nivel++;
                 variablescomp.puntos++;
             }
 
@@ -191,6 +202,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                nivel++;
                 variablescomp.puntos++;
             }
             else if (a == 2)
@@ -205,6 +217,7 @@ namespace Tweak_it
             {
                 MessageBox.Show("emocion correcta");
                 correcto = true;
+                nivel++;
                 variablescomp.puntos++;
             }
             else 
@@ -239,6 +252,7 @@ namespace Tweak_it
                     correcto = false;
                     sit6();
                     a++;
+                    nivel++;
                     variablescomp.puntos++;
                 }
                 else
@@ -253,10 +267,26 @@ namespace Tweak_it
                     MessageBox.Show("Muy bien, completaste el juego");
                     correcto = false;
                     j1pictosN1.puntos++;
-                    Form1 f1 = new Form1();
+                    nivel++;
+                    MenuJuego3 f1 = new MenuJuego3();
                     f1.Show();
                     this.Hide();
                     variablescomp.puntos++;
+
+                    connection.Open();
+                    nivel = nivel + puntos;
+                    command.Connection = connection;
+                    command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                    command.ExecuteNonQuery();
+                    connection.Close();
+
+                    connection.Open();
+                    DateTime TiempoFinal = DateTime.Now;
+                    var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                    int TF = Convert.ToInt32(Tiempo);
+                    command.Connection = connection;
+                    command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                    command.ExecuteNonQuery();
                 }
                 else
                 {
@@ -284,6 +314,7 @@ namespace Tweak_it
                     correcto = false;
                     sit4();
                     a++;
+                    nivel++;
                     j1pictosN1.puntos++;
                     variablescomp.puntos++;
                 }
@@ -315,6 +346,7 @@ namespace Tweak_it
                     MessageBox.Show("Muy bien, pasaste de nivel");
                     correcto = false;
                     sit2();
+                    nivel++;
                     a++;
                     variablescomp.puntos++;
                 }
@@ -331,6 +363,7 @@ namespace Tweak_it
                     correcto = false;
                     a++;
                     sit3();
+                    nivel++;
                     variablescomp.puntos++;
                 }
                 else
@@ -350,6 +383,7 @@ namespace Tweak_it
                     correcto = false;
                     sit5();
                     a++;
+                    nivel++;
                     variablescomp.puntos++;
                 }
                 else
@@ -439,8 +473,32 @@ namespace Tweak_it
             pB8.Image = situaciones[5, 7];
         }
 
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            MenuJuego3 mj3 = new MenuJuego3();
+            this.Hide();
+            mj3.Show();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            nivel = nivel + puntos;
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+            connection.Close();
 
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+
+            Application.Exit();
+        }
     }
     }
 

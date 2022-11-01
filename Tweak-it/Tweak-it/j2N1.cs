@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j2N1 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+
+        int puntos;
+
         PictureBox[] pBpictos = new PictureBox[5];
         PictureBox[] pBdibujos = new PictureBox[5];
         List<Image> pictos = new List<Image>();
@@ -19,7 +25,7 @@ namespace Tweak_it
         List<Image> ndibujos = new List<Image>();
         Random rand = new Random();
         String aux;       
-        int cont = 0;
+        int nivel = 0;
         bool pb1 = false;
         bool pb2 = false;
         bool pb3 = false;
@@ -30,6 +36,7 @@ namespace Tweak_it
         public j2N1()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
         private void j2N1_Load(object sender, EventArgs e)
@@ -58,7 +65,7 @@ namespace Tweak_it
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
             // Agrego imagenes a las listas
-            pictos.Add(Tweak_it.Properties.Resources.Contento);
+            pictos.Add(Tweak_it.Properties.Resources.nivelento);
             pictos.Add(Tweak_it.Properties.Resources.Triste);
             pictos.Add(Tweak_it.Properties.Resources.Enojado);
             pictos.Add(Tweak_it.Properties.Resources.Asustado);
@@ -70,7 +77,7 @@ namespace Tweak_it
             pictos.Add(Tweak_it.Properties.Resources.Aburrido);
             pictos.Add(Tweak_it.Properties.Resources.Preocupado);
 
-            dibujos.Add(Tweak_it.Properties.Resources.ContentoD);
+            dibujos.Add(Tweak_it.Properties.Resources.nivelentoD);
             dibujos.Add(Tweak_it.Properties.Resources.TristeD);
             dibujos.Add(Tweak_it.Properties.Resources.EnojadoD);
             dibujos.Add(Tweak_it.Properties.Resources.AsustadoD);
@@ -85,7 +92,7 @@ namespace Tweak_it
 
 
             //Asigno tag para cada emocion
-            pictos[0].Tag = "contento";
+            pictos[0].Tag = "nivelento";
             pictos[1].Tag = "triste";
             pictos[2].Tag = "enfadado";
             pictos[3].Tag = "asustado";
@@ -98,7 +105,7 @@ namespace Tweak_it
             pictos[10].Tag = "preocupado";
 
 
-            dibujos[0].Tag = "contento";
+            dibujos[0].Tag = "nivelento";
             dibujos[1].Tag = "triste";
             dibujos[2].Tag = "enfadado";
             dibujos[3].Tag = "asustado";
@@ -173,22 +180,37 @@ namespace Tweak_it
                 if (pB1d.Image.Tag.ToString() == aux)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     pb1 = true;
-                    if (cont == 5 && pictos.Count() > 1)
+                    if (nivel == 5 && pictos.Count() > 1)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 1)
+                    else if (nivel == 5 && pictos.Count() == 1)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
@@ -219,14 +241,14 @@ namespace Tweak_it
                 if (pB2d.Image.Tag.ToString() == aux)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     aux = "x";
                     pb2 = true;
                     variablescomp.puntos++;
-                    if (cont == 5 && pictos.Count() > 1)
+                    if (nivel == 5 && pictos.Count() > 1)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
@@ -234,8 +256,23 @@ namespace Tweak_it
                         pb5 = false;
 
                     }
-                    else if (cont == 5 && pictos.Count() == 1)
+                    else if (nivel == 5 && pictos.Count() == 1)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
@@ -266,22 +303,37 @@ namespace Tweak_it
                 if (pB3d.Image.Tag.ToString() == aux)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     pb3 = true;
-                    if (cont == 5 && pictos.Count() > 1)
+                    if (nivel == 5 && pictos.Count() > 1)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 1)
+                    else if (nivel == 5 && pictos.Count() == 1)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
@@ -312,22 +364,36 @@ namespace Tweak_it
                 if (pB4d.Image.Tag.ToString() == aux)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel ++;
                     variablescomp.puntos++;
                     aux = "x";
                     pb4 = true;
-                    if (cont == 5 && pictos.Count() > 1)
+                    if (nivel == 5 && pictos.Count() > 1)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 1)
+                    else if (nivel == 5 && pictos.Count() == 1)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
@@ -358,22 +424,37 @@ namespace Tweak_it
                 if (pB5d.Image.Tag.ToString() == aux)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     pb5 = true;
-                    if (cont == 5 && pictos.Count() > 1)
+                    if (nivel == 5 && pictos.Count() > 1)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 1)
+                    else if (nivel == 5 && pictos.Count() == 1)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         j2N2 j2 = new j2N2();
                         j2.Show();
                         this.Hide();
@@ -397,11 +478,31 @@ namespace Tweak_it
 
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void btnAtras_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
+            MenuJuego2 m2 = new MenuJuego2();
             this.Hide();
+            m2.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            nivel = nivel + puntos;
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+
+            Application.Exit();
         }
     }
 }

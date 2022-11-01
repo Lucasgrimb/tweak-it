@@ -49,10 +49,10 @@
             // pB1
             // 
             this.pB1.BackColor = System.Drawing.Color.Transparent;
-            this.pB1.Location = new System.Drawing.Point(818, 151);
+            this.pB1.Location = new System.Drawing.Point(794, 132);
             this.pB1.Margin = new System.Windows.Forms.Padding(2);
             this.pB1.Name = "pB1";
-            this.pB1.Size = new System.Drawing.Size(253, 228);
+            this.pB1.Size = new System.Drawing.Size(296, 296);
             this.pB1.TabIndex = 0;
             this.pB1.TabStop = false;
             this.pB1.Click += new System.EventHandler(this.pB1_Click);

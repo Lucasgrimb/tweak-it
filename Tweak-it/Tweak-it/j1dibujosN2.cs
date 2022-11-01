@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j1dibujosN2 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+
+        int puntos;
+
         // creo las listas y arrays
         PictureBox[] pictureBoxesArray = new PictureBox[6];
         List<Image> posiblesEmociones = new List<Image>();
@@ -21,6 +27,7 @@ namespace Tweak_it
         public j1dibujosN2()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
         private void j1dibujosN2_Load(object sender, EventArgs e)
         {
@@ -91,7 +98,7 @@ namespace Tweak_it
     }
     private void btnN1_Click(object sender, EventArgs e)
         {
-            j1dibujosN1 jn1 = new j1dibujosN1();
+            eleccionNivelPictos jn1 = new eleccionNivelPictos();
             jn1.Show();
             this.Hide();
         }
@@ -101,6 +108,21 @@ namespace Tweak_it
             checkResult(pB2);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+       
                 j1dibujosN3 j1p3 = new j1dibujosN3();
                 j1p3.Show();
                 this.Hide();
@@ -112,6 +134,21 @@ namespace Tweak_it
             checkResult(pB3);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+     
                 j1dibujosN3 j1p3 = new j1dibujosN3();
                 j1p3.Show();
                 this.Hide();
@@ -123,6 +160,21 @@ namespace Tweak_it
             checkResult(pB4);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+          
                 j1dibujosN3 j1p3 = new j1dibujosN3();
                 j1p3.Show();
                 this.Hide();
@@ -134,6 +186,21 @@ namespace Tweak_it
             checkResult(pB5);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+              
                 j1dibujosN3 j1p3 = new j1dibujosN3();
                 j1p3.Show();
                 this.Hide();
@@ -145,6 +212,21 @@ namespace Tweak_it
             checkResult(pB6);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+       
                 j1dibujosN3 j1p3 = new j1dibujosN3();
                 j1p3.Show();
                 this.Hide();
@@ -156,12 +238,44 @@ namespace Tweak_it
             checkResult(pB7);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+    
                 j1dibujosN3 j1p3 = new j1dibujosN3();
                 j1p3.Show();
                 this.Hide();
             }
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            nivel = nivel + puntos;
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+            Application.Exit();
+        }
     }
 }

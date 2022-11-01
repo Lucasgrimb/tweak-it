@@ -10,37 +10,37 @@ using System.Windows.Forms;
 
 namespace Tweak_it
 {
-    public partial class Form1 : Form
+    public partial class MenuJuego2 : Form
     {
-        public Form1()
+        public MenuJuego2()
         {
             InitializeComponent();
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void pictogramas_Click(object sender, EventArgs e)
         {
-            eleccionNivelPictos j1 = new eleccionNivelPictos();
-            j1.Show();
+            j2N1 j21 = new j2N1();
             this.Hide();
+            j21.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void fotos_Click(object sender, EventArgs e)
         {
-
+            j2N2 j22 = new j2N2();
+            this.Hide();
+            j22.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MenuJuego2 j2 = new MenuJuego2();
-            j2.Show();
-            this.Hide();
+            Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnAtras_Click(object sender, EventArgs e)
         {
-            MenuJuego3 j3 = new MenuJuego3();
-            j3.Show();
+            Form1 f1 = new Form1();
             this.Hide();
+            f1.Show();
         }
     }
 }

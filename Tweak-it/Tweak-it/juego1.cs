@@ -31,14 +31,14 @@ namespace Tweak_it
 
         private void dibujos_Click(object sender, EventArgs e)
         {
-            j1pictosN3 j1d = new j1pictosN3();
+            j1dibujosN1 j1d = new j1dibujosN1();
             j1d.Show();
             this.Hide();
         }
 
         private void fotos_Click(object sender, EventArgs e)
         {
-            j1pictosN2 jf1 = new j1pictosN2();
+            j1fotosN1 jf1 = new j1fotosN1();
             jf1.Show();
             this.Hide();
         }

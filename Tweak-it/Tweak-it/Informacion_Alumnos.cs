@@ -15,8 +15,7 @@ namespace Tweak_it
     {
         OleDbConnection connection = new OleDbConnection();
         int ID;
-        int tiempo;
-
+        public static int tiempo;
         public static int puntos;
 
 
@@ -79,21 +78,16 @@ namespace Tweak_it
 
 
             connection.Open();
-            string Puntos_Tiempo = "SELECT SUM (Puntos) FROM puntos WHERE id_usuario= " + ID + "";
-            OleDbCommand cmd = new OleDbCommand(Puntos_Tiempo, connection);
+            string Puntos = "SELECT SUM (Puntos) FROM puntos WHERE id_usuario= " + ID + "";
+            OleDbCommand cmd = new OleDbCommand(Puntos, connection);
+            puntos = Convert.ToInt32(cmd.ExecuteScalar());
 
-            OleDbDataReader Reader3 = cmd.ExecuteReader();
-
-            int i3 = 0;
-
-            while (Reader3.Read())
-            {
-                puntos = Convert.ToInt32(cmd.ExecuteScalar());
-                i3++;
-            }
+            string Tiempo = "SELECT SUM (TiempoEnPantalla) FROM tiempo WHERE id_usuario= " + ID + "";
+            OleDbCommand cmd2 = new OleDbCommand(Tiempo, connection);
+            tiempo = Convert.ToInt32(cmd2.ExecuteScalar());
 
             lblPuntos.Text = puntos +" "+ "PUNTOS TOTALES";
-            //lblTmpEnPntlla.Text = tiempo +" "+ "MINUTOS JUGADOS";
+            lblTmpEnPntlla.Text = tiempo +" "+ "MINUTOS JUGADOS";
             lblAlegre.Text = "ESTUVO " + EmocionesRecibidas[1] + " "+ "EL " + " " + FechasRecbidas[1];
             lbl2.Text = "ESTUVO " + EmocionesRecibidas[2] + " " + "EL " + " " + FechasRecbidas[2];
             label1.Text = "ESTUVO " + EmocionesRecibidas[3] + " " + "EL " + " " + FechasRecbidas[3];

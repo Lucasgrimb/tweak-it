@@ -21,7 +21,7 @@ namespace Tweak_it
         Random raux = new Random();
         
         int nivel = 0;
-        public static int puntos = puntos +=1;
+        public static int puntos; 
 
         public j1pictosN1()
         {
@@ -98,16 +98,19 @@ namespace Tweak_it
            if (nivel == 10)
             {
                 connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
                 DateTime TiempoFinal = DateTime.Now;
                 var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
                 int TF = Convert.ToInt32(Tiempo);
-                nivel = nivel + puntos;
-
-                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
-                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
                 command.ExecuteNonQuery();
-                command2.ExecuteNonQuery();
-                connection.Close();
 
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
@@ -121,16 +124,19 @@ namespace Tweak_it
             if (nivel == 10)
             {
                 connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
                 DateTime TiempoFinal = DateTime.Now;
                 var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
                 int TF = Convert.ToInt32(Tiempo);
-                nivel = nivel + puntos;
-
-                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
-                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
                 command.ExecuteNonQuery();
-                command2.ExecuteNonQuery();
-                connection.Close();
 
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
@@ -144,16 +150,19 @@ namespace Tweak_it
             if (nivel == 10)
             {
                 connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
                 DateTime TiempoFinal = DateTime.Now;
                 var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
                 int TF = Convert.ToInt32(Tiempo);
-                nivel = nivel + puntos;
-
-                command = new OleDbCommand("UPDATE info SET Puntos=" + nivel + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
-                OleDbCommand command2 = new OleDbCommand("UPDATE info SET TiempoEnPantalla=" + TF + " WHERE Nombre='" + LOGIN.name + "' AND Apellido='" + LOGIN.lastname + "'", connection);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
                 command.ExecuteNonQuery();
-                command2.ExecuteNonQuery();
-                connection.Close();
 
                 j1pictosN2 j1d = new j1pictosN2();
                 j1d.Show();
@@ -171,14 +180,19 @@ namespace Tweak_it
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            DateTime TiempoFinal = DateTime.Now;
-            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
-            int TF = Convert.ToInt32(Tiempo);
             nivel = nivel + puntos;
             command.Connection = connection;
             command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES ("+nivel+", "+LOGIN.ID+")";
             command.ExecuteNonQuery();
             connection.Close();
+
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
             Application.Exit();
         }
     }

@@ -55,7 +55,7 @@
             // pB2
             // 
             this.pB2.BackColor = System.Drawing.Color.Transparent;
-            this.pB2.Location = new System.Drawing.Point(281, 667);
+            this.pB2.Location = new System.Drawing.Point(281, 604);
             this.pB2.Margin = new System.Windows.Forms.Padding(2);
             this.pB2.Name = "pB2";
             this.pB2.Size = new System.Drawing.Size(296, 296);
@@ -67,7 +67,7 @@
             // pB3
             // 
             this.pB3.BackColor = System.Drawing.Color.Transparent;
-            this.pB3.Location = new System.Drawing.Point(824, 667);
+            this.pB3.Location = new System.Drawing.Point(824, 604);
             this.pB3.Margin = new System.Windows.Forms.Padding(2);
             this.pB3.Name = "pB3";
             this.pB3.Size = new System.Drawing.Size(296, 296);
@@ -79,7 +79,7 @@
             // pB4
             // 
             this.pB4.BackColor = System.Drawing.Color.Transparent;
-            this.pB4.Location = new System.Drawing.Point(1347, 667);
+            this.pB4.Location = new System.Drawing.Point(1347, 604);
             this.pB4.Margin = new System.Windows.Forms.Padding(2);
             this.pB4.Name = "pB4";
             this.pB4.Size = new System.Drawing.Size(296, 296);
@@ -112,7 +112,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1697, 101);
+            this.button1.Location = new System.Drawing.Point(1725, 82);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 53);
             this.button1.TabIndex = 5;
@@ -149,12 +149,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pB1;
         private System.Windows.Forms.PictureBox pB2;
         private System.Windows.Forms.PictureBox pB3;
         private System.Windows.Forms.PictureBox pB4;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pB1;
     }
 }

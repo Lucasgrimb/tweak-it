@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j1fotosN1 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+
+        int puntos;
         PictureBox[] pictureBoxesArray = new PictureBox[3];
         List<Image> posiblesEmociones = new List<Image>();
         Random raux = new Random();
@@ -19,6 +24,7 @@ namespace Tweak_it
         public j1fotosN1()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
 
         private void j1fotosN1_Load(object sender, EventArgs e)
@@ -85,6 +91,21 @@ namespace Tweak_it
             checkResult(pB2);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+
                 j1fotosN2 j1d = new j1fotosN2();
                 j1d.Show();
                 this.Hide();
@@ -96,6 +117,21 @@ namespace Tweak_it
             checkResult(pB3);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+
                 j1fotosN2 j1d = new j1fotosN2();
                 j1d.Show();
                 this.Hide();
@@ -107,6 +143,21 @@ namespace Tweak_it
             checkResult(pB4);
             if (nivel == 10)
             {
+                connection.Open();
+                nivel = nivel + puntos;
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                command.ExecuteNonQuery();
+                connection.Close();
+
+                connection.Open();
+                DateTime TiempoFinal = DateTime.Now;
+                var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                int TF = Convert.ToInt32(Tiempo);
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+
+                command.ExecuteNonQuery();
                 j1fotosN2 j1d = new j1fotosN2();
                 j1d.Show();
                 this.Hide();
@@ -128,6 +179,32 @@ namespace Tweak_it
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            nivel = nivel + puntos;
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+            Application.Exit();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            eleccionNivelPictos l = new eleccionNivelPictos();
+            this.Hide();
+            l.Show();
         }
     }
 }

@@ -593,6 +593,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___texto_n1_pictos3 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto n1 pictos3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___texto1 {
             get {
                 object obj = ResourceManager.GetObject("fondo + texto1", resourceCulture);
@@ -646,6 +656,26 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Fondo__y_texto_progreso {
             get {
                 object obj = ResourceManager.GetObject("Fondo  y texto progreso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Fondo_j2 {
+            get {
+                object obj = ResourceManager.GetObject("Fondo j2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Fondo_j2_posta_ {
+            get {
+                object obj = ResourceManager.GetObject("Fondo j2 posta\'", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Tweak_it
 {
     public partial class j2N2 : Form
     {
+        OleDbConnection connection = new OleDbConnection();
+        OleDbCommand command = new OleDbCommand();
+
+        int puntos;
+
         PictureBox[] pBpictos = new PictureBox[5];
         PictureBox[] pBdibujos = new PictureBox[5];
         PictureBox[] pBfotos = new PictureBox[5];
@@ -22,7 +28,7 @@ namespace Tweak_it
         List<Image> nfotos = new List<Image>();
         string aux;
         string aux2;
-        int cont = 0;
+        int nivel = 0;
         bool pb1 = false;
         bool pb2 = false;
         bool pb3 = false;
@@ -33,6 +39,7 @@ namespace Tweak_it
         public j2N2()
         {
             InitializeComponent();
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
         }
         private void j2N2_Load(object sender, EventArgs e)
         {
@@ -70,7 +77,7 @@ namespace Tweak_it
             }
 
             // Agrego imagenes a las listas
-            pictos.Add(Tweak_it.Properties.Resources.Contento);
+            pictos.Add(Tweak_it.Properties.Resources.nivelento);
             pictos.Add(Tweak_it.Properties.Resources.Triste);
             pictos.Add(Tweak_it.Properties.Resources.Enojado);
             pictos.Add(Tweak_it.Properties.Resources.Asustado);
@@ -85,7 +92,7 @@ namespace Tweak_it
             pictos.Add(Tweak_it.Properties.Resources.Nervioso);
             pictos.Add(Tweak_it.Properties.Resources.Confundido);
 
-            dibujos.Add(Tweak_it.Properties.Resources.ContentoD);
+            dibujos.Add(Tweak_it.Properties.Resources.nivelentoD);
             dibujos.Add(Tweak_it.Properties.Resources.TristeD);
             dibujos.Add(Tweak_it.Properties.Resources.EnojadoD);
             dibujos.Add(Tweak_it.Properties.Resources.AsustadoD);
@@ -100,7 +107,7 @@ namespace Tweak_it
             dibujos.Add(Tweak_it.Properties.Resources.NerviosoD);
             dibujos.Add(Tweak_it.Properties.Resources.ConfundidoD);
 
-            fotos.Add(Tweak_it.Properties.Resources.ContentoF);
+            fotos.Add(Tweak_it.Properties.Resources.nivelentoF);
             fotos.Add(Tweak_it.Properties.Resources.TristeF);
             fotos.Add(Tweak_it.Properties.Resources.EnojadoF);
             fotos.Add(Tweak_it.Properties.Resources.AsustadoF);
@@ -117,7 +124,7 @@ namespace Tweak_it
 
 
             //Asigno tag para cada emocion
-            pictos[0].Tag = "contento";
+            pictos[0].Tag = "nivelento";
             pictos[1].Tag = "triste";
             pictos[2].Tag = "enfadado";
             pictos[3].Tag = "asustado";
@@ -132,7 +139,7 @@ namespace Tweak_it
             pictos[12].Tag = "nervioso";
             pictos[13].Tag = "confundido";
 
-            dibujos[0].Tag = "contento";
+            dibujos[0].Tag = "nivelento";
             dibujos[1].Tag = "triste";
             dibujos[2].Tag = "enfadado";
             dibujos[3].Tag = "asustado";
@@ -147,7 +154,7 @@ namespace Tweak_it
             dibujos[12].Tag = "nervioso";
             dibujos[13].Tag = "confundido";
 
-            fotos[0].Tag = "contento";
+            fotos[0].Tag = "nivelento";
             fotos[1].Tag = "triste";
             fotos[2].Tag = "enfadado";
             fotos[3].Tag = "asustado";
@@ -266,22 +273,37 @@ namespace Tweak_it
 
                 if (pb1f.Image.Tag.ToString() == aux && pb1f.Image.Tag.ToString() == aux2){
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb1 = true;
 
-                    if (cont == 5 && pictos.Count() > 4){
+                    if (nivel == 5 && pictos.Count() > 4){
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false; }
 
-                    else if (cont == 5 && pictos.Count() == 4){
+                    else if (nivel == 5 && pictos.Count() == 4){
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         MessageBox.Show("Felicitaciones completaste el juego");
                         Form1 f1 = new Form1();
                         f1.Show();
@@ -305,28 +327,42 @@ namespace Tweak_it
                 if (pb2f.Image.Tag.ToString() == aux && pb2f.Image.Tag.ToString() == aux2)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb2 = true;
-                    if (cont == 5 && pictos.Count() > 4)
+                    if (nivel == 5 && pictos.Count() > 4)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 4)
+                    else if (nivel == 5 && pictos.Count() == 4)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         MessageBox.Show("Felicitaciones completaste el juego");
                         Form1 f1 = new Form1();
                         f1.Show();
                         this.Hide();
-
                     }
 
                 }
@@ -348,23 +384,38 @@ namespace Tweak_it
                 if (pb3f.Image.Tag.ToString() == aux && pb3f.Image.Tag.ToString() == aux2)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb3 = true;
-                    if (cont == 5 && pictos.Count() > 4)
+                    if (nivel == 5 && pictos.Count() > 4)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 4)
+                    else if (nivel == 5 && pictos.Count() == 4)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         MessageBox.Show("Felicitaciones completaste el juego");
                         Form1 f1 = new Form1();
                         f1.Show();
@@ -391,23 +442,38 @@ namespace Tweak_it
                 if (pb4f.Image.Tag.ToString() == aux && pb4f.Image.Tag.ToString() == aux2)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb4 = true;
-                    if (cont == 5 && pictos.Count() > 4)
+                    if (nivel == 5 && pictos.Count() > 4)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 4)
+                    else if (nivel == 5 && pictos.Count() == 4)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         MessageBox.Show("Felicitaciones completaste el juego");
                         Form1 f1 = new Form1();
                         f1.Show();
@@ -434,28 +500,42 @@ namespace Tweak_it
                 if (pb5f.Image.Tag.ToString() == aux && pb5f.Image.Tag.ToString() == aux2)
                 {
                     MessageBox.Show("Correcto");
-                    cont++;
+                    nivel++;
                     variablescomp.puntos++;
                     aux = "x";
                     aux2 = "x";
                     pb5 = true;
-                    if (cont == 5 && pictos.Count() > 4)
+                    if (nivel == 5 && pictos.Count() > 4)
                     {
                         randomizarImagenes();
-                        cont = 0;
+                        nivel = 0;
                         pb1 = false;
                         pb2 = false;
                         pb3 = false;
                         pb4 = false;
                         pb5 = false;
                     }
-                    else if (cont == 5 && pictos.Count() == 4)
+                    else if (nivel == 5 && pictos.Count() == 4)
                     {
+                        connection.Open();
+                        nivel = nivel + puntos;
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                        connection.Open();
+                        DateTime TiempoFinal = DateTime.Now;
+                        var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+                        int TF = Convert.ToInt32(Tiempo);
+                        command.Connection = connection;
+                        command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+                        command.ExecuteNonQuery();
+
                         MessageBox.Show("Felicitaciones completaste el juego");
                         Form1 f1 = new Form1();
                         f1.Show();
                         this.Hide();
-
                     }
 
                 }
@@ -468,6 +548,33 @@ namespace Tweak_it
             {
                 MessageBox.Show("Ya matcheaste esta emocion");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            nivel = nivel + puntos;
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO puntos (Puntos, id_usuario) VALUES (" + nivel + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            connection.Open();
+            DateTime TiempoFinal = DateTime.Now;
+            var Tiempo = (TiempoFinal - LOGIN.TiempoInicio).TotalMinutes;
+            int TF = Convert.ToInt32(Tiempo);
+            command.Connection = connection;
+            command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
+            command.ExecuteNonQuery();
+
+            Application.Exit();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            MenuJuego2 mj2 = new MenuJuego2();
+            this.Hide();
+            mj2.Show();
         }
     }
 }
