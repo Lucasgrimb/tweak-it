@@ -65,7 +65,7 @@ namespace Tweak_it
                 pBdibujos[x].SizeMode = PictureBoxSizeMode.StretchImage;
             }
             // Agrego imagenes a las listas
-            pictos.Add(Tweak_it.Properties.Resources.nivelento);
+            pictos.Add(Tweak_it.Properties.Resources.Contento);
             pictos.Add(Tweak_it.Properties.Resources.Triste);
             pictos.Add(Tweak_it.Properties.Resources.Enojado);
             pictos.Add(Tweak_it.Properties.Resources.Asustado);
@@ -77,7 +77,7 @@ namespace Tweak_it
             pictos.Add(Tweak_it.Properties.Resources.Aburrido);
             pictos.Add(Tweak_it.Properties.Resources.Preocupado);
 
-            dibujos.Add(Tweak_it.Properties.Resources.nivelentoD);
+            dibujos.Add(Tweak_it.Properties.Resources.ContentoD);
             dibujos.Add(Tweak_it.Properties.Resources.TristeD);
             dibujos.Add(Tweak_it.Properties.Resources.EnojadoD);
             dibujos.Add(Tweak_it.Properties.Resources.AsustadoD);
