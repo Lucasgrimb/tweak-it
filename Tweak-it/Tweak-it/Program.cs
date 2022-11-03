@@ -17,7 +17,7 @@ namespace Tweak_it
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new j1dibujosN3());
+            Application.Run(new LOGIN());
            
         }
       

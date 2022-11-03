@@ -623,6 +623,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___textos_estudiantes {
+            get {
+                object obj = ResourceManager.GetObject("fondo + textos estudiantes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___textos_login {
             get {
                 object obj = ResourceManager.GetObject("fondo + textos login", resourceCulture);
@@ -903,6 +913,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Log_in_for_students {
+            get {
+                object obj = ResourceManager.GetObject("Log-in-for-students", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Logo_perro {
             get {
                 object obj = ResourceManager.GetObject("Logo perro", resourceCulture);
@@ -1126,6 +1146,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Profesor_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Profesor-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Profesor1 {
+            get {
+                object obj = ResourceManager.GetObject("Profesor1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

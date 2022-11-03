@@ -40,14 +40,14 @@ namespace Tweak_it
             // 
             // txtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.Silver;
+            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.txtNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNombre.Location = new System.Drawing.Point(841, 302);
+            this.txtNombre.Location = new System.Drawing.Point(722, 301);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(303, 36);
+            this.txtNombre.Size = new System.Drawing.Size(534, 33);
             this.txtNombre.TabIndex = 0;
             this.txtNombre.Text = "NOMBRE";
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -56,14 +56,14 @@ namespace Tweak_it
             // 
             // txtApellido
             // 
-            this.txtApellido.BackColor = System.Drawing.Color.Silver;
+            this.txtApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.txtApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.txtApellido.Location = new System.Drawing.Point(841, 365);
+            this.txtApellido.Location = new System.Drawing.Point(722, 350);
             this.txtApellido.Multiline = true;
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(303, 36);
+            this.txtApellido.Size = new System.Drawing.Size(534, 33);
             this.txtApellido.TabIndex = 1;
             this.txtApellido.Text = "APELLIDO";
             this.txtApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -87,13 +87,13 @@ namespace Tweak_it
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Tweak_it.Properties.Resources.Profesor_removebg_preview;
+            this.button2.BackgroundImage = global::Tweak_it.Properties.Resources.Profesor1;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1575, 253);
+            this.button2.Location = new System.Drawing.Point(1642, 243);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 181);
+            this.button2.Size = new System.Drawing.Size(148, 141);
             this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -105,9 +105,9 @@ namespace Tweak_it
             this.btnContento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnContento.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnContento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContento.Location = new System.Drawing.Point(448, 523);
+            this.btnContento.Location = new System.Drawing.Point(413, 523);
             this.btnContento.Name = "btnContento";
-            this.btnContento.Size = new System.Drawing.Size(310, 281);
+            this.btnContento.Size = new System.Drawing.Size(349, 338);
             this.btnContento.TabIndex = 4;
             this.btnContento.UseVisualStyleBackColor = false;
             this.btnContento.Click += new System.EventHandler(this.btnContento_Click);
@@ -119,9 +119,9 @@ namespace Tweak_it
             this.btnTriste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTriste.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnTriste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTriste.Location = new System.Drawing.Point(829, 523);
+            this.btnTriste.Location = new System.Drawing.Point(812, 523);
             this.btnTriste.Name = "btnTriste";
-            this.btnTriste.Size = new System.Drawing.Size(310, 281);
+            this.btnTriste.Size = new System.Drawing.Size(349, 338);
             this.btnTriste.TabIndex = 5;
             this.btnTriste.UseVisualStyleBackColor = false;
             this.btnTriste.Click += new System.EventHandler(this.btnTriste_Click);
@@ -135,7 +135,7 @@ namespace Tweak_it
             this.btnEnojado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnojado.Location = new System.Drawing.Point(1205, 523);
             this.btnEnojado.Name = "btnEnojado";
-            this.btnEnojado.Size = new System.Drawing.Size(310, 281);
+            this.btnEnojado.Size = new System.Drawing.Size(349, 338);
             this.btnEnojado.TabIndex = 6;
             this.btnEnojado.UseVisualStyleBackColor = false;
             this.btnEnojado.Click += new System.EventHandler(this.btnEnojado_Click);
@@ -144,7 +144,8 @@ namespace Tweak_it
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos_login;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos_estudiantes;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.btnEnojado);
             this.Controls.Add(this.btnTriste);
