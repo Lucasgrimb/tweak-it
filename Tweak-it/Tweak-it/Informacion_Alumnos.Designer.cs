@@ -39,6 +39,7 @@ namespace Tweak_it
             this.btnMostrar = new System.Windows.Forms.Button();
             this.lbl2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPuntos
@@ -168,12 +169,26 @@ namespace Tweak_it
             this.label1.Size = new System.Drawing.Size(0, 31);
             this.label1.TabIndex = 15;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::Tweak_it.Properties.Resources.PERRO_LOGO__SIN_FONDO_____CALIDAD_;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(1599, 826);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(208, 172);
+            this.button4.TabIndex = 16;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // Informacion_Alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.Fondo__y_texto_informacion_de_alumnos;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.btnMostrar);
@@ -204,5 +219,6 @@ namespace Tweak_it
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button4;
     }
 }

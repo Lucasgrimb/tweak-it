@@ -124,6 +124,9 @@
   <data name="Triste" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Triste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fondo y texto crear alumno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo y texto crear alumno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="oidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,14 +214,17 @@
   <data name="ConfundidoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ConfundidoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ContentoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ContentoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Vector 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vector 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Asustado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Asustado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nivel 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nivel 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContentoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContentoD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Final2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Final2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -255,6 +261,9 @@
   </data>
   <data name="fondo + texto n1 pictos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo + texto n1 pictos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo + textos estudiantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo + textos estudiantes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Log-in-for-students" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Log-in-for-students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -327,9 +336,6 @@
   </data>
   <data name="Fondo y texto menu profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo y texto menu profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fondo + texto n1 pictos3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo + texto n1 pictos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -427,8 +433,8 @@
   <data name="Vector 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vector 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Vector 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Profesor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Profesor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Crear un nuevo profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Crear un nuevo profesor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -444,9 +450,6 @@
   </data>
   <data name="Consigna1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Consigna1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Profesor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Profesor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondo + textos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondo + textos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -538,8 +541,8 @@
   <data name="Profesor-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Profesor-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fondo y texto crear alumno" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fondo y texto crear alumno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo + texto n1 pictos3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo + texto n1 pictos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TristeD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TristeD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -547,7 +550,7 @@
   <data name="Aburrido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Aburrido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondo + textos estudiantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fondo + textos estudiantes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PERRO LOGO (SIN FONDO,  + CALIDAD)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PERRO LOGO (SIN FONDO,  + CALIDAD).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

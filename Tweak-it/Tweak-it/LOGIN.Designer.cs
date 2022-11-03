@@ -36,6 +36,7 @@ namespace Tweak_it
             this.btnContento = new System.Windows.Forms.Button();
             this.btnTriste = new System.Windows.Forms.Button();
             this.btnEnojado = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -140,6 +141,19 @@ namespace Tweak_it
             this.btnEnojado.UseVisualStyleBackColor = false;
             this.btnEnojado.Click += new System.EventHandler(this.btnEnojado_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::Tweak_it.Properties.Resources.PERRO_LOGO__SIN_FONDO_____CALIDAD_;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(1625, 845);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(187, 146);
+            this.button4.TabIndex = 14;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // LOGIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +161,7 @@ namespace Tweak_it
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___textos_estudiantes;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnEnojado);
             this.Controls.Add(this.btnTriste);
             this.Controls.Add(this.btnContento);
@@ -173,5 +188,6 @@ namespace Tweak_it
         private System.Windows.Forms.Button btnContento;
         private System.Windows.Forms.Button btnTriste;
         private System.Windows.Forms.Button btnEnojado;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -19,7 +19,7 @@ namespace Tweak_it.Properties {
     // a través de una herramienta como ResGen o Visual Studio.
     // Para agregar o quitar un miembro, edite el archivo .ResX y, a continuación, vuelva a ejecutar ResGen
     // con la opción /str o recompile su proyecto de VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -1096,6 +1096,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap papaest {
             get {
                 object obj = ResourceManager.GetObject("papaest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap PERRO_LOGO__SIN_FONDO_____CALIDAD_ {
+            get {
+                object obj = ResourceManager.GetObject("PERRO LOGO (SIN FONDO,  + CALIDAD)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -772,5 +772,8 @@
   <ItemGroup>
     <None Include="Resources\fondo + textos estudiantes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERRO LOGO %28SIN FONDO,  + CALIDAD%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
