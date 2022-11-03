@@ -86,7 +86,7 @@ namespace Tweak_it
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text == "" || txtApellido.Text == "" || txtEdad.Text == "")
+            if(txtNombre.Text == "NOMBRE" || txtApellido.Text == "APELLIDO" || txtEdad.Text == "EDAD")
             {
                 MessageBox.Show("Completa los campos");
             }

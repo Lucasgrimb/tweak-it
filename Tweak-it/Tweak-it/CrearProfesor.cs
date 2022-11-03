@@ -59,7 +59,7 @@ namespace Tweak_it
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "" || txtContraseña.Text == "")
+            if(txtUsuario.Text == "USUARIO" || txtContraseña.Text == "CONTRASEÑA")
             {
                 MessageBox.Show("Completa los campos");
             }

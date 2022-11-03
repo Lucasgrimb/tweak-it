@@ -33,7 +33,7 @@ namespace Tweak_it
 
         private void txtNombre_Enter(object sender, EventArgs e)
         {
-            if(txtNombre.Text == "NOMBRE")
+            if(txtNombre.Text == "NOMBRE DEL ALUMNO")
             {
                 txtNombre.Text = "";
             }
@@ -43,13 +43,13 @@ namespace Tweak_it
         {
             if(txtNombre.Text == "")
             {
-                txtNombre.Text = "NOMBRE";
+                txtNombre.Text = "NOMBRE DEL ALUMNO";
             }
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if(txtApellido.Text == "APELLIDO")
+            if(txtApellido.Text == "APELLIDO DEL ALUMNO")
             {
                 txtApellido.Text = "";
             }
@@ -59,7 +59,7 @@ namespace Tweak_it
         {
             if(txtApellido.Text == "")
             {
-                txtApellido.Text = "APELLIDO";
+                txtApellido.Text = "APELLIDO DEL ALUMNO";
             }
         }
 
@@ -93,7 +93,7 @@ namespace Tweak_it
 
                 while (Reader.Read())
                 {
-                    MessageBox.Show("Bienvenido. " + Reader.GetString(0));
+                    MessageBox.Show("Bienvenido, " + Reader.GetString(0));
                     ID = Reader.GetInt32(2);
                     name = txtNombre.Text;
                     lastname = txtApellido.Text;
@@ -142,7 +142,7 @@ namespace Tweak_it
 
                 while (Reader.Read())
                 {
-                    MessageBox.Show("Bienvenido. " + Reader.GetString(0));
+                    MessageBox.Show("Bienvenido, " + Reader.GetString(0));
                     ID = Reader.GetInt32(2);
                     i++;
 
@@ -181,7 +181,7 @@ namespace Tweak_it
 
                 while (Reader.Read())
                 {
-                    MessageBox.Show("Bienvenido. " + Reader.GetString(0));
+                    MessageBox.Show("Bienvenido, " + Reader.GetString(0));
                     ID = Reader.GetInt32(2);
                     i++;
 
