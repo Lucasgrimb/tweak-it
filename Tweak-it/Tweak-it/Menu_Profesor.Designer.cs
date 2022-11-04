@@ -120,6 +120,7 @@ namespace Tweak_it
             this.Name = "Menu_Profesor";
             this.Text = "Menu_Profesor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Menu_Profesor_Load);
             this.ResumeLayout(false);
 
         }

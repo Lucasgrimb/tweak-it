@@ -47,5 +47,10 @@ namespace Tweak_it
         {
 
         }
+
+        private void MenuJuego2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

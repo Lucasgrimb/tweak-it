@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___texto__1_;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);

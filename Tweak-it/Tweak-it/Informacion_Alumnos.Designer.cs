@@ -203,6 +203,7 @@ namespace Tweak_it
             this.Name = "Informacion_Alumnos";
             this.Text = "Informacion_Alumnos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Informacion_Alumnos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

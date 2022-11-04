@@ -233,7 +233,7 @@
             this.btnAtras.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtras.Location = new System.Drawing.Point(149, 101);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(122, 68);
             this.btnAtras.TabIndex = 17;
@@ -258,7 +258,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tweak_it.Properties.Resources.Fondo_j2_posta_;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___new_text1;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnAtras);

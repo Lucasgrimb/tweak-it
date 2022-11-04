@@ -56,7 +56,7 @@
             // pB1p
             // 
             this.pB1p.BackColor = System.Drawing.Color.Transparent;
-            this.pB1p.Location = new System.Drawing.Point(590, 276);
+            this.pB1p.Location = new System.Drawing.Point(675, 276);
             this.pB1p.Margin = new System.Windows.Forms.Padding(2);
             this.pB1p.Name = "pB1p";
             this.pB1p.Size = new System.Drawing.Size(128, 130);
@@ -67,7 +67,7 @@
             // pB2p
             // 
             this.pB2p.BackColor = System.Drawing.Color.Transparent;
-            this.pB2p.Location = new System.Drawing.Point(590, 422);
+            this.pB2p.Location = new System.Drawing.Point(675, 422);
             this.pB2p.Margin = new System.Windows.Forms.Padding(2);
             this.pB2p.Name = "pB2p";
             this.pB2p.Size = new System.Drawing.Size(128, 130);
@@ -78,7 +78,7 @@
             // pB3p
             // 
             this.pB3p.BackColor = System.Drawing.Color.Transparent;
-            this.pB3p.Location = new System.Drawing.Point(590, 568);
+            this.pB3p.Location = new System.Drawing.Point(675, 568);
             this.pB3p.Margin = new System.Windows.Forms.Padding(2);
             this.pB3p.Name = "pB3p";
             this.pB3p.Size = new System.Drawing.Size(128, 130);
@@ -89,7 +89,7 @@
             // pB4p
             // 
             this.pB4p.BackColor = System.Drawing.Color.Transparent;
-            this.pB4p.Location = new System.Drawing.Point(590, 713);
+            this.pB4p.Location = new System.Drawing.Point(675, 713);
             this.pB4p.Margin = new System.Windows.Forms.Padding(2);
             this.pB4p.Name = "pB4p";
             this.pB4p.Size = new System.Drawing.Size(128, 130);
@@ -100,7 +100,7 @@
             // pB5p
             // 
             this.pB5p.BackColor = System.Drawing.Color.Transparent;
-            this.pB5p.Location = new System.Drawing.Point(590, 857);
+            this.pB5p.Location = new System.Drawing.Point(675, 857);
             this.pB5p.Margin = new System.Windows.Forms.Padding(2);
             this.pB5p.Name = "pB5p";
             this.pB5p.Size = new System.Drawing.Size(128, 130);
@@ -111,7 +111,7 @@
             // pB5d
             // 
             this.pB5d.BackColor = System.Drawing.Color.Transparent;
-            this.pB5d.Location = new System.Drawing.Point(1111, 857);
+            this.pB5d.Location = new System.Drawing.Point(1196, 857);
             this.pB5d.Margin = new System.Windows.Forms.Padding(2);
             this.pB5d.Name = "pB5d";
             this.pB5d.Size = new System.Drawing.Size(128, 130);
@@ -122,7 +122,7 @@
             // pB4d
             // 
             this.pB4d.BackColor = System.Drawing.Color.Transparent;
-            this.pB4d.Location = new System.Drawing.Point(1111, 713);
+            this.pB4d.Location = new System.Drawing.Point(1196, 713);
             this.pB4d.Margin = new System.Windows.Forms.Padding(2);
             this.pB4d.Name = "pB4d";
             this.pB4d.Size = new System.Drawing.Size(128, 130);
@@ -133,7 +133,7 @@
             // pB3d
             // 
             this.pB3d.BackColor = System.Drawing.Color.Transparent;
-            this.pB3d.Location = new System.Drawing.Point(1111, 568);
+            this.pB3d.Location = new System.Drawing.Point(1196, 568);
             this.pB3d.Margin = new System.Windows.Forms.Padding(2);
             this.pB3d.Name = "pB3d";
             this.pB3d.Size = new System.Drawing.Size(128, 130);
@@ -144,7 +144,7 @@
             // pB2d
             // 
             this.pB2d.BackColor = System.Drawing.Color.Transparent;
-            this.pB2d.Location = new System.Drawing.Point(1111, 422);
+            this.pB2d.Location = new System.Drawing.Point(1196, 422);
             this.pB2d.Margin = new System.Windows.Forms.Padding(2);
             this.pB2d.Name = "pB2d";
             this.pB2d.Size = new System.Drawing.Size(128, 130);
@@ -155,7 +155,7 @@
             // pB1d
             // 
             this.pB1d.BackColor = System.Drawing.Color.Transparent;
-            this.pB1d.Location = new System.Drawing.Point(1111, 276);
+            this.pB1d.Location = new System.Drawing.Point(1196, 276);
             this.pB1d.Margin = new System.Windows.Forms.Padding(2);
             this.pB1d.Name = "pB1d";
             this.pB1d.Size = new System.Drawing.Size(128, 130);
@@ -212,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tweak_it.Properties.Resources.Fondo_j2_posta_;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___new_text;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);

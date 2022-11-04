@@ -96,7 +96,7 @@ namespace Tweak_it
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1642, 243);
+            this.button2.Location = new System.Drawing.Point(163, 82);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(148, 141);
             this.button2.TabIndex = 3;

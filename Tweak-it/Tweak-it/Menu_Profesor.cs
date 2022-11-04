@@ -42,5 +42,10 @@ namespace Tweak_it
         {
             Application.Exit();
         }
+
+        private void Menu_Profesor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

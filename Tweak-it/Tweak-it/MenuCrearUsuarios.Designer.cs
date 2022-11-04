@@ -49,6 +49,7 @@ namespace Tweak_it
             this.pictureBox1.Size = new System.Drawing.Size(699, 380);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -60,6 +61,7 @@ namespace Tweak_it
             this.pictureBox2.Size = new System.Drawing.Size(687, 380);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -115,6 +117,7 @@ namespace Tweak_it
             this.Name = "MenuCrearUsuarios";
             this.Text = "MenuCrearUsuarios";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuCrearUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

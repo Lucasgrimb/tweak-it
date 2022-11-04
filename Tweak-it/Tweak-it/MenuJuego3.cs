@@ -35,5 +35,10 @@ namespace Tweak_it
         {
             Application.Exit();
         }
+
+        private void MenuJuego3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

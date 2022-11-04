@@ -108,6 +108,7 @@ namespace Tweak_it
             this.Name = "MenuJuego3";
             this.Text = "MenuJuego3";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuJuego3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictogramas)).EndInit();
             this.ResumeLayout(false);
