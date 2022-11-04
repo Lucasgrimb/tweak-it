@@ -75,9 +75,9 @@ namespace Tweak_it
             this.lblAlegre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.lblAlegre.Location = new System.Drawing.Point(734, 825);
             this.lblAlegre.Name = "lblAlegre";
-            this.lblAlegre.Size = new System.Drawing.Size(385, 31);
+            this.lblAlegre.Size = new System.Drawing.Size(393, 31);
             this.lblAlegre.TabIndex = 7;
-            this.lblAlegre.Text = "ULTIMAS TRES EMOCIONES";
+            this.lblAlegre.Text = "ULTIMAS TRES EMOCIONES:";
             // 
             // button2
             // 
