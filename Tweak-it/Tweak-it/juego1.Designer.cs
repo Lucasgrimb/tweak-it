@@ -71,9 +71,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Tweak_it.Properties.Resources.gato_personaje_2__modi1_1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(209, 276);
+            this.pictureBox1.Location = new System.Drawing.Point(211, 252);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(548, 619);
+            this.pictureBox1.Size = new System.Drawing.Size(548, 704);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
