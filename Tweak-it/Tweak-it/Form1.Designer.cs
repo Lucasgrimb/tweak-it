@@ -38,15 +38,15 @@
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.Color.Transparent;
-            this.btn1.BackgroundImage = global::Tweak_it.Properties.Resources.gato_personaje_2__modi1_;
+            this.btn1.BackgroundImage = global::Tweak_it.Properties.Resources.RECORTADO_GATO;
             this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.ForeColor = System.Drawing.Color.Transparent;
-            this.btn1.Location = new System.Drawing.Point(156, 280);
+            this.btn1.Location = new System.Drawing.Point(158, 385);
             this.btn1.Margin = new System.Windows.Forms.Padding(2);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(446, 583);
+            this.btn1.Size = new System.Drawing.Size(411, 352);
             this.btn1.TabIndex = 0;
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
@@ -54,14 +54,14 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Tweak_it.Properties.Resources.MONO_PERSONAJE_PNG;
+            this.button1.BackgroundImage = global::Tweak_it.Properties.Resources.RECORTADO_MONO;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(729, 290);
+            this.button1.Location = new System.Drawing.Point(735, 380);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(431, 580);
+            this.button1.Size = new System.Drawing.Size(412, 385);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

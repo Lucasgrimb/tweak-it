@@ -790,6 +790,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PERRO-LOGO-_SIN-FONDO_-CALIDAD_.ico" />
+    <None Include="Resources\RECORTADO MONO.png" />
+    <None Include="Resources\RECORTADO GATO.png" />
     <None Include="Resources\fondo + new text1.png" />
     <None Include="Resources\fondo + new text.png" />
     <None Include="Resources\fondo + texto %281%291.png" />
