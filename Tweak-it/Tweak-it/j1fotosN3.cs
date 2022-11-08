@@ -77,7 +77,7 @@ namespace Tweak_it
 
         private void checkResult(PictureBox pB)
         {
-            MessageBox.Show(pB.Image.ToString());
+          
             if (pB.Image == pB1.Image)
             {
                 randomizarImages();

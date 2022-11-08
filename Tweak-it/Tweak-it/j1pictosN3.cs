@@ -129,6 +129,9 @@ namespace Tweak_it
                 command.ExecuteNonQuery();
 
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
+                Form1 f1 = new Form1();
+                this.Hide();
+                f1.Show();
             }
         }
 
