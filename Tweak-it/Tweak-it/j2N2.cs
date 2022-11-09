@@ -39,14 +39,14 @@ namespace Tweak_it
         public j2N2()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source =C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb; Persist Security Info = False";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\BDD Tweak-It.accdb;Persist Security Info=False";
         }
         private void j2N2_Load(object sender, EventArgs e)
         {
             //agrego Pb al arrray
             pBpictos[0] = pb1p;
             pBpictos[1] = pb2p;
-            pBpictos[2] = pb3p;
+            pBpictos[2] = pictureBox1;
             pBpictos[3] = pb4p;
             pBpictos[4] = pb5p;
 
@@ -124,7 +124,7 @@ namespace Tweak_it
 
 
             //Asigno tag para cada emocion
-            pictos[0].Tag = "nivelento";
+            pictos[0].Tag = "contento";
             pictos[1].Tag = "triste";
             pictos[2].Tag = "enfadado";
             pictos[3].Tag = "asustado";
@@ -139,7 +139,7 @@ namespace Tweak_it
             pictos[12].Tag = "nervioso";
             pictos[13].Tag = "confundido";
 
-            dibujos[0].Tag = "nivelento";
+            dibujos[0].Tag = "contento";
             dibujos[1].Tag = "triste";
             dibujos[2].Tag = "enfadado";
             dibujos[3].Tag = "asustado";
@@ -154,7 +154,7 @@ namespace Tweak_it
             dibujos[12].Tag = "nervioso";
             dibujos[13].Tag = "confundido";
 
-            fotos[0].Tag = "nivelento";
+            fotos[0].Tag = "contento";
             fotos[1].Tag = "triste";
             fotos[2].Tag = "enfadado";
             fotos[3].Tag = "asustado";
@@ -180,8 +180,7 @@ namespace Tweak_it
             {
                 int x = rand.Next(0, pictos.Count);
 
-                pBpictos[i].Image = pictos[x];
-                pBpictos[i].Tag = i.ToString();
+                pBpictos[i].Image = pictos[x];                
                 ndibujos.Add(dibujos[x]);
                 nfotos.Add(fotos[x]);
                 pictos.RemoveAt(x);

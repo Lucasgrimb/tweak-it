@@ -543,9 +543,49 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___new_text {
+            get {
+                object obj = ResourceManager.GetObject("fondo + new text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___new_text1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + new text1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___texto {
             get {
                 object obj = ResourceManager.GetObject("fondo + texto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___texto__1_ {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___texto__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,9 +653,29 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap fondo___texto2 {
+            get {
+                object obj = ResourceManager.GetObject("fondo + texto2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap fondo___textos {
             get {
                 object obj = ResourceManager.GetObject("fondo + textos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo___textos_estudiantes {
+            get {
+                object obj = ResourceManager.GetObject("fondo + textos estudiantes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -903,6 +963,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Log_in_for_students {
+            get {
+                object obj = ResourceManager.GetObject("Log-in-for-students", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Logo_perro {
             get {
                 object obj = ResourceManager.GetObject("Logo perro", resourceCulture);
@@ -1083,6 +1153,16 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap PERRO_LOGO__SIN_FONDO_____CALIDAD_ {
+            get {
+                object obj = ResourceManager.GetObject("PERRO LOGO (SIN FONDO,  + CALIDAD)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Preocupado {
             get {
                 object obj = ResourceManager.GetObject("Preocupado", resourceCulture);
@@ -1126,6 +1206,16 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Profesor_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Profesor-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Profesor1 {
+            get {
+                object obj = ResourceManager.GetObject("Profesor1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1193,6 +1283,26 @@ namespace Tweak_it.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap RECORTADO_GATO {
+            get {
+                object obj = ResourceManager.GetObject("RECORTADO GATO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap RECORTADO_MONO {
+            get {
+                object obj = ResourceManager.GetObject("RECORTADO MONO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Rectangulo_usuario {
             get {
                 object obj = ResourceManager.GetObject("Rectangulo usuario", resourceCulture);
@@ -1206,6 +1316,26 @@ namespace Tweak_it.Properties {
         public static System.Drawing.Bitmap Rectangulo_usuario1 {
             get {
                 object obj = ResourceManager.GetObject("Rectangulo usuario1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Rectangulo_usuario2 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangulo usuario2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Rectangulo_usuario3 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangulo usuario3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

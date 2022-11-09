@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -63,6 +63,13 @@
   <PropertyGroup>
     <StartupObject>
     </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PERRO-LOGO-_SIN-FONDO_-CALIDAD_.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -762,6 +769,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Fondo j2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log-in-for-students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profesor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo + textos estudiantes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERRO LOGO %28SIN FONDO,  + CALIDAD%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangulo usuario2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangulo usuario3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PERRO-LOGO-_SIN-FONDO_-CALIDAD_.ico" />
+    <None Include="Resources\RECORTADO MONO.png" />
+    <None Include="Resources\RECORTADO GATO.png" />
+    <None Include="Resources\fondo + new text1.png" />
+    <None Include="Resources\fondo + new text.png" />
+    <None Include="Resources\fondo + texto %281%291.png" />
+    <None Include="Resources\fondo + texto %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

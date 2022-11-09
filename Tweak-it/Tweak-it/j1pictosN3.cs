@@ -26,7 +26,7 @@ namespace Tweak_it
         public j1pictosN3()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\BDD Tweak-It.accdb;Persist Security Info=False";
         }
 
         private void j1pictosN3_Load(object sender, EventArgs e)
@@ -129,6 +129,9 @@ namespace Tweak_it
                 command.ExecuteNonQuery();
 
                 MessageBox.Show("ya pasaste todos los niveles, felicitaciones");
+                Form1 f1 = new Form1();
+                this.Hide();
+                f1.Show();
             }
         }
 
@@ -413,6 +416,11 @@ namespace Tweak_it
             command.CommandText = "INSERT INTO tiempo (TiempoEnPantalla, id_usuario) VALUES (" + TF + ", " + LOGIN.ID + ")";
             command.ExecuteNonQuery();
             Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

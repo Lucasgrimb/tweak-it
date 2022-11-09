@@ -28,5 +28,24 @@ namespace Tweak_it
         {
             Application.Exit();
         }
+
+        private void MenuCrearUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            CrearEstudiante cr = new CrearEstudiante();
+            this.Hide();
+            cr.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            CrearProfesor cr = new CrearProfesor();
+            this.Hide();
+            cr.Show();
+        }
     }
 }

@@ -42,5 +42,15 @@ namespace Tweak_it
             this.Hide();
             f1.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuJuego2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAtras = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
@@ -52,7 +53,7 @@
             // pB1
             // 
             this.pB1.BackColor = System.Drawing.Color.Transparent;
-            this.pB1.Location = new System.Drawing.Point(948, 98);
+            this.pB1.Location = new System.Drawing.Point(852, 110);
             this.pB1.Margin = new System.Windows.Forms.Padding(2);
             this.pB1.Name = "pB1";
             this.pB1.Size = new System.Drawing.Size(233, 226);
@@ -62,7 +63,7 @@
             // pB2
             // 
             this.pB2.BackColor = System.Drawing.Color.Transparent;
-            this.pB2.Location = new System.Drawing.Point(948, 342);
+            this.pB2.Location = new System.Drawing.Point(852, 354);
             this.pB2.Margin = new System.Windows.Forms.Padding(2);
             this.pB2.Name = "pB2";
             this.pB2.Size = new System.Drawing.Size(233, 119);
@@ -72,7 +73,7 @@
             // pB3
             // 
             this.pB3.BackColor = System.Drawing.Color.Transparent;
-            this.pB3.Location = new System.Drawing.Point(576, 482);
+            this.pB3.Location = new System.Drawing.Point(480, 494);
             this.pB3.Margin = new System.Windows.Forms.Padding(2);
             this.pB3.Name = "pB3";
             this.pB3.Size = new System.Drawing.Size(222, 213);
@@ -83,7 +84,7 @@
             // pB4
             // 
             this.pB4.BackColor = System.Drawing.Color.Transparent;
-            this.pB4.Location = new System.Drawing.Point(955, 482);
+            this.pB4.Location = new System.Drawing.Point(859, 494);
             this.pB4.Margin = new System.Windows.Forms.Padding(2);
             this.pB4.Name = "pB4";
             this.pB4.Size = new System.Drawing.Size(222, 213);
@@ -94,7 +95,7 @@
             // pB5
             // 
             this.pB5.BackColor = System.Drawing.Color.Transparent;
-            this.pB5.Location = new System.Drawing.Point(1368, 482);
+            this.pB5.Location = new System.Drawing.Point(1272, 494);
             this.pB5.Margin = new System.Windows.Forms.Padding(2);
             this.pB5.Name = "pB5";
             this.pB5.Size = new System.Drawing.Size(222, 213);
@@ -105,7 +106,7 @@
             // pB6
             // 
             this.pB6.BackColor = System.Drawing.Color.Transparent;
-            this.pB6.Location = new System.Drawing.Point(576, 752);
+            this.pB6.Location = new System.Drawing.Point(480, 764);
             this.pB6.Margin = new System.Windows.Forms.Padding(2);
             this.pB6.Name = "pB6";
             this.pB6.Size = new System.Drawing.Size(222, 213);
@@ -116,7 +117,7 @@
             // pB7
             // 
             this.pB7.BackColor = System.Drawing.Color.Transparent;
-            this.pB7.Location = new System.Drawing.Point(955, 752);
+            this.pB7.Location = new System.Drawing.Point(859, 764);
             this.pB7.Margin = new System.Windows.Forms.Padding(2);
             this.pB7.Name = "pB7";
             this.pB7.Size = new System.Drawing.Size(222, 213);
@@ -127,7 +128,7 @@
             // pB8
             // 
             this.pB8.BackColor = System.Drawing.Color.Transparent;
-            this.pB8.Location = new System.Drawing.Point(1368, 752);
+            this.pB8.Location = new System.Drawing.Point(1272, 764);
             this.pB8.Margin = new System.Windows.Forms.Padding(2);
             this.pB8.Name = "pB8";
             this.pB8.Size = new System.Drawing.Size(222, 213);
@@ -140,7 +141,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label1.Location = new System.Drawing.Point(979, 705);
+            this.label1.Location = new System.Drawing.Point(883, 717);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 39);
             this.label1.TabIndex = 9;
@@ -178,12 +179,26 @@
             this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::Tweak_it.Properties.Resources.PERRO_LOGO__SIN_FONDO_____CALIDAD_;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(1624, 854);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(187, 146);
+            this.button4.TabIndex = 14;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // juego3n1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tweak_it.Properties.Resources.Fondo_j2;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.label1);
@@ -226,5 +241,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
     }
 }

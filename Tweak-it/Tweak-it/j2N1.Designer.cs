@@ -40,6 +40,7 @@
             this.pB1d = new System.Windows.Forms.PictureBox();
             this.btnAtras = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pB1p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB2p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pB3p)).BeginInit();
@@ -55,7 +56,7 @@
             // pB1p
             // 
             this.pB1p.BackColor = System.Drawing.Color.Transparent;
-            this.pB1p.Location = new System.Drawing.Point(590, 276);
+            this.pB1p.Location = new System.Drawing.Point(675, 276);
             this.pB1p.Margin = new System.Windows.Forms.Padding(2);
             this.pB1p.Name = "pB1p";
             this.pB1p.Size = new System.Drawing.Size(128, 130);
@@ -66,7 +67,7 @@
             // pB2p
             // 
             this.pB2p.BackColor = System.Drawing.Color.Transparent;
-            this.pB2p.Location = new System.Drawing.Point(590, 422);
+            this.pB2p.Location = new System.Drawing.Point(675, 422);
             this.pB2p.Margin = new System.Windows.Forms.Padding(2);
             this.pB2p.Name = "pB2p";
             this.pB2p.Size = new System.Drawing.Size(128, 130);
@@ -77,7 +78,7 @@
             // pB3p
             // 
             this.pB3p.BackColor = System.Drawing.Color.Transparent;
-            this.pB3p.Location = new System.Drawing.Point(590, 568);
+            this.pB3p.Location = new System.Drawing.Point(675, 568);
             this.pB3p.Margin = new System.Windows.Forms.Padding(2);
             this.pB3p.Name = "pB3p";
             this.pB3p.Size = new System.Drawing.Size(128, 130);
@@ -88,7 +89,7 @@
             // pB4p
             // 
             this.pB4p.BackColor = System.Drawing.Color.Transparent;
-            this.pB4p.Location = new System.Drawing.Point(590, 713);
+            this.pB4p.Location = new System.Drawing.Point(675, 713);
             this.pB4p.Margin = new System.Windows.Forms.Padding(2);
             this.pB4p.Name = "pB4p";
             this.pB4p.Size = new System.Drawing.Size(128, 130);
@@ -99,7 +100,7 @@
             // pB5p
             // 
             this.pB5p.BackColor = System.Drawing.Color.Transparent;
-            this.pB5p.Location = new System.Drawing.Point(590, 857);
+            this.pB5p.Location = new System.Drawing.Point(675, 857);
             this.pB5p.Margin = new System.Windows.Forms.Padding(2);
             this.pB5p.Name = "pB5p";
             this.pB5p.Size = new System.Drawing.Size(128, 130);
@@ -110,7 +111,7 @@
             // pB5d
             // 
             this.pB5d.BackColor = System.Drawing.Color.Transparent;
-            this.pB5d.Location = new System.Drawing.Point(1111, 857);
+            this.pB5d.Location = new System.Drawing.Point(1196, 857);
             this.pB5d.Margin = new System.Windows.Forms.Padding(2);
             this.pB5d.Name = "pB5d";
             this.pB5d.Size = new System.Drawing.Size(128, 130);
@@ -121,7 +122,7 @@
             // pB4d
             // 
             this.pB4d.BackColor = System.Drawing.Color.Transparent;
-            this.pB4d.Location = new System.Drawing.Point(1111, 713);
+            this.pB4d.Location = new System.Drawing.Point(1196, 713);
             this.pB4d.Margin = new System.Windows.Forms.Padding(2);
             this.pB4d.Name = "pB4d";
             this.pB4d.Size = new System.Drawing.Size(128, 130);
@@ -132,7 +133,7 @@
             // pB3d
             // 
             this.pB3d.BackColor = System.Drawing.Color.Transparent;
-            this.pB3d.Location = new System.Drawing.Point(1111, 568);
+            this.pB3d.Location = new System.Drawing.Point(1196, 568);
             this.pB3d.Margin = new System.Windows.Forms.Padding(2);
             this.pB3d.Name = "pB3d";
             this.pB3d.Size = new System.Drawing.Size(128, 130);
@@ -143,7 +144,7 @@
             // pB2d
             // 
             this.pB2d.BackColor = System.Drawing.Color.Transparent;
-            this.pB2d.Location = new System.Drawing.Point(1111, 422);
+            this.pB2d.Location = new System.Drawing.Point(1196, 422);
             this.pB2d.Margin = new System.Windows.Forms.Padding(2);
             this.pB2d.Name = "pB2d";
             this.pB2d.Size = new System.Drawing.Size(128, 130);
@@ -154,7 +155,7 @@
             // pB1d
             // 
             this.pB1d.BackColor = System.Drawing.Color.Transparent;
-            this.pB1d.Location = new System.Drawing.Point(1111, 276);
+            this.pB1d.Location = new System.Drawing.Point(1196, 276);
             this.pB1d.Margin = new System.Windows.Forms.Padding(2);
             this.pB1d.Name = "pB1d";
             this.pB1d.Size = new System.Drawing.Size(128, 130);
@@ -194,12 +195,26 @@
             this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::Tweak_it.Properties.Resources.PERRO_LOGO__SIN_FONDO_____CALIDAD_;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(1635, 857);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(187, 146);
+            this.button4.TabIndex = 14;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // j2N1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Tweak_it.Properties.Resources.Fondo_j2_posta_;
+            this.BackgroundImage = global::Tweak_it.Properties.Resources.fondo___new_text;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pB5d);
@@ -246,5 +261,6 @@
         private System.Windows.Forms.PictureBox pB1d;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button4;
     }
 }

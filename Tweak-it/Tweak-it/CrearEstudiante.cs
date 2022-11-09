@@ -86,7 +86,7 @@ namespace Tweak_it
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text == "" || txtApellido.Text == "" || txtEdad.Text == "")
+            if(txtNombre.Text == "NOMBRE" || txtApellido.Text == "APELLIDO" || txtEdad.Text == "EDAD")
             {
                 MessageBox.Show("Completa los campos");
             }
@@ -108,7 +108,11 @@ namespace Tweak_it
 
         private void CrearEstudiante_Load(object sender, EventArgs e)
         {
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\user\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\BDD Tweak-It.accdb;Persist Security Info=False";
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
