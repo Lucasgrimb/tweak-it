@@ -17,12 +17,14 @@ namespace Tweak_it
         int ID;
         public static int tiempo;
         public static int puntos;
-
+        
 
         public Informacion_Alumnos()
         {
             InitializeComponent();
             connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\BDD Tweak-It.accdb;Persist Security Info=False";
+            pctboxem2.Visible = false;
+            pctboxem3.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -80,7 +82,7 @@ namespace Tweak_it
             connection.Open();
             string Puntos = "SELECT SUM (Puntos) FROM puntos WHERE id_usuario= " + ID + "";
             OleDbCommand cmd = new OleDbCommand(Puntos, connection);
-            puntos = Convert.ToInt32(cmd.ExecuteScalar());
+                puntos = Convert.ToInt32(cmd.ExecuteScalar());
 
             string Tiempo = "SELECT SUM (TiempoEnPantalla) FROM tiempo WHERE id_usuario= " + ID + "";
             OleDbCommand cmd2 = new OleDbCommand(Tiempo, connection);
@@ -90,7 +92,9 @@ namespace Tweak_it
             lblTmpEnPntlla.Text = tiempo +" "+ "MINUTOS JUGADOS";
             lblAlegre.Text = "ESTUVO " + EmocionesRecibidas[1] + " "+ "EL " + " " + FechasRecbidas[1];
             lbl2.Text = "ESTUVO " + EmocionesRecibidas[2] + " " + "EL " + " " + FechasRecbidas[2];
+            pctboxem2.Visible = true;
             label1.Text = "ESTUVO " + EmocionesRecibidas[3] + " " + "EL " + " " + FechasRecbidas[3];
+            pctboxem3.Visible = true;
             connection.Close();
         }
 
@@ -127,6 +131,11 @@ namespace Tweak_it
         }
 
         private void Informacion_Alumnos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }
