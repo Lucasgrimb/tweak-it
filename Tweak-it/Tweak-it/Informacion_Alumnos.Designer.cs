@@ -83,7 +83,7 @@ namespace Tweak_it
             this.lblAlegre.AutoSize = true;
             this.lblAlegre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.lblAlegre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblAlegre.Location = new System.Drawing.Point(726, 804);
+            this.lblAlegre.Location = new System.Drawing.Point(726, 803);
             this.lblAlegre.Name = "lblAlegre";
             this.lblAlegre.Size = new System.Drawing.Size(393, 31);
             this.lblAlegre.TabIndex = 7;
