@@ -23,7 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+<<<<<<< HEAD
     <ApplicationRevision>10</ApplicationRevision>
+=======
+    <ApplicationRevision>3</ApplicationRevision>
+>>>>>>> parent of aa52dbf (no cambie nada le puse el logo a la applicacion)
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -63,13 +67,6 @@
   <PropertyGroup>
     <StartupObject>
     </StartupObject>
-  </PropertyGroup>
-  <PropertyGroup>
-    <Win32Resource>
-    </Win32Resource>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>PERRO-LOGO-_SIN-FONDO_-CALIDAD_.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -788,6 +785,7 @@
   <ItemGroup>
     <None Include="Resources\Rectangulo usuario3.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Content Include="PERRO-LOGO-_SIN-FONDO_-CALIDAD_.ico" />
     <None Include="Resources\fondo + new text1.png" />
@@ -795,5 +793,7 @@
     <None Include="Resources\fondo + texto %281%291.png" />
     <None Include="Resources\fondo + texto %281%29.png" />
   </ItemGroup>
+=======
+>>>>>>> parent of aa52dbf (no cambie nada le puse el logo a la applicacion)
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
