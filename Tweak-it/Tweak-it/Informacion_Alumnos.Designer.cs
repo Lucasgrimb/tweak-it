@@ -61,6 +61,7 @@ namespace Tweak_it
             this.lblPuntos.AutoSize = true;
             this.lblPuntos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.lblPuntos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblPuntos.ForeColor = System.Drawing.Color.DimGray;
             this.lblPuntos.Location = new System.Drawing.Point(807, 629);
             this.lblPuntos.Name = "lblPuntos";
             this.lblPuntos.Size = new System.Drawing.Size(267, 31);
@@ -72,6 +73,7 @@ namespace Tweak_it
             this.lblTmpEnPntlla.AutoSize = true;
             this.lblTmpEnPntlla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.lblTmpEnPntlla.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblTmpEnPntlla.ForeColor = System.Drawing.Color.DimGray;
             this.lblTmpEnPntlla.Location = new System.Drawing.Point(798, 714);
             this.lblTmpEnPntlla.Name = "lblTmpEnPntlla";
             this.lblTmpEnPntlla.Size = new System.Drawing.Size(317, 31);
@@ -83,6 +85,7 @@ namespace Tweak_it
             this.lblAlegre.AutoSize = true;
             this.lblAlegre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.lblAlegre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblAlegre.ForeColor = System.Drawing.Color.DimGray;
             this.lblAlegre.Location = new System.Drawing.Point(726, 803);
             this.lblAlegre.Name = "lblAlegre";
             this.lblAlegre.Size = new System.Drawing.Size(393, 31);
