@@ -17,12 +17,12 @@ namespace Tweak_it
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Progreso prg = new Progreso();
-            this.Hide();
-            prg.Show();
-        }
+# private void pictureBox1_Click(object sender, EventArgs e)
+#       {
+# Progreso prg = new Progreso();
+# this.Hide();
+# prg.Show();
+# }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
