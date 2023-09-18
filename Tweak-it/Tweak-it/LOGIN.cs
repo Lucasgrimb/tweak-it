@@ -121,7 +121,7 @@ namespace Tweak_it
         private void LOGIN_Load(object sender, EventArgs e)
         {
             connection = new OleDbConnection();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\47700176\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\48045008\Documents\GitHub\tweak-it\Tweak-it\Tweak-it\bin\Debug\BDD Tweak-It.accdb;Persist Security Info=False";
         }
 
         private void btnTriste_Click(object sender, EventArgs e)

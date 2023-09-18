@@ -22,7 +22,7 @@ namespace Tweak_it
         public Informacion_Alumnos()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\47700176\Documents\GitHub\tweak-it\Tweak-it\BDD Tweak-It.accdb;Persist Security Info=False";
+            connection.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\48045008\Documents\GitHub\tweak-it\Tweak-it\Tweak-it\bin\Debug\BDD Tweak-It.accdb;Persist Security Info=False";
         }
 
         private void button2_Click(object sender, EventArgs e)
